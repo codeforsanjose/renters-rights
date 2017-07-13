@@ -6,8 +6,8 @@
 
 npm-debug.log*
 node_modules
-tmp/cache
-log #Ignore development log
+tmp/cache/
+log/ #Ignore development log
 
 # Ignore bundler config.
 /.bundle
