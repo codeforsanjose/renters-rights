@@ -9,12 +9,13 @@ The web application will be built in Rails, React.js, React-on-Rails gem, and Po
 
 ## How to Run This
 
+Set up the following dependencies
+
 | Dependency      | Version       | 
 | --------------: |--------------:| 
 | Ruby            | 2.3.3p222     |
 | Rails           | 5.0.4         |
 | PostgreSQL      | 9.6.3         | 
-| react_on_rails  | 8.0.3         |
 
 After you install the dependencies, to start the frontend:
 
