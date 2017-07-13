@@ -12,7 +12,7 @@ class RentersFriendController < ApplicationController
   private
 
   def path_to_asset(asset)
-    ApplicationController.helper.asset_path(asset)
+    ApplicationController.helpers.asset_path(asset)
   end 
 
 end
