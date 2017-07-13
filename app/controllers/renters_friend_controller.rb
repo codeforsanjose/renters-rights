@@ -4,6 +4,15 @@ class RentersFriendController < ApplicationController
   layout "renters_friend"
 
   def index
-    #add more later!
+    @images = {
+      twitter: path_to_asset('twitter_logo')
+    }
   end
+
+  private
+
+  def path_to_asset(asset)
+    ApplicationController.helper.asset_path(asset)
+  end 
+
 end
