@@ -11,7 +11,7 @@ export default class Renters extends React.Component {
           <RentersHeader />
           <div className="dashboard-container">
             <div className="dashboard-title">
-              <h1> Renter's Friend</h1>
+              <h1>Renter's Friend</h1>
             </div>
             <div className="dashboard-text">
             </div>
