@@ -7,7 +7,7 @@ export default class rentersFooter extends React.Component {
     return (
       <footer className="renters-footer-container row">
         <div className="renters-logos-container">
-          <p>Made with <3 by Code for San Jose</p>
+          <p>Made by Code for San Jose</p>
           <div>
             <img src={this.props.twitter} alt="logo" className="social-media-logos" />
           </div>
