@@ -13,9 +13,10 @@ Set up the following dependencies
 
 | Dependency      | Version       | 
 | --------------: |--------------:| 
-| Ruby            | 2.3.3p222     |
+| Ruby            | 2.3.3         |
 | Rails           | 5.0.4         |
 | PostgreSQL      | 9.6.3         | 
+| Node            | 8.1.4         |
 
 After you install the dependencies, to start the frontend:
 
