@@ -1,5 +1,5 @@
 {
-  "name": "renters_friend_app",
+  "name": "renters_rights_app",
   "private": true,
   "scripts": {
     "build:test": "NODE_ENV=test webpack --config webpack.config.js",

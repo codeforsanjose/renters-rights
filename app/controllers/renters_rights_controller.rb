@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-class RentersFriendController < ApplicationController
-  layout "renters_friend"
+class RentersRightsController < ApplicationController
+  layout "renters_rights"
 
   def index
-    @images = {
-      twitter: path_to_asset('twitter_logo')
-    }
+  #  @images = {
+  #    twitter: path_to_asset('twitter_logo')
+  #  }
   end
 
   def not_applicable
@@ -16,6 +16,6 @@ class RentersFriendController < ApplicationController
 
   def path_to_asset(asset)
     ApplicationController.helpers.asset_path(asset)
-  end 
+  end
 
 end
