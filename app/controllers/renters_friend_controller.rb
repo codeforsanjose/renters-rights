@@ -9,6 +9,9 @@ class RentersFriendController < ApplicationController
     }
   end
 
+  def not_applicable
+  end
+
   private
 
   def path_to_asset(asset)
