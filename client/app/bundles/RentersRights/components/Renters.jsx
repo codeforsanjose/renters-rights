@@ -16,40 +16,40 @@ export default class Renters extends React.Component {
 
             <div className="dashboard-text">
               <p> Get started by completing the form below </p>
-              <form class="form-horizontal">
+              <form className="form-horizontal">
                 <h3> What is your address?</h3>
-                <div class="form-group">
+                <div className="form-group">
                   <label for="streetAddress">Street Address:</label>
-                  <input type="streetAddress" class="form-control"/>
+                  <input type="streetAddress" className="form-control"/>
                 </div>
                 <br/>
-                <div class="form-group">
+                <div className="form-group">
                   <label for="aptOrUnit">Apt/Unit:</label>
-                  <input type="aptOrUnit" class="form-control"/>
+                  <input type="aptOrUnit" className="form-control"/>
                 </div>
                 <br/>
-                <div class="col-xs-6">
-                  <div class="form-group">
+                <div className="col-xs-6">
+                  <div className="form-group">
                     <label for="city">City:</label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" className="form-control"/>
                   </div>
                 </div>
-                <div class="col-xs-3">
-                  <div class="form-group">
+                <div className="col-xs-3">
+                  <div className="form-group">
                   <label for="state">State:</label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" className="form-control"/>
                   </div>
                 </div>
                 <br/>
-                <div class="col-xs-3">
-                  <div class="form-group">
+                <div className="col-xs-3">
+                  <div className="form-group">
                   <label for="zip">Zip:</label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" className="form-control"/>
                   </div>
                 </div>
                 <br/>
                 <h3>How can we help you?</h3>
-                <div class="checkbox">
+                <div className="checkbox">
                   <label>
                     <input type="checkbox"/> My landlord is evicting me.
                   </label>
@@ -65,7 +65,7 @@ export default class Renters extends React.Component {
 
                 <br/>
                 <h3>Did your landlord give you reasons for evicting you?</h3>
-                <div class="checkbox">
+                <div className="checkbox">
                   <label>
                     <input type="checkbox"/> Yes
                   </label>
@@ -79,7 +79,7 @@ export default class Renters extends React.Component {
                 <br/>
                 <h3>What were their reasons?</h3>
                 <h5>Check all that apply</h5>
-                <div class="checkbox">
+                <div className="checkbox">
                   <label>
                     <input type="checkbox"/> Non-payment of rent
                   </label>
