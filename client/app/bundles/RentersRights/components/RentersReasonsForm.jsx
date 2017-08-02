@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import RentersHeader from './RentersHeader'
+import RentersFooter from './RentersFooter'
 
-export default class Renters extends React.Component {
+export default class RentersReasonsForm extends React.Component {
   render() {
     return (
       <div className="renters-container">
         <div className="renters-dashboard">
-          <RentersHeader />
 
           <div className="dashboard-container">
             <div className="dashboard-title">
@@ -110,6 +109,7 @@ export default class Renters extends React.Component {
             </div>
 
           </div>
+            <RentersFooter />
         </div>
       </div>
     )
