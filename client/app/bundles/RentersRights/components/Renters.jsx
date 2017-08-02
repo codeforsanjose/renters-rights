@@ -8,12 +8,22 @@ export default class Renters extends React.Component {
     super(props);
     this.state = {city: ""};
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
  }
 
  handleInputChange(event) {
    this.setState({
      city: event.target.value
    });
+ }
+
+ handleClick(event){
+  if (this.state.city.toUpperCase() != "SAN JOSE") {
+      window.location.assign("not-applicable");
+  } else {
+      window.location.assign("renters-reasons-form");
+  }
+
  }
 
   render() {
