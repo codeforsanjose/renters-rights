@@ -1,3 +1,4 @@
+import TenantReallocationMessage from '../components/TenantReallocationMessage';
 import EvictionResourcesMessage from '../components/EvictionResourcesMessage';
 import NotApplicableMessage from '../components/NotApplicableMessage';
 import ReactOnRails from 'react-on-rails';
