@@ -3,6 +3,19 @@ import React from 'react';
 import RentersFooter from './RentersFooter'
 
 export default class Renters extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {city: ""};
+    this.handleInputChange = this.handleInputChange.bind(this);
+ }
+
+ handleInputChange(event) {
+   this.setState({
+     city: event.target.value
+   });
+ }
+
   render() {
     return (
       <div className="renters-container">
@@ -31,8 +44,13 @@ export default class Renters extends React.Component {
                   <div className="row">
                     <div className="col-xs-6">
 
-                        <label for="city">City:</label>
-                        <input type="text" className="form-control"/>
+                    <label for="city">City:</label>
+                    <input
+                      name="city"
+                      type="text"
+                      value={this.state.city}
+                      onChange={this.handleInputChange}
+                      className="form-control"/>
 
                     </div>
                     <div className="col-xs-3">
@@ -55,7 +73,7 @@ export default class Renters extends React.Component {
                 <button
                   className="btn btn-primary"
                   onClick={this.handleClick}
-                  type="submit"
+                  type="button"
                 >
                   Get Started
                 </button>
