@@ -12,6 +12,15 @@ class RentersRightsController < ApplicationController
   def not_applicable
   end
 
+  def renters_reasons_form
+  end
+
+  def tenant_reallocation
+  end
+
+  def eviction_resources
+  end
+
   private
 
   def path_to_asset(asset)
