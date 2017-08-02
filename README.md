@@ -1,5 +1,5 @@
 # Renter's Rights
-Renter's Rights is a Code for San José project to provide a web application that informs renters of their rights, beginning with residents in San José.
+Renter's Rights is a Code for San José project to provide a web application that informs renters of their rights, beginning with residents in San José. Check out the [demo](https://renters-rights.herokuapp.com)
 
 ## Why
 After conducting user research, renters expressed common issues - dealing with eviction or rising rent. It can be difficult to navigate policy jargon to understand renters rights and procedures to address issues with landlords.
