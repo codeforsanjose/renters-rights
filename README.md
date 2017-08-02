@@ -21,10 +21,13 @@ Set up the following dependencies
 After you install the dependencies, to start the frontend:
 
 1. Git clone this repo
-2. ```bundle install```
-3. ```bundle exec rails db:setup```
-4. ```foreman start -f Procfile.dev```
-5. Navigate to ```localhost:3000``` to see the index
+1. ```gem install bundler```
+1. ```bundle install```
+1. ```bundle exec rails db:setup```
+1. ```yarn```
+1. ```gem install foreman```
+1. ```foreman start -f Procfile.dev```
+1. Navigate to ```localhost:3000``` to see the index
 
 ## How You Can Contribute
 Join the #rails_team channel on our [Slack](https://slackin-c4sj.herokuapp.com/) and message [Yan-Yin Choy](https://github.com/ychoy)
