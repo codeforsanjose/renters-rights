@@ -1,10 +1,12 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default class RentersFooter extends React.Component {
   render() {
     return (
-      <header className="renters-Header">
+      <footer
+        className="renters-Header"
+      >
+        <hr />
         <div className="header-server-logo">
         </div>
         <div className="header-button-container">
@@ -20,7 +22,7 @@ export default class RentersFooter extends React.Component {
             </li>
           </ul>
         </div>
-      </header>
+      </footer>
     )
   }
 }

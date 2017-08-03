@@ -1,100 +1,66 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import RentersFooter from './RentersFooter'
+import RentersLayout from './RentersLayout'
 
 export default class Renters extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {city: ""};
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleClick = this.handleClick.bind(this);
- }
-
- handleInputChange(event) {
-   this.setState({
-     city: event.target.value
-   });
- }
-
- handleClick(event){
-  if (this.state.city.toUpperCase() != "SAN JOSE") {
-      window.location.assign("not-applicable");
-  } else {
-      window.location.assign("renters-reasons-form");
-  }
-
- }
-
   render() {
+    const { token } = this.props;
+
     return (
-      <div className="renters-container">
-        <div className="renters-dashboard">
-
-          <div className="dashboard-container">
-            <div className="dashboard-title">
-              <h1>Renter's Rights</h1>
-            </div>
-
-            <div className="dashboard-text">
-              <p> Get started by completing the form below </p>
-              <form className="form-horizontal">
-                <h3> What is your address?</h3>
-                <div className="form-group">
-                  <label for="streetAddress">Street Address:</label>
-                  <input type="streetAddress" className="form-control"/>
+      <RentersLayout>
+        <div className="dashboard-container">
+          <div className="dashboard-text">
+            <p> Get started by completing the form below </p>
+            <form
+              className="form-horizontal"
+              method="post"
+            >
+              <h3> What is your address?</h3>
+              <div className="form-group">
+                <label htmlFor="streetAddress">Street Address:</label>
+                <input type="streetAddress" className="form-control"/>
+              </div>
+              <br/>
+              <div className="form-group">
+                <label htmlFor="aptOrUnit">Apt/Unit:</label>
+                <input type="aptOrUnit" className="form-control"/>
+              </div>
+              <br/>
+              <div className="form-group row">
+                <label className="col-1 col-form-label" htmlFor="city">City:</label>
+                <div className="col-4">
+                  <input
+                    className="form-control"
+                    name="city"
+                    type="text"
+                  />
                 </div>
-                <br/>
-                <div className="form-group">
-                  <label for="aptOrUnit">Apt/Unit:</label>
-                  <input type="aptOrUnit" className="form-control"/>
+                <label className="col-1 col-form-label" htmlFor="state">State:</label>
+                <div className="col-2">
+                  <input type="text" className="form-control"/>
                 </div>
-                <br/>
-                <div className="form-group">
-                  <div className="row">
-                    <div className="col-xs-6">
-
-                    <label for="city">City:</label>
-                    <input
-                      name="city"
-                      type="text"
-                      value={this.state.city}
-                      onChange={this.handleInputChange}
-                      className="form-control"/>
-
-                    </div>
-                    <div className="col-xs-3">
-
-                      <label for="state">State:</label>
-                        <input type="text" className="form-control"/>
-
-                    </div>
-                  </div>
+                <label className="col-1 col-form-label" htmlFor="zip">Zip:</label>
+                <div className="col-2">
+                  <input type="text" className="form-control"/>
                 </div>
-                <br/>
-                <div className="col-xs-3">
-                  <div className="form-group">
-                  <label for="zip">Zip:</label>
-                    <input type="text" className="form-control"/>
-                  </div>
-                </div>
+              </div>
 
+              <input
+                name="authenticity_token"
+                type="hidden"
+                value={token}
+              />
 
-                <button
-                  className="btn btn-primary"
-                  onClick={this.handleClick}
-                  type="button"
-                >
-                  Get Started
-                </button>
-              </form>
-
-            </div>
+              <button
+                className="btn btn-primary"
+                type="submit"
+              >
+                Get Started
+              </button>
+            </form>
 
           </div>
-          <RentersFooter />
         </div>
-      </div>
+      </RentersLayout>      
     )
   }
 }
