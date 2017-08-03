@@ -1,16 +1,17 @@
-import Navbar from './Navbar';
 import React from 'react';
+import RentersLayout from './RentersLayout';
 
 export default function NotApplicableMessage({
   className,
 }) {
   return (
-    <div className={className}>
-      <Navbar className="mb-4" />
+    <RentersLayout
+      className={className}
+    >
       <div className="container">
-        <h5>
+        <strong>
           We're sorry, but we don't cover homes outside San Jose yet.
-        </h5>
+        </strong>
         <p>
           Please review our resource guide and consider following us on social media to stay updated on further developments.
         </p>
@@ -20,6 +21,6 @@ export default function NotApplicableMessage({
           </a>
         </p>
       </div>
-    </div>
+    </RentersLayout>
   );
 }
