@@ -4,23 +4,27 @@ export default class RentersFooter extends React.Component {
   render() {
     return (
       <footer
-        className="renters-Header"
+        className="renters-footer"
       >
         <hr />
-        <div className="header-server-logo">
-        </div>
-        <div className="header-button-container">
-          <ul className="nav justify-content-center">
+
+        <div className="container">
+          <ul className="nav nav-pils nav-justified">
             <li className="nav-item">
-              <a className="nav-link active" href="#">Resource</a>
+              <a className="nav-link" href="#">Resources Cat #1</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Disclaimer</a>
+              <a className="nav-link" href="#">Resources Cat #2</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <a className="nav-link" href="#">Resources Cat #3</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Resources Cat #4</a>
             </li>
           </ul>
+          
+          <p className="nav justify-content-center"> Disclaimer: This app informs you about your basic rights. It is not a substitute for legal advice. </p>
         </div>
       </footer>
     )
