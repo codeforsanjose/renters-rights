@@ -1,6 +1,9 @@
 {
-  "name": "renters_friend_app",
+  "name": "renters_rights_app",
   "private": true,
+  "engines": {
+    "node": "8.2.1"
+  },
   "dependencies": {},
   "scripts": {
     "postinstall": "cd client && yarn install"

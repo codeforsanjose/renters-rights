@@ -5,8 +5,6 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 .DS_Store
-npm-debug.log*
-node_modules
 tmp/cache/
 log/ #Ignore development log
 
@@ -31,3 +29,6 @@ node_modules
 
 # Generated js bundles
 /public/webpack/*
+
+# Ignore npm package management
+package-lock.json
