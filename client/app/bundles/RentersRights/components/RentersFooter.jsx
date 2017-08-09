@@ -24,7 +24,7 @@ export default class RentersFooter extends React.Component {
             </li>
           </ul>
           
-          <p className="nav justify-content-center"> Disclaimer: This app informs you about your basic rights. It is not a substitute for legal advice. </p>
+          <p className="text-center"> <em>Disclaimer:</em> This app informs you about your basic rights. It is not a substitute for legal advice. </p>
         </div>
       </footer>
     )
