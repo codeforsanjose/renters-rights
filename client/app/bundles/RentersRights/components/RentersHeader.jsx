@@ -8,9 +8,27 @@ export default function RentersHeader({
     <header
       className={classNames('pt-4', className)}
     >
-      <h1>
-        Renter's Rights
-      </h1>
-    </header>
+			<nav className="navbar navbar-default navbar-fixed-top">
+				<div className="container-fluid">
+				{/* Brand and toggle get grouped for better mobile display */}
+				<div className="navbar-header">
+					<button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span className="icon-bar"></span>
+						<span className="icon-bar"></span>
+						<span className="icon-bar"></span>
+					</button>
+					<a className="navbar-brand" href="/">Renter's Rights Guide</a>
+				</div>
+
+				{/* Collect the nav links, forms, and other content for toggling */}
+				<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul className="nav navbar-nav navbar-right">
+						<li><a href="#">Resources</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
   );
 }
