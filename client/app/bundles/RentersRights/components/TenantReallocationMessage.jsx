@@ -6,12 +6,13 @@ export default function TenantReallocationMessage({
 }) {
   return (
     <RentersLayout className={className}>
-      <strong>
+      <div className="home-links">
         <p>Yes, unfortunately your landlord can evict you by law, but
         based on the reasons they stated, they owe you reallocation money.
         </p>
-        <p>We recommend that you confirm with a legal advisor</p>
-      </strong>
+        <p/>
+        <p>Please confirm with a legal advisor and refer to our list of <a href="#">resources</a></p>
+      </div>
     </RentersLayout>
   );
 }
