@@ -6,10 +6,12 @@ import NotApplicableMessage from '../components/NotApplicableMessage';
 import ReactOnRails from 'react-on-rails';
 import Renters from '../components/Renters';
 import Home from '../components/Home';
+import FAQ from '../components/FAQ';
 
 // This is how react_on_rails can see the components in the browser.
 ReactOnRails.register({
   Home,
+  FAQ,
   EvictionResourcesMessage,
   HelpTypeForm,
   NotApplicableMessage,
