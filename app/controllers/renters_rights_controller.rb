@@ -4,12 +4,9 @@ class RentersRightsController < ApplicationController
   layout "renters_rights"
 
   def index
-  #  @images = {
-  #    twitter: path_to_asset('twitter_logo')
-  #  }
   end
 
-  def index_post
+  def renters_post
     if params[:city].strip.upcase == "SAN JOSE"
       redirect_to '/help-type'
     else

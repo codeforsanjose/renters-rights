@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root 'renters_rights#index'
   # reference: http://guides.rubyonrails.org/routing.html
-
-  post '/', to: 'renters_rights#index_post'
+  get '/renters', to: 'renters_rights#renters'
+  post '/renters', to: 'renters_rights#renters_post'
   get '/not-applicable', to: 'renters_rights#not_applicable'
   get '/help-type', to: 'renters_rights#help_type'
   post '/help-type', to: 'renters_rights#help_type_post'
