@@ -29,6 +29,24 @@ export default class FAQ extends React.Component {
               <li><a href="http://www.sanjoseca.gov/DocumentCenter/View/70490">Tenant Protection Ordinance Frequently Asked Questions</a></li>
             </ul>
             <br/>
+            <h3>What is Just Cause?</h3>
+            <p> It is a requirement that any notice to vacate (any action to recover possession) state a just cause for eviction. Notice to vacate must be based on a cause included in the list of twelve just-cause terminations listed in the Tenant Protection Ordinance.The following is a summary of the twelve (12) causes:
+            </p>
+            <li className="list-group-item active">Just Cause Terminations. <br/>The reasons for no-cause notice to vacate that signify fault on the part of the tenant are:</li>
+            <li className="list-group-item">1. Nonpayment of rent</li>
+            <li className="list-group-item">2. Material or habitual violation of the lease</li>
+            <li className="list-group-item">3. Substantial damage to the apartment</li>
+            <li className="list-group-item">4. Refusal to agree to a like or new rental agreement</li>
+            <li className="list-group-item">5. Nuisance behavior</li>
+            <li className="list-group-item">6. Refusing access to the apartment, requested in accordance in law</li>
+            <li className="list-group-item">7. Unapproved holdover subtenant</li>
+            <li className="list-group-item active">No-Fault Just Causes. <br/>Relocation benefits must be paid when a Tenant is being removed from an apartment for reasons 8-12.</li>
+            <li className="list-group-item">8. Substantial rehabilitation of the apartment</li>
+            <li className="list-group-item">9. Ellis Act removal or demolition</li>
+            <li className="list-group-item">10. Owner move-in</li>
+            <li className="list-group-item">11. Order to vacate</li>
+            <li className="list-group-item">12. Leaving an unpermitted apartment</li>
+            <br/>
             <h3>What is the Apartment Rental Dispute Mediation and Arbitration Ordinance (ARO)?</h3>
             <p>The City of San José’s <a href="http://www.sanjoseca.gov/index.aspx?nid=1355">Apartment Rental Dispute Mediation and Arbitration Ordinance (ARO)</a> regulates the annual amount that rents can increase in apartments in San José with three or more units that were first rented before September 7, 1979. </p>
             <br/>
