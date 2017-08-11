@@ -1,14 +1,16 @@
 import React from 'react';
 import RentersLayout from './RentersLayout';
 
-export default function EvictionResourcesMessage({
+export default function NoDueToTPOMessage({
   className,
 }) {
   return (
-    <RentersLayout className={className}>
+    <RentersLayout
+      className={className}
+    >
       <div className="home-links">
         <div className="container">
-          <p className="language-paragraph">The Tenant Protection Ordinance specifies requirements for providing notices to vacate for tenants living in apartments with three units or more in San José. The ordinance eliminates no-cause notices and requires a just cause for all notices to vacate.</p> 
+          <p className="language-paragraph">The Tenant Protection Ordinance specifies requirements for providing notices to vacate for tenants living in apartments with three units or more in San José. The ordinance eliminates no-cause notices and requires a just cause for all notices to vacate.</p>
           <br/>
           <li className="list-group-item language-paragraph active language-paragraph">Just Cause Terminations. <br/>The reasons for no-cause notice to vacate that signify fault on the part of the tenant are:</li>
           <li className="list-group-item language-paragraph">1. Nonpayment of rent</li>
@@ -28,8 +30,13 @@ export default function EvictionResourcesMessage({
           <p className="language-paragraph">
           Learn more about the <a href="http://www.sanjoseca.gov/index.aspx?nid=5518">Tenant Protection Ordinance</a>.
           </p>
-          <p className="language-paragraph">
-          Please confirm with a legal advisor and refer to our <a href="/resources">resource guide.</a>
+          <p className="language-paragraph">Please confirm with a legal advisor and refer to our <a href="/resources">resource guide</a>.
+          </p>
+          <br/>
+          <p>
+          <a href="/">
+            &laquo; Back to home page
+          </a>
           </p>
         </div>
       </div>

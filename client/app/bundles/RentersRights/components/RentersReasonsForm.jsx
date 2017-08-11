@@ -57,11 +57,11 @@ export default function RentersReasonsForm({
               </label>
               <br/>
               <label>
-                <input type="checkbox"/> Substantial rehabilitation of the apartment
+                <input name="rehabilitation"type="checkbox"/> Substantial rehabilitation of the apartment
               </label>
               <br/>
               <label>
-                <input type="checkbox"/> Ellis Act removal
+                <input name="ellisact" type="checkbox"/> Ellis Act removal
               </label>
               <br/>
               <label>
@@ -69,11 +69,11 @@ export default function RentersReasonsForm({
               </label>
               <br/>
               <label>
-                <input type="checkbox"/> Order to vacate
+                <input name="ordertovacate" type="checkbox"/> Order to vacate
               </label>
               <br/>
               <label>
-                <input type="checkbox"/> Vacation of unpermitted unit
+                <input name="leavingunpermittedunit" type="checkbox"/> Leaving an unpermitted apartment
               </label>
             </div>
 
