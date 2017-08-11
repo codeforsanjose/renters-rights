@@ -1,8 +1,8 @@
-# Renter's Rights
-Renter's Rights is a Code for San José project to provide a web application that informs renters of their rights, beginning with residents in San José. Check out the [demo](https://renters-rights.herokuapp.com)
+# Renter's Rights Guide
+Renter's Rights Guide is a Code for San José open source web application to help renters in San José understand the laws and programs in place to protect them. Check out the [demo](https://renters-rights.herokuapp.com)
 
 ## Why
-After conducting user research, renters expressed common issues - dealing with eviction or rising rent. It can be difficult to navigate policy jargon to understand renters rights and procedures to address issues with landlords.
+We learned from conducting user research and stakeholder interviews that renters deal with common issues - how to navigate the eviction process, increased rent, and affordable housing. It can be difficult to navigate policy jargon to understand renters rights and procedures to address issues with landlords. We hope to build an application that will empower renters to understand their rights and resources. 
 
 ## Tech
 The web application will be built in Rails, React.js, React-on-Rails gem, and PostgreSQL.
@@ -38,3 +38,4 @@ Join the #rails_team channel on our [Slack](https://slackin-c4sj.herokuapp.com/)
 * [Yan-Yin Choy](https://github.com/ychoy)
 * [Emily Ramos](https://github.com/EngineerEmily)
 * [Julie Kim](https://github.com/jliekim)
+* [Sanaz Jamloo](https://github.com/sanazjamloo)
