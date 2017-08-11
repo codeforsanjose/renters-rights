@@ -8,7 +8,7 @@ class RentersRightsController < ApplicationController
 
   def renters_post
     if params[:city].strip.upcase == "SAN JOSE"
-      redirect_to '/help-type'
+      redirect_to '/renters-reasons'
     else
       redirect_to '/not-applicable'
     end
@@ -34,9 +34,11 @@ class RentersRightsController < ApplicationController
   def renters_reasons_post
     if params[:gavereason] == "yes" && params[:ownermovein] == "on"
       redirect_to '/tenant-reallocation'
-    else
+    elsif params[:gavereason] == "yes"
       redirect_to '/eviction-resources'
-    end
+    elsif params[:gavereason] == "no"
+      redirect_to '/no-due-to-tpo'
+    end 
   end
   
   def tenant_reallocation
@@ -44,6 +46,12 @@ class RentersRightsController < ApplicationController
 
   def eviction_resources
   end
+
+  def no_due_to_tpo_message
+  end 
+
+  def resources
+  end 
 
   private
 
