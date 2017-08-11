@@ -29,31 +29,31 @@ export default function RentersReasonsForm({
             <h5>Check all that apply</h5>
             <div className="checkbox">
               <label>
-                <input type="checkbox"/> Non-payment of rent
+                <input name="nonpayment" type="checkbox"/> Non-payment of rent
               </label>
               <br/>
               <label>
-                <input type="checkbox"/> Violation of lease
+                <input name="lease" type="checkbox"/> Violation of lease
               </label>
               <br/>
               <label>
-                <input type="checkbox"/> Damage to the apartment
+                <input name="damage" type="checkbox"/> Damage to the apartment
               </label>
               <br/>
               <label>
-                <input type="checkbox"/> Refusal to agree to similar or new rental agreement
+                <input name="refusalnew" type="checkbox"/> Refusal to agree to similar or new rental agreement
               </label>
               <br/>
               <label>
-                <input type="checkbox"/> Nuisance behavior
+                <input name="nuisance" type="checkbox"/> Nuisance behavior
               </label>
               <br/>
               <label>
-                <input type="checkbox"/> Refusing access to unit
+                <input name="refusing" type="checkbox"/> Refusing access to unit
               </label>
               <br/>
               <label>
-                <input type="checkbox"/> Illegally sub-leasing to an unapproved tenant
+                <input name="sublease" type="checkbox"/> Illegally sub-leasing to an unapproved tenant
               </label>
               <br/>
               <label>
