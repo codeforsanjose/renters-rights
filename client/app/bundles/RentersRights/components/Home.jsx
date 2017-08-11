@@ -9,7 +9,7 @@ export default class Home extends React.Component {
       <RentersLayout>
         <br/>
         <div className="page-header"> 
-          <h1>Helping renters in San Jose understand the laws and programs in place to protect them.
+          <h1>Helping renters in San José understand the laws and programs in place to protect them.
           </h1>
         </div>
         <br/>
@@ -17,7 +17,7 @@ export default class Home extends React.Component {
           <div className="col-sm-12 col-md-7">
             <h4> How can we help you today? </h4>
             <div className="list-group">
-              <a href="#" className="list-group-item">
+              <a href="/resources" className="list-group-item">
                 <h4 className="list-group-item-heading">I want to learn about housing programs.</h4>
               </a>
             </div>
