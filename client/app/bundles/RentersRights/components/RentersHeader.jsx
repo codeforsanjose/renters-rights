@@ -23,8 +23,8 @@ export default function RentersHeader({
 				{/* Collect the nav links, forms, and other content for toggling */}
 				<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul className="nav navbar-nav navbar-right">
-						<li><a href="#">Resources</a></li>
-						<li><a href="#">FAQ</a></li>
+						<li><a href="/resources">Resources</a></li>
+						<li><a href="/faq">FAQ</a></li>
 					</ul>
 					</div>
 				</div>
