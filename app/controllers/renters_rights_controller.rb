@@ -21,7 +21,7 @@ class RentersRightsController < ApplicationController
   end
 
   def renters_type_post
-    if params[:unpermitted] == "on" || params[:rentalType] == "apt3Plus" 
+    if params[:apt3Plus] == "on" && params[:unpermitted] == "yes"
       redirect_to '/renters-reasons'
     else
       redirect_to '/evictions-resources'
