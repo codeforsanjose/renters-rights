@@ -83,7 +83,8 @@ authorized, permitted, or otherwise approved by the City</em>
               </label>
               <br/>
             </div>
-    
+            
+            <input name="authenticity_token" type="hidden" value={token} />    
             <br/>
             <button
               className="btn btn-primary"
