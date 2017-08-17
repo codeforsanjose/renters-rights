@@ -13,13 +13,13 @@ export default function RentersReasonsForm({
             method="post"
           >
             <h3>Did your landlord give you reasons for evicting you in writing?</h3>
-            <div className="checkbox" required="true">
+            <div className="checkbox" reyquired="true">
               <label>
-                <input name="gavereason" type="radio" value="yes"/> Yes
+                <input name="gaveReason" type="radio" value="yes"/> Yes
               </label>
               <br/>
               <label>
-                <input name="gavereason" type="radio" value="no"/> No
+                <input name="gaveReason" type="radio" value="no"/> No
               </label>
               <br/>
             </div>
@@ -41,7 +41,7 @@ export default function RentersReasonsForm({
               </label>
               <br/>
               <label>
-                <input name="refusalnew" type="checkbox"/> Refusal to agree to similar or new rental agreement
+                <input name="refusalNew" type="checkbox"/> Refusal to agree to similar or new rental agreement
               </label>
               <br/>
               <label>
@@ -61,19 +61,19 @@ export default function RentersReasonsForm({
               </label>
               <br/>
               <label>
-                <input name="ellisact" type="checkbox"/> Ellis Act removal
+                <input name="ellisAct" type="checkbox"/> Ellis Act removal
               </label>
               <br/>
               <label>
-                <input name="ownermovein" type="checkbox"/> Owner move-in
+                <input name="ownerMoveIn" type="checkbox"/> Owner move-in
               </label>
               <br/>
               <label>
-                <input name="ordertovacate" type="checkbox"/> Order to vacate
+                <input name="orderToVacate" type="checkbox"/> Order to vacate
               </label>
               <br/>
               <label>
-                <input name="leavingunpermittedunit" type="checkbox"/> Leaving an unpermitted apartment
+                <input name="leavingUnpermittedUnit" type="checkbox"/> Leaving an unpermitted apartment
               </label>
             </div>
 

@@ -8,7 +8,7 @@ class RentersRightsController < ApplicationController
 
   def renters_post
     if params[:city].strip.upcase == "SAN JOSE"
-      redirect_to '/renters-reasons'
+      redirect_to '/renters-type'
     else
       redirect_to '/not-applicable'
     end
@@ -17,14 +17,14 @@ class RentersRightsController < ApplicationController
   def not_applicable
   end
 
-  def help_type
+  def renters_type
   end
 
-  def help_type_post
-    if params[:evict] == "on"
+  def renters_type_post
+    if params[:apt3Plus] == "on" && params[:unpermitted] == "yes"
       redirect_to '/renters-reasons'
     else
-      redirect_to '/not-applicable'
+      redirect_to '/eviction-resources'
     end
   end
 
@@ -32,11 +32,11 @@ class RentersRightsController < ApplicationController
   end
 
   def renters_reasons_post
-    if params[:gavereason] == "yes" && params[:ownermovein] == "on" || params[:ellisact] == "on" || params[:ordertovacate] == "on" || params[:leavingunpermittedunit] == "on" || params[:rehabilitation] == "on"
+    if params[:gaveReason] == "yes" && params[:ownerMoveIn] == "on" || params[:ellisAct] == "on" || params[:orderToVacate] == "on" || params[:leavingUnpermittedUnit] == "on" || params[:rehabilitation] == "on"
       redirect_to '/tenant-relocation'
-    elsif params[:gavereason] == "yes" && params[:nonpayment] == "on" ||  params[:lease] == "on" || params[:damage] == "on" || params[:refulsalnew] == "on" || params[:nuisance] == "on" || params[:refusing] == "on" || params[:sublease] == "on"
+    elsif params[:gaveReason] == "yes" && params[:nonpayment] == "on" ||  params[:lease] == "on" || params[:damage] == "on" || params[:refulsalNew] == "on" || params[:nuisance] == "on" || params[:refusing] == "on" || params[:sublease] == "on"
       redirect_to '/eviction-resources'
-    elsif params[:gavereason] == "no"
+    elsif params[:gaveReason] == "no"
       redirect_to '/tpo'
     end 
   end
