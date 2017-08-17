@@ -31,11 +31,11 @@ export default function RentersTypeForm({
               </label>
               <br/>
               <label>
-                <input name="rentalType" type="radio" value="apt3Plus"/> Apartment with 3+ units in the building 
+                <input name="rentalType" type="radio" value="apt3Plus"/> Apartment with 3 or more units in the building
               </label>
               <br/>
               <label>
-                input name="rentalType" type="radio" value="apt1To2"/> Apartment with 1-2 units in the building 
+                <input name="rentalType" type="radio" value="apt1To2"/> Apartment with 1 to 2 units in the building 
               </label>
               <br/>
               <label>
