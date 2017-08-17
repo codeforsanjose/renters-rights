@@ -17,14 +17,14 @@ class RentersRightsController < ApplicationController
   def not_applicable
   end
 
-  def help_type
+  def renters_type
   end
 
-  def help_type_post
-    if params[:evict] == "on"
+  def renters_type_post
+    if params[:unpermitted] == "on" || params[:rentalType] == "apt3Plus" 
       redirect_to '/renters-reasons'
     else
-      redirect_to '/not-applicable'
+      redirect_to '/evictions-resources'
     end
   end
 
