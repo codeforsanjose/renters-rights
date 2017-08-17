@@ -31,7 +31,7 @@ export default function RentersTypeForm({
               </label>
               <br/>
               <label>
-                <input name="rentalType" type="radio" value="apt3Plut"/> Apartment with 3+ units in the building 
+                <input name="rentalType" type="radio" value="apt3Plus"/> Apartment with 3+ units in the building 
               </label>
               <br/>
               <label>
@@ -39,11 +39,36 @@ export default function RentersTypeForm({
               </label>
               <br/>
               <label>
-                <input name="rentalType" type="radio" value="mobileHome"/> Mobile Home 
+                <input name="rentalType" type="radio" value="townHouse"/> Townhouse
               </label>
               <br/>
+              <label>
+                <input name="rentalType" type="radio" value="hotel"/> Hotel 
+              </label>
+              <br/>
+              <label>
+                <input name="rentalType" type="radio" value="motel"/> Motel 
+              </label>
+              <br/>
+              <label>
+                <input name="rentalType" type="radio" value="boardingHouse"/> Boarding House 
+              </label>
+              <br/>
+              <label>
+                <input name="rentalType" type="radio" value="nonprofitHome"/> Nonprofit Home  
+              </label>
+              <br/>
+              <label>
+                <input name="rentalType" type="radio" value="schoolDorm"/> School dormitory 
+              </label>
+              <br/>
+              <label>
+                <input name="rentalType" type="radio" value="rentalUnitByGov"/> Rental units owned and operated by any government agency
+              </label>
+              <br/>
+
             </div>
-              
+
             <h3>Do you live in an unpermitted dwelling? </h3>
             <em>Unpermitted dwelling means part  or parts of a structure that are being rented as a home, residence, or sleeping place, where the use is not
 authorized, permitted, or otherwise approved by the City</em>
