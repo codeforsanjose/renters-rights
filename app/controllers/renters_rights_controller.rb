@@ -24,7 +24,7 @@ class RentersRightsController < ApplicationController
     if params[:apt3Plus] == "on" && params[:unpermitted] == "yes"
       redirect_to '/renters-reasons'
     else
-      redirect_to '/evictions-resources'
+      redirect_to '/eviction-resources'
     end
   end
 
