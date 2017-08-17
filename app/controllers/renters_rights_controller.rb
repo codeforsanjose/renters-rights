@@ -8,7 +8,7 @@ class RentersRightsController < ApplicationController
 
   def renters_post
     if params[:city].strip.upcase == "SAN JOSE"
-      redirect_to '/renters-reasons'
+      redirect_to '/renters-type'
     else
       redirect_to '/not-applicable'
     end
