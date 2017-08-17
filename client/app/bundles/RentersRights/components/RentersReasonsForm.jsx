@@ -12,14 +12,69 @@ export default function RentersReasonsForm({
             className="form-horizontal"
             method="post"
           >
-            <h3>Did your landlord give you reasons for evicting you in writing?</h3>
+            <h3>What type of home do you rent?</h3>
             <div className="checkbox" required="true">
               <label>
-                <input name="gavereason" type="radio" value="yes"/> Yes
+                <input name="rentalType" type="radio" value=""/> Single Family Home
               </label>
               <br/>
               <label>
-                <input name="gavereason" type="radio" value="no"/> No
+                <input name="rentalType" type="radio" value="duplex"/> Duplex 
+              </label>
+              <br/>
+              <label>
+                <input name="rentalType" type="radio" value="triplex"/> Triplex
+              </label>
+              <br/>
+              <label>
+                <input name="rentalType" type="radio" value="quadruplex"/> Quadruplex
+              </label>
+              <br/>
+              <label>
+                <input name="rentalType" type="radio" value="apt3Plut"/> Apartment with 3+ units in the building 
+              </label>
+              <br/>
+              <label>
+                input name="rentalType" type="radio" value="apt1To2"/> Apartment with 1-2 units in the building 
+              </label>
+              <br/>
+              <label>
+                <input name="rentalType" type="radio" value="mobileHome"/> Mobile Home 
+              </label>
+              <br/>
+            </div>
+              
+            <h3>When was your rental built? </h3>
+            <br/>
+            <label className="col-form-label" htmlFor="yearBuilt">Year Built:</label>
+              <input
+                className="form-control"
+                type="yearBuilt"
+              />
+  
+            <h3>Do you live in an unpermitted dwelling? </h3>
+            <em>Unpermitted dwelling means part  or parts of a structure that are being rented as a home, residence, or sleeping place, where the use is not
+authorized, permitted, or otherwise approved by the City</em>
+            <br/>
+            <div className="checkbox" required="true">
+              <label>
+                <input name="unpermitted" type="radio" value="yes"/> Yes
+              </label>
+              <br/>
+              <label>
+                <input name="unpermitted" type="radio" value="no"/> No
+              </label>
+              <br/>
+            </div>
+    
+            <h3>Did your landlord give you reasons for evicting you in writing?</h3>
+            <div className="checkbox" reyquired="true">
+              <label>
+                <input name="gaveReason" type="radio" value="yes"/> Yes
+              </label>
+              <br/>
+              <label>
+                <input name="gaveReason" type="radio" value="no"/> No
               </label>
               <br/>
             </div>
@@ -41,7 +96,7 @@ export default function RentersReasonsForm({
               </label>
               <br/>
               <label>
-                <input name="refusalnew" type="checkbox"/> Refusal to agree to similar or new rental agreement
+                <input name="refusalNew" type="checkbox"/> Refusal to agree to similar or new rental agreement
               </label>
               <br/>
               <label>
@@ -61,19 +116,19 @@ export default function RentersReasonsForm({
               </label>
               <br/>
               <label>
-                <input name="ellisact" type="checkbox"/> Ellis Act removal
+                <input name="ellisAct" type="checkbox"/> Ellis Act removal
               </label>
               <br/>
               <label>
-                <input name="ownermovein" type="checkbox"/> Owner move-in
+                <input name="ownerMoveIn" type="checkbox"/> Owner move-in
               </label>
               <br/>
               <label>
-                <input name="ordertovacate" type="checkbox"/> Order to vacate
+                <input name="orderToVacate" type="checkbox"/> Order to vacate
               </label>
               <br/>
               <label>
-                <input name="leavingunpermittedunit" type="checkbox"/> Leaving an unpermitted apartment
+                <input name="leavingUnpermittedUnit" type="checkbox"/> Leaving an unpermitted apartment
               </label>
             </div>
 
