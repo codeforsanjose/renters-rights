@@ -8,14 +8,14 @@ import Home from '../components/Home';
 import FAQ from '../components/FAQ';
 import TPOMessage from '../components/TPOMessage';
 import Resources from '../components/Resources';
-import RentersType from '../components/RentersType';
+import RentersTypeForm from '../components/RentersTypeForm';
 
 // This is how react_on_rails can see the components in the browser.
 ReactOnRails.register({
   Home,
   FAQ,
   Resources,
-  RentersType,
+  RentersTypeForm,
   EvictionResourcesMessage,
   NotApplicableMessage,
   TPOMessage,
