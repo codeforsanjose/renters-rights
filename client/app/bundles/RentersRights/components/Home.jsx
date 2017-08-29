@@ -22,8 +22,23 @@ export default class Home extends React.Component {
               </a>
             </div>
             <div className="list-group">
+              <a href="/#" className="list-group-item">
+                <h4 className="list-group-item-heading">I want to learn about local renter's  rights.</h4>
+              </a>
+            </div>
+            <div className="list-group">
+              <a href="/#" className="list-group-item">
+                <h4 className="list-group-item-heading">I want to learn about renter's rights in the State of California.</h4>
+              </a>
+            </div>
+             <div className="list-group">
               <a href="/resources" className="list-group-item">
-                <h4 className="list-group-item-heading">I want to learn about housing programs.</h4>
+                <h4 className="list-group-item-heading">I want to learn about local resources.</h4>
+              </a>
+            </div>
+            <div className="list-group">
+              <a href="/#" className="list-group-item">
+                <h4 className="list-group-item-heading">I want to calculate how much my rent increased in the past year.</h4>
               </a>
             </div>
           </div>
