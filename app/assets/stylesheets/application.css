@@ -14,6 +14,24 @@
  *= require_self
  */
 
+ .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+   color: #000;  /*Sets the text hover color on navbar*/
+ }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+   color: white; /*BACKGROUND color for active*/
+   background-color: #329CC4;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #329CC4; /*Change active text color here*/
+}
+
+.navbar-default .navbar-brand {
+  color: #329CC4;
+}
+
 body {
   padding-top: 70px;
   font-family: 'Open Sans', sans-serif;
@@ -22,6 +40,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
+
+h1 {
+  color: #329CC4;
+}
+
 .home-links {
   display: flex;
   justify-content: center;
