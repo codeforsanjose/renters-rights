@@ -4,7 +4,10 @@
   "engines": {
     "node": "8.2.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-simple-flowchart": "^1.2.2"
+  },
   "scripts": {
     "postinstall": "cd client && yarn install"
   }
