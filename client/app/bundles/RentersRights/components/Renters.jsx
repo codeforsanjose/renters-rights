@@ -11,203 +11,25 @@ export default class Renters extends React.Component {
           <div className="dashboard-text">
             <h3>Learn More About Tenant Law & Rights</h3>
             <ul className="nav nav-pills">
-              <li className="active"><a data-toggle="pill" href="#menu1">Ellis Act Ordinance</a></li>
-              <li><a data-toggle="pill" href="#menu2">Tenant Protection Ordinance</a></li>
-              <li><a data-toggle="pill" href="#menu3">Apartment Rent Ordinance</a></li>
+              <li className="active"><a data-toggle="pill" href="#menu1">Apartment Rent Ordinance</a></li>
+              <li><a data-toggle="pill" href="#menu2">Ellis Act Ordinance</a></li>
+              <li><a data-toggle="pill" href="#menu3">Tenant Protection Ordinance</a></li>
               <li><a data-toggle="pill" href="#menu4">Mobilehome Ordinance</a></li>
             </ul>
 
             <div className="tab-content">
               <div id="menu1" className="tab-pane fade in active">
-                <h3>Ellis Act Ordinance</h3>
-                <div className="panel-group" id="accordion">
-                  <p>
-                  On April 18, 2017, the City Council recommended the approval of the Ellis Act Ordinance. </p>
-                  <h5> Who does this apply to? </h5>
-                  <p>This ordinance applies to all apartments four units or more covered by the Apartment Rent Ordinance and provides requirements for landlords removing these apartments from the rental housing market. </p>
-                  <p>In San José, the most frequent use of the Ellis Act Ordinance would be the demolition and redevelopment of existing rent controlled housing.</p>
-
-                  <p>The Ellis Act is a provision in California Law (Government Code section 7060-7060.7) that provides landlords in California with a legal way to go out of the rental market business. The Ellis Act was adopted by the California Legislature in 1985 after the California Supreme Court decision in the case of Nash v. City of Santa Monica. </p>
-                  <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                        Removal from the Rental Market</a>
-                      </h4>
-                    </div>
-                    <div id="collapse1" className="panel-collapse collapse">
-
-                      <div className="panel-body">
-                      <p>
-                      A property owner may recover possession of a rental unit to either demolish a rental unit or to remove the rental unit permanently from rental housing use.
-                      </p>
-                      <p>
-                      If you receive an eviction notice from your landlord because your landlord wishes to recover possession of the rental unit, you can expect the following:
-                      </p>
-                      <ul>
-                        <li>You will receive a Notice to Withdraw that has been filed by your landlord.</li>
-                        <li>Your case will be referred to the City’s Relocation Consultant to provide you support during your relocation.</li>
-                        <li>The amount of relocation fees you may be entitled to will be determined.</li>
-                      </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                        Renter's Rights and Responsibilities</a>
-                      </h4>
-                    </div>
-                    <div id="collapse2" className="panel-collapse collapse">
-                      <div className="panel-body">
-                        <ul>
-                          <li><strong>120-Day Notice of Eviction:</strong> You are entitled to a 120-Day Notice of Eviction.
-</li>
-                          <li><strong>One-Year Extension:</strong> You may be entitled to a one-year extension from the date the landlord delivered the Notice of Intent to Withdraw if you are low-income, over the age of 62, disabled, terminally or catastrophically ill, or have school-aged children.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                        Relocation Assistance</a>
-                      </h4>
-                    </div>
-                    <div id="collapse3" className="panel-collapse collapse">
-                      <div className="panel-body">You may be entitled to relocation assistance. The City of San José’s Relocation Consultant will determine the amount of relocation benefits you are entitled to, otherwise the determination will be based on the information provided by your Landlord.</div>
-                    </div>
-                  </div>
-                  <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                        Interested in Returning to the Unit Should it Become Available?</a>
-                      </h4>
-                    </div>
-                    <div id="collapse4" className="panel-collapse collapse">
-                      <div className="panel-body">
-                      <p>
-                      For units re-rented within five years, rent will be set at the rent paid when the Notice of Intent to Withdraw is given, escalated by the annual allowable rate for the number of years the unit was not occupied. </p>
-                      <p>For units re-rented after 10 years, tenants will have the right to return only. </p>
-                      <p>If apartments were demolished and rebuilt, tenants do not have a right to return to the newly constructed apartments.
-                      </p>
-                      </div>
-                    </div>
-                  </div>
-                  <br/>
-                  <p>View the <a href="http://www.sanjoseca.gov/index.aspx?NID=5517" target="blank">Ellis Act Ordinance Fact Sheet</a> for more information.</p>
-                </div>
-              </div>
-              <div id="menu2" className="tab-pane">
-                <h3>Tenant Protection Ordinance (TPO)</h3>
-
-                <p>On May 9, 2017, San José City Council adopted the <strong>Tenant Protection Ordinance</strong> and an Urgency Ordinance making the new regulations effective immediately.
-                TPO outlines landlord responsibilities and tenant rights regarding notices to terminate. </p>
-                <br/>
-                <div className="panel-group" id="accordion">
-                  <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                        What is covered by TPO?</a>
-                      </h4>
-                    </div>
-                    <div id="collapse5" className="panel-collapse collapse in">
-                      <div className="panel-body">
-                      <strong>Covered:</strong>
-                        <ul>
-                          <li>Rent stabilized apartments covered under ARO. Units within Apartments with 3+ units built on or before September 7, 1979</li>
-                          <li>Multifamily dwellings with at least 3 units</li>
-                          <li>Rental apartments except permitted hotels and motels</li>
-                          <li>Guest rooms in any guesthouse and guesthouses</li>
-                          <li>Units built without a permit</li>
-                        </ul>
-                      <strong>Not Covered:</strong>
-                        <ul>
-                          <li>Duplexes</li>
-                          <li>Single-family homes</li>
-                          <li>Permitted Second units</li>
-                          <li>Single family Condominiums</li>
-                          <li>Townhouses</li>
-                        </ul>
-                      <br/>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-                        What does it mean to be covered under TPO?</a>
-                      </h4>
-                    </div>
-                    <div id="collapse6" className="panel-collapse collapse">
-                      <div className="panel-body">
-                        Buildings are covered by Just Cause and any 30-60-90 day notice to vacate must list one of the 12 just-cause reasons for eviction.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
-                        What is Just Cause?</a>
-                      </h4>
-                    </div>
-                    <div id="collapse7" className="panel-collapse collapse">
-                      <div className="panel-body">
-                      <em> View this information in <a href="http://www.sanjoseca.gov/DocumentCenter/View/69112" target="_blank">Spanish</a> or <a href="http://www.sanjoseca.gov/DocumentCenter/View/69113" target="_blank">Vietnamese</a></em>
-                      <br/>
-                      <p><strong> Under TPO, landlords must include one of the following 12 reasons for termination in any 30-60-90 notice to vacate to the tenant:</strong></p>
-                      <li className="list-group-item active"><h4>Just Cause Terminations </h4> <p>The reasons for no-cause notice to vacate that signify fault on the part of the tenant are:</p></li>
-                      <li className="list-group-item">1. Nonpayment of rent</li>
-                      <li className="list-group-item">2. Material or habitual violation of the lease</li>
-                      <li className="list-group-item">3. Substantial damage to the apartment</li>
-                      <li className="list-group-item">4. Refusal to agree to a like or new rental agreement</li>
-                      <li className="list-group-item">5. Nuisance behavior</li>
-                      <li className="list-group-item">6. Refusing access to the apartment, requested in accordance in law</li>
-                      <li className="list-group-item">7. Unapproved holdover subtenant</li>
-                      <li className="list-group-item active"><h4>No-Fault Just Causes </h4><p>Relocation benefits must be paid when a Tenant is being removed from an apartment for reasons 8-12.</p></li>
-                      <li className="list-group-item">8. Substantial rehabilitation of the apartment</li>
-                      <li className="list-group-item">9. Ellis Act removal or demolition</li>
-                      <li className="list-group-item">10. Owner move-in</li>
-                      <li className="list-group-item">11. Order to vacate</li>
-                      <li className="list-group-item">12. Leaving an unpermitted apartment</li>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
-                        No-cause Notice</a>
-                      </h4>
-                    </div>
-                    <div id="collapse8" className="panel-collapse collapse">
-                      <div className="panel-body">
-                      No-cause notices received after May 10, 2017 are no longer valid. If you have received this and are covered under TPO, please contact the City of San José Rental Rights & Referrals Program at (408)975-4480 to learn about your rights.
-                      </div>
-                    </div>
-                  </div>
-                  <br/>
-                  <p>To learn more, refer to the <a href="http://www.sanjoseca.gov/DocumentCenter/View/70042">Tenant Protection Ordinance Fact Sheet</a> and the <a href="http://www.sanjoseca.gov/DocumentCenter/View/70490">Tenant Protection Ordinance Frequently Asked Questions</a>.</p>
-                </div>
-              </div>
-              <div id="menu3" className="tab-pane fade">
-                <h3>Apartment Rent Ordinance (ARO)</h3>
+                <h3>Apartment Rent Ordinance (ARO) </h3>
                 <p>The City of San José's Apartment Rent Ordinance (ARO) controls rent increases on apartments that are covered by the ordinance.</p>
                 <div className="panel-group" id="accordion">
                   <div className="panel panel-default">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                         What is covered by ARO?</a>
                       </h4>
                     </div>
-                    <div id="collapse9" className="panel-collapse collapse">
+                    <div id="collapse1" className="panel-collapse collapse in">
                       <div className="panel-body">
                       <p><strong>Covered</strong></p>
                       <p>Properties covered under ARO include apartments:</p>
@@ -238,11 +60,11 @@ export default class Renters extends React.Component {
                   <div className="panel panel-default">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                         How much can rent be increased?</a>
                       </h4>
                     </div>
-                    <div id="collapse10" className="panel-collapse collapse">
+                    <div id="collapse2" className="panel-collapse collapse">
                       <div className="panel-body">
                       <p>The <strong>maximum annual allowable rent increase</strong> is <strong>5%.</strong></p>
                       <p>Rent increases may only be given once in a 12-month period. </p>
@@ -252,11 +74,11 @@ export default class Renters extends React.Component {
                   <div className="panel panel-default">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
                         Exceptions to Allowable Rent Increase</a>
                       </h4>
                     </div>
-                    <div id="collapse11" className="panel-collapse collapse">
+                    <div id="collapse3" className="panel-collapse collapse">
                       <div className="panel-body">
                       <p>
                       <strong>Exempt rent increases include:</strong>
@@ -282,12 +104,12 @@ export default class Renters extends React.Component {
                   <div className="panel panel-default">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
                         Service Reductions</a>
                       </h4>
                     </div>
 
-                    <div id="collapse12" className="panel-collapse collapse">
+                    <div id="collapse4" className="panel-collapse collapse">
                       <div className="panel-body">
                       <p>
                       <strong> What is service reduction? </strong>
@@ -304,12 +126,12 @@ export default class Renters extends React.Component {
                   <div className="panel panel-default">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
                         Housing Code Violation</a>
                       </h4>
                     </div>
 
-                    <div id="collapse13" className="panel-collapse collapse">
+                    <div id="collapse5" className="panel-collapse collapse">
                       <div className="panel-body">
                       <strong>What is a housing code violation?</strong>
                       <p>When there are health and safety defects which violate the San José Housing Code and/or California Civil Code Sections 1941.1 and 1941.2. </p>
@@ -325,12 +147,12 @@ export default class Renters extends React.Component {
                   <div className="panel panel-default">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
                         Freedom to Exercise Rights</a>
                       </h4>
                     </div>
 
-                    <div id="collapse14" className="panel-collapse collapse">
+                    <div id="collapse6" className="panel-collapse collapse">
                       <div className="panel-body">
                       <p>Apartment owners may not do the following in retaliation for tenants demanding their rights under the Ordinance:</p>
                       <ul>
@@ -343,27 +165,216 @@ export default class Renters extends React.Component {
                       <em>If any of these actions occur, provide a written complaint to the Rental Rights & Referrals Program at 200 East Santa Clara Street, 12th Floor, San José, CA 95113. To contact staff call (408)975-4480.</em>
                       </div>
                     </div>
+                  </div>
+
+                  <br/>
                   <p>For more information, view the <a href="http://www.sanjoseca.gov/DocumentCenter/View/61137" target="_blank">Interim Ordinance</a> and the <a href="http://www.sanjoseca.gov/DocumentCenter/View/61137" target="_blank">Revised Interim Regulations</a>.</p>
                   <p>
-                    The San José Housing Department released the draft <a href="http://www.sanjoseca.gov/DocumentCenter/View/71051" target="_blank">Apartment Rent Ordinance</a> and <a href="http://www.sanjoseca.gov/DocumentCenter/View/71125" target="_blank">Regulations</a> are available for public review and comment on August 14, 2017. The 30-day comment period will run from August 14, 2017 to September 15, 2017.
+                    The San José Housing Department released the draft <a href="http://www.sanjoseca.gov/DocumentCenter/View/71051" target="_blank">Apartment Rent Ordinance</a> and <a href="http://www.sanjoseca.gov/DocumentCenter/View/71125" target="_blank">Regulations</a>, which are available for public review and comment. The 30-day comment period will run from August 14, 2017 to September 15, 2017.
                     <a href="http://www.sanjoseca.gov/index.aspx?nid=1355" target="blank"> Learn more</a>.
                   </p>
-                  </div>
-                  <br/>
                 </div>
               </div>
-              <div id="menu4" className="tab-pane fade">
+              <div id="menu2" className="tab-pane">
+                <h3>Ellis Act Ordinance</h3>
+                <div className="panel-group" id="accordion">
+                  <p>On April 18, 2017, the City Council recommended the approval of the Ellis Act Ordinance. </p>
+                  <p>In San José, the most frequent use of the Ellis Act Ordinance would be the demolition and redevelopment of existing rent controlled housing.</p>
+                  <p>The Ellis Act is a provision in California Law (Government Code section 7060-7060.7) that provides landlords in California with a legal way to go out of the rental market business. The Ellis Act was adopted by the California Legislature in 1985 after the California Supreme Court decision in the case of Nash v. City of Santa Monica. </p>
+                  <div className="panel panel-default">
+                    <div className="panel-heading">
+                      <h4 className="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                        Who does this apply to?</a>
+                      </h4>
+                    </div>
+                    <div id="collapse7" className="panel-collapse collapse in">
+                      <div className="panel-body">
+                      <p>This ordinance applies to all apartments four units or more covered by the Apartment Rent Ordinance and provides requirements for landlords removing these apartments from the rental housing market. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="panel panel-default">
+                    <div className="panel-heading">
+                      <h4 className="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                        Removal from the Rental Market</a>
+                      </h4>
+                    </div>
+                    <div id="collapse8" className="panel-collapse collapse">
+
+                      <div className="panel-body">
+                      <p>
+                      A property owner may recover possession of a rental unit to either demolish a rental unit or to remove the rental unit permanently from rental housing use.
+                      </p>
+                      <p>
+                      If you receive an eviction notice from your landlord because your landlord wishes to recover possession of the rental unit, you can expect the following:
+                      </p>
+                      <ul>
+                        <li>You will receive a Notice to Withdraw that has been filed by your landlord.</li>
+                        <li>Your case will be referred to the City’s Relocation Consultant to provide you support during your relocation.</li>
+                        <li>The amount of relocation fees you may be entitled to will be determined.</li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="panel panel-default">
+                    <div className="panel-heading">
+                      <h4 className="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                        Renter's Rights and Responsibilities</a>
+                      </h4>
+                    </div>
+                    <div id="collapse9" className="panel-collapse collapse">
+                      <div className="panel-body">
+                        <ul>
+                          <li><strong>120-Day Notice of Eviction:</strong> You are entitled to a 120-Day Notice of Eviction.
+</li>
+                          <li><strong>One-Year Extension:</strong> You may be entitled to a one-year extension from the date the landlord delivered the Notice of Intent to Withdraw if you are low-income, over the age of 62, disabled, terminally or catastrophically ill, or have school-aged children.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="panel panel-default">
+                    <div className="panel-heading">
+                      <h4 className="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                        Relocation Assistance</a>
+                      </h4>
+                    </div>
+                    <div id="collapse10" className="panel-collapse collapse">
+                      <div className="panel-body">You may be entitled to relocation assistance. The City of San José’s Relocation Consultant will determine the amount of relocation benefits you are entitled to, otherwise the determination will be based on the information provided by your Landlord.</div>
+                    </div>
+                  </div>
+                  <div className="panel panel-default">
+                    <div className="panel-heading">
+                      <h4 className="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+                        Interested in Returning to the Unit Should it Become Available?</a>
+                      </h4>
+                    </div>
+                    <div id="collapse11" className="panel-collapse collapse">
+                      <div className="panel-body">
+                      <p>
+                      For units re-rented within five years, rent will be set at the rent paid when the Notice of Intent to Withdraw is given, escalated by the annual allowable rate for the number of years the unit was not occupied. </p>
+                      <p>For units re-rented after 10 years, tenants will have the right to return only. </p>
+                      <p>If apartments were demolished and rebuilt, tenants do not have a right to return to the newly constructed apartments.
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+                  <br/>
+                  <p>View the <a href="http://www.sanjoseca.gov/index.aspx?NID=5517" target="blank">Ellis Act Ordinance Fact Sheet</a> for more information.</p>
+                </div>
+              </div>
+              <div id="menu3" className="tab-pane">
+                <h3>Tenant Protection Ordinance (TPO)</h3>
+
+                <p>On May 9, 2017, San José City Council adopted the <strong>Tenant Protection Ordinance</strong> and an Urgency Ordinance making the new regulations effective immediately.
+                TPO outlines landlord responsibilities and tenant rights regarding notices to terminate. </p>
+                <br/>
+                <div className="panel-group" id="accordion">
+                  <div className="panel panel-default">
+                    <div className="panel-heading">
+                      <h4 className="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+                        What is covered by TPO?</a>
+                      </h4>
+                    </div>
+                    <div id="collapse12" className="panel-collapse collapse in">
+                      <div className="panel-body">
+                      <strong>Covered:</strong>
+                        <ul>
+                          <li>Rent stabilized apartments covered under ARO. Units within Apartments with 3+ units built on or before September 7, 1979</li>
+                          <li>Multifamily dwellings with at least 3 units</li>
+                          <li>Rental apartments except permitted hotels and motels</li>
+                          <li>Guest rooms in any guesthouse and guesthouses</li>
+                          <li>Units built without a permit</li>
+                        </ul>
+                      <strong>Not Covered:</strong>
+                        <ul>
+                          <li>Duplexes</li>
+                          <li>Single-family homes</li>
+                          <li>Permitted Second units</li>
+                          <li>Single family Condominiums</li>
+                          <li>Townhouses</li>
+                        </ul>
+                      <br/>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="panel panel-default">
+                    <div className="panel-heading">
+                      <h4 className="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+                        What does it mean to be covered under TPO?</a>
+                      </h4>
+                    </div>
+                    <div id="collapse13" className="panel-collapse collapse">
+                      <div className="panel-body">
+                        Buildings are covered by Just Cause and any 30-60-90 day notice to vacate must list one of the 12 just-cause reasons for eviction.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="panel panel-default">
+                    <div className="panel-heading">
+                      <h4 className="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">
+                        What is Just Cause?</a>
+                      </h4>
+                    </div>
+                    <div id="collapse14" className="panel-collapse collapse">
+                      <div className="panel-body">
+                      <em> View this information in <a href="http://www.sanjoseca.gov/DocumentCenter/View/69112" target="_blank">Spanish</a> or <a href="http://www.sanjoseca.gov/DocumentCenter/View/69113" target="_blank">Vietnamese</a></em>
+                      <br/>
+                      <p><strong> Under TPO, landlords must include one of the following 12 reasons for termination in any 30-60-90 notice to vacate to the tenant:</strong></p>
+                      <li className="list-group-item active"><h4>Just Cause Terminations </h4> <p>The reasons for no-cause notice to vacate that signify fault on the part of the tenant are:</p></li>
+                      <li className="list-group-item">1. Nonpayment of rent</li>
+                      <li className="list-group-item">2. Material or habitual violation of the lease</li>
+                      <li className="list-group-item">3. Substantial damage to the apartment</li>
+                      <li className="list-group-item">4. Refusal to agree to a like or new rental agreement</li>
+                      <li className="list-group-item">5. Nuisance behavior</li>
+                      <li className="list-group-item">6. Refusing access to the apartment, requested in accordance in law</li>
+                      <li className="list-group-item">7. Unapproved holdover subtenant</li>
+                      <li className="list-group-item active"><h4>No-Fault Just Causes </h4><p>Relocation benefits must be paid when a Tenant is being removed from an apartment for reasons 8-12.</p></li>
+                      <li className="list-group-item">8. Substantial rehabilitation of the apartment</li>
+                      <li className="list-group-item">9. Ellis Act removal or demolition</li>
+                      <li className="list-group-item">10. Owner move-in</li>
+                      <li className="list-group-item">11. Order to vacate</li>
+                      <li className="list-group-item">12. Leaving an unpermitted apartment</li>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="panel panel-default">
+                    <div className="panel-heading">
+                      <h4 className="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">
+                        No-cause Notice</a>
+                      </h4>
+                    </div>
+                    <div id="collapse15" className="panel-collapse collapse">
+                      <div className="panel-body">
+                      No-cause notices received after May 10, 2017 are no longer valid. If you have received this and are covered under TPO, please contact the City of San José Rental Rights & Referrals Program at (408)975-4480 to learn about your rights.
+                      </div>
+                    </div>
+                  </div>
+                  <br/>
+                  <p>To learn more, refer to the <a href="http://www.sanjoseca.gov/DocumentCenter/View/70042">Tenant Protection Ordinance Fact Sheet</a> and the <a href="http://www.sanjoseca.gov/DocumentCenter/View/70490">Tenant Protection Ordinance Frequently Asked Questions</a>.</p>
+                </div>
+              </div>
+
+              <div id="menu4" className="tab-pane">
                 <h3>Mobilehome Ordinance (MHO)</h3>
                 <p>The City of San José Mobilehome Rent Ordinance and Mobilehome Regulations regulate rent increases on mobilehomes and mobilehome lots. </p>
                 <div className="panel-group" id="accordion">
                   <div className="panel panel-default">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">
                         What is covered by the Mobilehome Ordinance?</a>
                       </h4>
                     </div>
-                    <div id="collapse15" className="panel-collapse collapse in">
+                    <div id="collapse16" className="panel-collapse collapse in">
                       <div className="panel-body">
                       <p>The City of San José’s Mobilehome Rent Ordinance covers spaces in which the plumbing, electrical and sewer permits were issued prior to September 7, 1979. </p>
                       <p>Some mobilehome spaces may be exempted from complying with the Ordinance, including those with government subsidized rents or long term leases (over 12 months).</p>
