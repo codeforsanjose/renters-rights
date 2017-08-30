@@ -14,10 +14,14 @@
  *= require_self
  */
 
-body { 
-  padding-top: 70px; 
+body {
+  padding-top: 70px;
+  font-family: 'Open Sans', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
 .home-links {
   display: flex;
   justify-content: center;

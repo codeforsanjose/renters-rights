@@ -8,7 +8,7 @@ export default class Home extends React.Component {
     return (
       <RentersLayout>
         <br/>
-        <div className="page-header"> 
+        <div className="page-header">
           <h1>Helping renters in San José understand the laws and programs in place to protect them.
           </h1>
         </div>
@@ -22,13 +22,18 @@ export default class Home extends React.Component {
               </a>
             </div>
             <div className="list-group">
+              <a href="/#" className="list-group-item">
+                <h4 className="list-group-item-heading">I want to learn about renter's rights.</h4>
+              </a>
+            </div>
+             <div className="list-group">
               <a href="/resources" className="list-group-item">
-                <h4 className="list-group-item-heading">I want to learn about housing programs.</h4>
+                <h4 className="list-group-item-heading">I want to learn about local resources.</h4>
               </a>
             </div>
           </div>
         </div>
-      </RentersLayout>      
+      </RentersLayout>
     )
   }
 }
