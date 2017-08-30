@@ -15,21 +15,25 @@
  */
 
  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-   color: #000;  /*Sets the text hover color on navbar*/
+   color: white;  /*Sets the text hover color on navbar*/
  }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
  a:hover, .navbar-default .navbar-nav > .active > a:focus {
    color: white; /*BACKGROUND color for active*/
-   background-color: #329CC4;
+   background-color: white;
+}
+
+.navbar-default {
+  background-color: #51c5e4;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #329CC4; /*Change active text color here*/
+  color: #FC4A1A; /*Change active text color here*/
 }
 
 .navbar-default .navbar-brand {
-  color: #329CC4;
+  color: #FC4A1A;
 }
 
 body {
@@ -42,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: #329CC4;
+  color: #FC4A1A;
 }
 
 .home-links {
@@ -53,4 +57,27 @@ h1 {
 
 .language-paragraph {
   font-size: 120%;
+}
+
+.nav-pills>li>a:hover{
+    background-color: #e47051;
+    color: white;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #51c5e4;
+}
+
+.panel-info>.panel-heading {
+  color: white;
+  background-color: #51c5e4;
+}
+
+a:hover {
+  color: #FC4A1A;
+  text-decoration: none;
+}
+
+a.list-group-item, button.list-group-item >li>a:hover {
+  background-color: #51c5e4;
 }
