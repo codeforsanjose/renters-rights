@@ -22,7 +22,7 @@ export default class Home extends React.Component {
               </a>
             </div>
             <div className="list-group">
-              <a href="/#" className="list-group-item">
+              <a href="/renters" className="list-group-item">
                 <h4 className="list-group-item-heading">I want to learn about renter's rights.</h4>
               </a>
             </div>
