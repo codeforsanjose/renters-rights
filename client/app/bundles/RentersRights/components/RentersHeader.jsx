@@ -17,14 +17,14 @@ export default function RentersHeader({
 						<span className="icon-bar"></span>
 						<span className="icon-bar"></span>
 					</button>
-					<a className="navbar-brand" href="/">Renter's Rights Guide</a>
+					<a className="navbar-brand" href="/"><strong>Renter's Rights Guide</strong></a>
 				</div>
 
 				{/* Collect the nav links, forms, and other content for toggling */}
 				<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul className="nav navbar-nav navbar-right">
-						<li><a href="/resources">Resources</a></li>
-						<li><a href="/faq">FAQ</a></li>
+						<li><a href="/resources"><strong>Resources</strong></a></li>
+						<li><a href="/faq"><strong>FAQ</strong></a></li>
 					</ul>
 					</div>
 				</div>
