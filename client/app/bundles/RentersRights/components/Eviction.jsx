@@ -197,7 +197,9 @@ export default class Eviction extends React.Component {
       const { code, currentStep, events, opt, elementText } = this.state;
       return (
         <RentersLayout>
-          <div className="container">
+
+          <div className="content-container">
+ 
             <h3>Tenant Eviction</h3>
             <p>
               Click "Next" to walk through the eviction process. You can see the timeline of events on the right.
