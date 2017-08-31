@@ -10,7 +10,10 @@ export default class Renters extends React.Component {
         <div className="content-container">
           <div className="dashboard-container">
             <div className="dashboard-text">
-              <h3>Learn More About Tenant Law & Rights</h3>
+              <div className="page-header">
+                <h1>Learn More About Tenant Law & Rights</h1>
+              </div>
+
               <ul className="nav nav-pills">
                 <li className="active"><a data-toggle="pill" href="#menu1">Apartment Rent Ordinance</a></li>
                 <li><a data-toggle="pill" href="#menu2">Ellis Act Ordinance</a></li>
@@ -30,7 +33,7 @@ export default class Renters extends React.Component {
                           What is covered by ARO?</a>
                         </h4>
                       </div>
-                      <div id="collapse1" className="panel-collapse collapse in">
+                      <div id="collapse1" className="panel-collapse collapse">
                         <div className="panel-body">
                         <p><h5>Covered</h5></p>
                         <p>Properties covered under ARO include apartments:</p>
@@ -67,7 +70,7 @@ export default class Renters extends React.Component {
                       </div>
                       <div id="collapse2" className="panel-collapse collapse">
                         <div className="panel-body">
-                        <p>The <h5>maximum annual allowable rent increase</h5> is <h5>5%.</h5></p>
+                        <p>The maximum annual allowable rent increase is 5%.</p>
                         <p>Rent increases may only be given once in a 12-month period. </p>
                         </div>
                       </div>
@@ -179,9 +182,7 @@ export default class Renters extends React.Component {
                 <div id="menu2" className="tab-pane">
                   <h3>Ellis Act Ordinance</h3>
                   <div className="panel-group" id="accordion">
-                    <p>On April 18, 2017, the City Council recommended the approval of the Ellis Act Ordinance. </p>
-                    <p>In San José, the most frequent use of the Ellis Act Ordinance would be the demolition and redevelopment of existing rent controlled housing.</p>
-                    <p>The Ellis Act is a provision in California Law (Government Code section 7060-7060.7) that provides landlords in California with a legal way to go out of the rental market business. The Ellis Act was adopted by the California Legislature in 1985 after the California Supreme Court decision in the case of Nash v. City of Santa Monica. </p>
+                    <p>The City of San José Ellis Act Ordinance provides requirements for landlords removing apartments covered by the ordinance from the rental housing market.</p>
                     <div className="panel panel-info">
                       <div className="panel-heading">
                         <h4 className="panel-title">
@@ -189,9 +190,9 @@ export default class Renters extends React.Component {
                           Who does this apply to?</a>
                         </h4>
                       </div>
-                      <div id="collapse7" className="panel-collapse collapse in">
+                      <div id="collapse7" className="panel-collapse collapse">
                         <div className="panel-body">
-                        <p>This ordinance applies to all apartments four units or more covered by the Apartment Rent Ordinance and provides requirements for landlords removing these apartments from the rental housing market. </p>
+                        <p>This ordinance applies to all apartments with 4+ units covered by the Apartment Rent Ordinance in the City of San José. </p>
                         </div>
                       </div>
                     </div>
@@ -271,8 +272,7 @@ export default class Renters extends React.Component {
                 <div id="menu3" className="tab-pane">
                   <h3>Tenant Protection Ordinance (TPO)</h3>
 
-                  <p>On May 9, 2017, San José City Council adopted the <h5>Tenant Protection Ordinance</h5> and an Urgency Ordinance making the new regulations effective immediately.
-                  TPO outlines landlord responsibilities and tenant rights regarding notices to terminate. </p>
+                  <p>The City of San José Tenant Protection Ordinance (TPO) outlines landlord responsibilities and tenant rights regarding notices to terminate for properties covered by the ordinance. </p>
                   <br/>
                   <div className="panel-group" id="accordion">
                     <div className="panel panel-info">
@@ -282,7 +282,7 @@ export default class Renters extends React.Component {
                           What is covered by TPO?</a>
                         </h4>
                       </div>
-                      <div id="collapse12" className="panel-collapse collapse in">
+                      <div id="collapse12" className="panel-collapse collapse">
                         <div className="panel-body">
                         <h5>Covered:</h5>
                           <ul>
@@ -375,7 +375,7 @@ export default class Renters extends React.Component {
                           What is covered by the Mobilehome Ordinance?</a>
                         </h4>
                       </div>
-                      <div id="collapse16" className="panel-collapse collapse in">
+                      <div id="collapse16" className="panel-collapse collapse">
                         <div className="panel-body">
                         <p>The City of San José’s Mobilehome Rent Ordinance covers spaces in which the plumbing, electrical and sewer permits were issued prior to September 7, 1979. </p>
                         <p>Some mobilehome spaces may be exempted from complying with the Ordinance, including those with government subsidized rents or long term leases (over 12 months).</p>

@@ -199,9 +199,10 @@ export default class Eviction extends React.Component {
         <RentersLayout>
 
           <div className="content-container">
-
-            <h3>Tenant Eviction Process</h3>
-            <br/>
+            <div className="page-header">
+              <h1>Tenant Eviction Process</h1>
+            </div>
+  
             <p>
               Select one of the buttons below to walk through the eviction process in the State of California.
             </p>
