@@ -91,17 +91,25 @@ h1 {
 }
 
 .nav-pills>li>a:hover{
-    background-color: #CBDBEF;
+    background-color: #4a90e2;
     color: black;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background-color: #51c5e4;
+    background-color: #4a90e2;
 }
 
 .panel-info>.panel-heading {
   color: white;
-  background-color: #51c5e4;
+  background-color: #4a90e2;
+}
+
+.panel-info>.panel-heading+.panel-collapse>.panel-body {
+  background-color: #eff4fa;
+}
+
+.btn-default {
+  background-color: #eff4fa;
 }
 
 a:hover {
