@@ -8,12 +8,10 @@ export default class FAQ extends React.Component {
     return (
       <RentersLayout>
         <div className="content-container">
-          <br/>
           <div className="page-header">
             <h1>Frequently Asked Questions
             </h1>
           </div>
-          <br/>
 
           <div class="panel-group" id="accordion">
             <div class="panel panel-default">
