@@ -179,7 +179,7 @@ export default class Eviction extends React.Component {
         ],
       });
     }
-    
+
     handleOptChange(e) {
       this.setState({
         opt: JSON.parse(e.target.value),
@@ -199,13 +199,17 @@ export default class Eviction extends React.Component {
         <RentersLayout>
 
           <div className="content-container">
- 
-            <h3>Tenant Eviction</h3>
+
+            <h3>Tenant Eviction Process</h3>
+            <br/>
             <p>
-              Click "Next" to walk through the eviction process. You can see the timeline of events on the right.
+              Select one of the buttons below to walk through the eviction process in the State of California.
+            </p>
+            <p> You can see the timeline of events on the right.
             </p>
 
             <div className="row">
+
               <div className="col-md-6">
                 {currentStep.question && <form>
                   <h4>{currentStep.question}</h4>
@@ -226,7 +230,7 @@ export default class Eviction extends React.Component {
                 </form>}
                 {!currentStep.question && <div>
                   <p>
-                    See the Eviction Process Timeline on the right. 
+                    See the Eviction Process Timeline on the right.
                   </p>
                   <button
                     className="btn btn-primary"
@@ -251,7 +255,7 @@ export default class Eviction extends React.Component {
                 </table>
               </div>
             </div>
-            
+
             {/*<h3>Tenant Eviction</h3>
 
             <br/>
@@ -263,21 +267,27 @@ export default class Eviction extends React.Component {
               onClick={elementText => this.setState({elementText})}
             />*/}
 
+            <br/>
+            <h4> Special Situations </h4>
+            <p>
+              Learn more about <a href="http://www.courts.ca.gov/27953.htm" target="_blank">special situations</a>, or <a href="/renters">local ordinances in the City of San José</a>.
+            </p>
+
             <h4> Find Help </h4>
             <ul>
               <li>Find a <a href="https://lawhelpca.org/issues/housing/landlord-and-tenant-issues" target="_blank">legal aid program</a></li>
               <li>Find help from your <a href="http://www.courts.ca.gov/selfhelp-courtresources.htm" target="_blank">court</a></li>
-              <li>Refer to our list of <a href="/resources">resources</a> for more information.</li>
+              <li>Refer to our list of <a href="/resources">resources</a> for more information</li>
             </ul>
 
             <br/>
             <p> To learn more about the Eviction Process in the State of California, visit the <a href="http://www.courts.ca.gov/27798.htm" target="_blank">California Courts</a> website.</p>
 
-            <button type="button" className="btn btn-default">
+
               <a href="http://www.courts.ca.gov/partners/documents/eviction_process_flowchart.pdf">
                 <span className="glyphicon glyphicon-download-alt"></span> Download Eviction Process PDF
               </a>
-            </button>
+
           </div>
         </RentersLayout>
       );
