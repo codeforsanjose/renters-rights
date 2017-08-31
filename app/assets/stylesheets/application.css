@@ -14,6 +14,28 @@
  *= require_self
  */
 
+ .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+   color: white;  /*Sets the text hover color on navbar*/
+ }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+   color: white; /*BACKGROUND color for active*/
+   background-color: white;
+}
+
+.navbar-default {
+  background-color: #51c5e4;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #FC4A1A; /*Change active text color here*/
+}
+
+.navbar-default .navbar-brand {
+  color: #FC4A1A;
+}
+
 body {
   padding-top: 70px;
   font-family: 'Open Sans', sans-serif;
@@ -22,6 +44,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
+
+h1 {
+  color: #FC4A1A;
+}
+
 .home-links {
   display: flex;
   justify-content: center;
@@ -30,4 +57,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .language-paragraph {
   font-size: 120%;
+}
+
+.nav-pills>li>a:hover{
+    background-color: #e47051;
+    color: white;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #51c5e4;
+}
+
+.panel-info>.panel-heading {
+  color: white;
+  background-color: #51c5e4;
+}
+
+a:hover {
+  color: #FC4A1A;
+  text-decoration: none;
+}
+
+a.list-group-item, button.list-group-item >li>a:hover {
+  background-color: #51c5e4;
 }
