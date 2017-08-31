@@ -7,7 +7,8 @@ export default class Eviction extends React.Component {
       const { } = this.props;
       return (
         <RentersLayout>
-          <div className="container">
+
+          <div className="content-container">
 
             <h3>Tenant Eviction</h3>
 

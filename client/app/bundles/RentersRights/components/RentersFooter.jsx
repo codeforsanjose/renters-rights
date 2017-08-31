@@ -6,8 +6,8 @@ export default class RentersFooter extends React.Component {
       <footer
         className="renters-footer"
       >
-        <hr />
-
+        <br/>
+        <br/>
         <div className="container">
           <ul className="nav nav-pils nav-justified">
             <li className="nav-item">
@@ -26,7 +26,7 @@ export default class RentersFooter extends React.Component {
               <a className="nav-link" href="#">Residential Housing Options</a>
             </li>
           </ul>
-          
+
           <p className="text-center"> <em>Disclaimer:</em> This app informs you about your basic rights and resources. It is not a substitute for legal advice. Find a <a href="https://lawhelpca.org/issues/housing/landlord-and-tenant-issues">legal aid office</a>.</p>
         </div>
       </footer>
