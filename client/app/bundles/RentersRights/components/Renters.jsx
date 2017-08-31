@@ -3,7 +3,7 @@ import RentersLayout from './RentersLayout'
 
 export default class Renters extends React.Component {
   render() {
-    const { token } = this.props;
+    const { } = this.props;
 
     return (
       <RentersLayout>
@@ -22,7 +22,7 @@ export default class Renters extends React.Component {
                 <h3>Apartment Rent Ordinance (ARO) </h3>
                 <p>The City of San José's Apartment Rent Ordinance (ARO) controls rent increases on apartments that are covered by the ordinance.</p>
                 <div className="panel-group" id="accordion">
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
@@ -57,7 +57,7 @@ export default class Renters extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
@@ -71,7 +71,7 @@ export default class Renters extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
@@ -101,7 +101,7 @@ export default class Renters extends React.Component {
                     </div>
                   </div>
 
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
@@ -123,7 +123,7 @@ export default class Renters extends React.Component {
                     </div>
                   </div>
 
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
@@ -144,7 +144,7 @@ export default class Renters extends React.Component {
                     </div>
                   </div>
 
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
@@ -181,7 +181,7 @@ export default class Renters extends React.Component {
                   <p>On April 18, 2017, the City Council recommended the approval of the Ellis Act Ordinance. </p>
                   <p>In San José, the most frequent use of the Ellis Act Ordinance would be the demolition and redevelopment of existing rent controlled housing.</p>
                   <p>The Ellis Act is a provision in California Law (Government Code section 7060-7060.7) that provides landlords in California with a legal way to go out of the rental market business. The Ellis Act was adopted by the California Legislature in 1985 after the California Supreme Court decision in the case of Nash v. City of Santa Monica. </p>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
@@ -194,7 +194,7 @@ export default class Renters extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
@@ -218,7 +218,7 @@ export default class Renters extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
@@ -235,7 +235,7 @@ export default class Renters extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
@@ -246,7 +246,7 @@ export default class Renters extends React.Component {
                       <div className="panel-body">You may be entitled to relocation assistance. The City of San José’s Relocation Consultant will determine the amount of relocation benefits you are entitled to, otherwise the determination will be based on the information provided by your Landlord.</div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
@@ -274,7 +274,7 @@ export default class Renters extends React.Component {
                 TPO outlines landlord responsibilities and tenant rights regarding notices to terminate. </p>
                 <br/>
                 <div className="panel-group" id="accordion">
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">
@@ -303,7 +303,7 @@ export default class Renters extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">
@@ -316,7 +316,7 @@ export default class Renters extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">
@@ -345,7 +345,7 @@ export default class Renters extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">
@@ -367,7 +367,7 @@ export default class Renters extends React.Component {
                 <h3>Mobilehome Ordinance (MHO)</h3>
                 <p>The City of San José Mobilehome Rent Ordinance and Mobilehome Regulations regulate rent increases on mobilehomes and mobilehome lots. </p>
                 <div className="panel-group" id="accordion">
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">
@@ -381,14 +381,14 @@ export default class Renters extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">
                         How much can rent be increased?</a>
                       </h4>
                     </div>
-                    <div id="collapse16" className="panel-collapse collapse">
+                    <div id="collapse17" className="panel-collapse collapse">
                       <div className="panel-body">
                       <p>
                       Under the Mobilehome Rent Ordinance, annual increases on space rents are set by the City of San José at 75% of the San Francisco-Oakland All Urban Consumers CPI, with a minimum of 3% and a maximum of 7%.
@@ -400,14 +400,14 @@ export default class Renters extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse18">
                         Mobilehome Owners' Rights under the Ordinance - Rent Increases Above the Allowable Amount</a>
                       </h4>
                     </div>
-                    <div id="collapse17" className="panel-collapse collapse">
+                    <div id="collapse18" className="panel-collapse collapse">
                       <div className="panel-body">
                       <p>Mobilehome owners residing in park spaces that are under the Mobilehome Ordinance are not subject to rent increases above the maximum annual percentage unless a hearing is held and a decision is made.
                       Both the park owner and the Rental Rights and Referrals Program are required to notify all impacted park residents should a park owner petition for a hearing.
@@ -423,14 +423,14 @@ export default class Renters extends React.Component {
                     </div>
                   </div>
 
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse18">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse19">
                         Service Reductions</a>
                       </h4>
                     </div>
-                    <div id="collapse18" className="panel-collapse collapse">
+                    <div id="collapse19" className="panel-collapse collapse">
                       <div className="panel-body">
                       <strong>What is a service reduction?</strong>
                       <p>
@@ -452,14 +452,14 @@ export default class Renters extends React.Component {
                     </div>
                   </div>
 
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse19">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse20">
                         Resident's Waiver of Rights</a>
                       </h4>
                     </div>
-                    <div id="collapse19" className="panel-collapse collapse">
+                    <div id="collapse20" className="panel-collapse collapse">
                       <div className="panel-body">
                       <p>A resident may temporarily waive their rights under the Mobilehome Rent Ordinance only by entering into a long term lease with the park owner. The waiver of rights is valid only if all of the following criteria are met: </p>
                       <ul>
@@ -472,14 +472,14 @@ export default class Renters extends React.Component {
                     </div>
                   </div>
 
-                  <div className="panel panel-default">
+                  <div className="panel panel-info">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse20">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse21">
                         Freedom to Exercise Rights</a>
                       </h4>
                     </div>
-                    <div id="collapse20" className="panel-collapse collapse">
+                    <div id="collapse21" className="panel-collapse collapse">
                       <div className="panel-body">
                       <p>                      Park owners may not do the following in retaliation for park residents demanding their rights under the Ordinance:</p>
                       <ul>
