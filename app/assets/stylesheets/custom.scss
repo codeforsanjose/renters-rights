@@ -1,18 +1,20 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+/*** Variables ***/
+/* colors */
+$saffron: #F7B733;
+$carmine-pink: #E2504A;
+$soap: #CBDBEF;
+$united-nations-blue: #4A90E2;
+$orange: #E29C4A;
+
+/* fonts */
+$logo-font: 'Karla', sans-serif;
+$heading-font: 'Poppins', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
 
 /* Center the content and keep it under 750px*/
 @media (min-width: 1200px) {
@@ -22,19 +24,19 @@
   }
 }
 
- .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-   color: #cbdbef;  /*Sets the text hover color on navbar*/
- }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: $soap;  /*Sets the text hover color on navbar*/
+}
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
- a:hover, .navbar-default .navbar-nav > .active > a:focus {
-   color: #cbdbef; /*BACKGROUND color for active*/
-   /*background-color: white;*/
-   /*box-shadow: 10px 10px bd;*/
+a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: $soap; /*BACKGROUND color for active*/
+ /*background-color: white;*/
+ /*box-shadow: 10px 10px bd;*/
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #4a90e2;
+  border-color: $united-nations-blue;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -42,7 +44,7 @@
 }
 
 .navbar-default {
-  background-color: #4a90e2;
+  background-color: $united-nations-blue;
   font-variant: small-caps;
 }
 
@@ -59,25 +61,27 @@
   color: black;
 }
 
+/* Typography */
+
 body {
   padding-top: 70px;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #CBDBEF;
+  font-family: $body-font;
+  background-color: $soap;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: $heading-font;
 }
 
 h1 {
   color: #525b73;
   font-weight: 100;
-  font-family: 'Karla', sans-serif;
+  font-family: $logo-font;
   font-variant: small-caps;
 }
 
 .page-header {
-  border-bottom: #CBDBEF;
+  border-bottom: $soap;
 }
 
 .home-links {
@@ -96,12 +100,12 @@ h1 {
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background-color: #4a90e2;
+    background-color: $united-nations-blue;
 }
 
 .panel-info>.panel-heading {
   color: white;
-  background-color: #4a90e2;
+  background-color: $united-nations-blue;
 }
 
 .panel-info>.panel-heading+.panel-collapse>.panel-body {
@@ -126,11 +130,11 @@ a.list-group-item-danger, button.list-group-item-danger {
 }
 
 a.list-group-item-warning, button.list-group-item-warning {
-  background-color: #f7b733;
+  background-color: $saffron;
 }
 
 a.list-group-item-info, button.list-group-item-info {
-  background-color: #4a90e2;
+  background-color: $united-nations-blue;
 }
 
 a.list-group-item .list-group-item-heading {
