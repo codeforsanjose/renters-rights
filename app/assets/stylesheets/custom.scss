@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500');
-@import url('https://fonts.googleapis.com/css?family=Poppins:500');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500');
+// @import url('https://fonts.googleapis.com/css?family=Poppins:500');
 @import url('https://fonts.googleapis.com/css?family=Karla');
 
 /*** Variables ***/
@@ -12,8 +12,8 @@ $orange: #E29C4A;
 
 /* fonts */
 $logo-font: 'Karla', sans-serif;
-$heading-font: 'Poppins', sans-serif;
-$body-font: 'Open Sans', sans-serif;
+$heading-font: 'Karla', sans-serif;
+$body-font: 'Karla', sans-serif;
 
 
 /* Center the content and keep it under 750px*/
@@ -45,12 +45,10 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 
 .navbar-default {
   background-color: $united-nations-blue;
-  font-variant: small-caps;
 }
 
 .navbar-default .navbar-nav > li > a {
   color: white; /*Change active text color here*/
-  font-variant: small-caps;
 }
 
 .navbar-default .navbar-brand {
@@ -77,7 +75,6 @@ h1 {
   color: #525b73;
   font-weight: 100;
   font-family: $logo-font;
-  font-variant: small-caps;
 }
 
 .page-header {
