@@ -22,12 +22,12 @@ export default class Home extends React.Component {
                 </a>
               </div>
               <div className="list-group">
-                <a href="/renters" className="list-group-item list-group-item-warning">
+                <a href="/renters" className="list-group-item list-group-item-danger">
                   <h4 className="list-group-item-heading">I want to learn about renter's rights.</h4>
                 </a>
               </div>
                <div className="list-group">
-                <a href="/resources" className="list-group-item list-group-item-info">
+                <a href="/resources" className="list-group-item list-group-item-danger">
                   <h4 className="list-group-item-heading">I want to learn about local resources.</h4>
                 </a>
               </div>
