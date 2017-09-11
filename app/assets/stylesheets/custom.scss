@@ -4,17 +4,16 @@
 
 /*** Variables ***/
 /* colors */
-$saffron: #F7B733;
+$cerulean: #00303F;
 $carmine-pink: #E2504A;
-$soap: #CBDBEF;
-$united-nations-blue: #4A90E2;
-$orange: #E29C4A;
+$morning-sky: #CAE4DB;
+$mist: #7A9D96;
+$honey: #DCAE1D;
 
 /* fonts */
 $logo-font: 'Karla', sans-serif;
 $heading-font: 'Karla', sans-serif;
 $body-font: 'Karla', sans-serif;
-
 
 /* Center the content and keep it under 750px*/
 @media (min-width: 1200px) {
@@ -24,39 +23,48 @@ $body-font: 'Karla', sans-serif;
   }
 }
 
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: $soap;  /*Sets the text hover color on navbar*/
+  color: white;  /*Sets the text hover color on navbar*/
+  background-color: $mist;
 }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: $mist;
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
 a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: $soap; /*BACKGROUND color for active*/
+  color: $morning-sky; /*BACKGROUND color for active*/
  /*background-color: white;*/
  /*box-shadow: 10px 10px bd;*/
 }
 
 .navbar-default .navbar-toggle {
-  border-color: $united-nations-blue;
+  border-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+  background-color: $cerulean;
 }
 
 .navbar-default {
-  background-color: $united-nations-blue;
+  background-color: transparent;
+  border-color: transparent;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
 .navbar-default .navbar-nav > li > a {
-  color: white; /*Change active text color here*/
+  color: $cerulean; /*Change active text color here*/
 }
 
 .navbar-default .navbar-brand {
-  color: white;
+  color: $honey;
 }
 
 .navbar-default .navbar-brand > .active > a:focus > a:hover {
-  color: black;
+  color: $cerulean;
 }
 
 /* Typography */
@@ -64,21 +72,21 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 body {
   padding-top: 70px;
   font-family: $body-font;
-  background-color: $soap;
+  background: linear-gradient(to top, white, $morning-sky) fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
+  color: $cerulean
 }
 
 h1 {
-  color: #525b73;
   font-weight: 100;
   font-family: $logo-font;
 }
 
 .page-header {
-  border-bottom: $soap;
+  border-bottom: $morning-sky;
 }
 
 .home-links {
@@ -92,46 +100,51 @@ h1 {
 }
 
 .nav-pills>li>a:hover{
-    background-color: #eff4fa;
-    color: black;
+    background-color: $mist;
+    color: $cerulean;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background-color: $united-nations-blue;
+    background-color: $honey;
 }
 
 .panel-info>.panel-heading {
   color: white;
-  background-color: $united-nations-blue;
+  background-color: $mist;
 }
 
 .panel-info>.panel-heading+.panel-collapse>.panel-body {
-  background-color: #eff4fa;
+  background-color: $morning-sky;
+  border-top-color: $morning-sky;
 }
 
 .btn-default {
-  background-color: #eff4fa;
+  background-color: $mist;
+}
+
+a {
+  color: #006a8c;
 }
 
 a:hover {
-  color: black;
+  color: $cerulean;
   text-decoration: none;
 }
 
 a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
-  background-color: grey;
+  background-color: $honey;
 }
 
 a.list-group-item-danger, button.list-group-item-danger {
-  background-color: #e2504a;
+  background-color: $cerulean;
 }
 
 a.list-group-item-warning, button.list-group-item-warning {
-  background-color: $saffron;
+  background-color: $mist;
 }
 
 a.list-group-item-info, button.list-group-item-info {
-  background-color: $united-nations-blue;
+  background-color: $morning-sky;
 }
 
 a.list-group-item .list-group-item-heading {
