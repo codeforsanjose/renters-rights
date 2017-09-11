@@ -43,12 +43,10 @@
 
 .navbar-default {
   background-color: #4a90e2;
-  font-variant: small-caps;
 }
 
 .navbar-default .navbar-nav > li > a {
   color: white; /*Change active text color here*/
-  font-variant: small-caps;
 }
 
 .navbar-default .navbar-brand {
@@ -61,19 +59,18 @@
 
 body {
   padding-top: 70px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Karla', sans-serif;
   background-color: #CBDBEF;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 h1 {
   color: #525b73;
   font-weight: 100;
   font-family: 'Karla', sans-serif;
-  font-variant: small-caps;
 }
 
 .page-header {
