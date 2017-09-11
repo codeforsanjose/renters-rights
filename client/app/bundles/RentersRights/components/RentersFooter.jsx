@@ -11,13 +11,10 @@ export default class RentersFooter extends React.Component {
         <div className="container">
           <ul className="nav nav-pils nav-justified">
             <li className="nav-item">
-              <a className="nav-link" href="/resources#menu1">Legal Resources</a>
+              <a className="nav-link" href="resources">Resources</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/resources#menu2">Homeless Resources </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/resources#menu3">Housing Resources</a>
+              <a className="nav-link" href="FAQ">FAQ</a>
             </li>
           </ul>
 
