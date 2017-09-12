@@ -23,7 +23,7 @@ $body-font: 'Karla', sans-serif;
   }
 }
 
-
+/* NavBar */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: white;  /*Sets the text hover color on navbar*/
   background-color: $mist;
@@ -69,7 +69,14 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: $cerulean;
 }
 
-/* Typography */
+.nav-pills>li>a:hover{
+    background-color: $mist;
+    color: $cerulean;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: $honey;
+}
 
 body {
   padding-top: 70px;
@@ -87,29 +94,20 @@ h1 {
   font-family: $logo-font;
 }
 
+/* Header */
 .page-header {
   border-bottom: $morning-sky;
-}
-
-.home-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .language-paragraph {
   font-size: 120%;
 }
 
-.nav-pills>li>a:hover{
-    background-color: $mist;
-    color: $cerulean;
+.btn-default {
+  background-color: $mist;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background-color: $honey;
-}
-
+/* Panel */
 .panel-info>.panel-heading {
   color: white;
   background-color: $mist;
@@ -120,8 +118,12 @@ h1 {
   border-top-color: $morning-sky;
 }
 
-.btn-default {
-  background-color: $mist;
+/* Links */
+
+.home-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
