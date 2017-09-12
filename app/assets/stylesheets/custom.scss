@@ -29,9 +29,11 @@ $body-font: 'Karla', sans-serif;
   background-color: $mist;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: $mist;
+
+.navbar-default .navbar-toggle.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: $morning-sky;
 }
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
 a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: $morning-sky; /*BACKGROUND color for active*/
@@ -48,7 +50,7 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 }
 
 .navbar-default {
-  background-color: transparent;
+  background-color: $morning-sky;
   border-color: transparent;
 }
 
