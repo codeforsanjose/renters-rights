@@ -106,7 +106,7 @@ export default function Eviction() {
           </div>
         <h3>Other Situations</h3>
         <p>
-          Learn more about <a href="http://www.courts.ca.gov/27953.htm" target="_blank">special situations</a> and other San José<a href="/renters">local ordinances</a>.
+          Learn more about <a href="http://www.courts.ca.gov/27953.htm" target="_blank">special situations</a> and other San José <a href="/renters">local ordinances</a>.
         </p>
 
         <h3> Find Help </h3>
