@@ -1,75 +1,10 @@
 import React from 'react';
 import RentersLayout from './RentersLayout';
-import Flowchart from 'react-simple-flowchart';
 
 export default class Eviction extends React.Component {
 
     constructor(props) {
       super(props);
-      const code =
-
-        `st=>start: Tenant receives 3-Day, 30-Day, 60-Day or 90-Day Notice to move out
-        e=>end: END
-        op1=>operation: Tenant is served "Summons" and "Complain-Unlawful Detainer"
-        cond=>condition: 5 Days to Respond
-        cond2=>condition: Trial held within 20 Days
-        op6=>operation: Tenant files motion(s) within 5 days
-        op5=>operation: Discovery
-        op8=>operation: Landlord files "Request to Enter Default"
-        op2=>operation: Landlord files "Request/Counter-Request to Set Case for Trial"
-        op3=>operation: Notice of Hearing
-        op15=>operation: Judgement entered in favor of Landlord
-        op7=>operation: Judgment for Landlord
-        op4=>operation: send email
-        op9=>operation: Judgment for Tenant
-        op10=>operation: Tenant Stays
-        op11=>operation: Tenant receives Sheriff's 5-Day Eviction Notice
-        op12=>operation: Optional: Tenant files: "Motion for Stay of Execution" (to buy more days to stay)
-        op13=>operation: Sheriff evicts Tenant(s)
-        op14=>operation: Optional: Tenant files "Motion to Set Aside Default and Default Judgment"
-
-        st->op1->cond
-        cond(yes)->op6->op5->op2->op3->cond2
-        cond(no)->op8->op15
-        cond2(right)->op7->op11
-        cond2(left)->op9->op10
-        op15->op14->op11->op12->op13
-        `;
-
-      const opt = {
-        x: 0,
-        y: 0,
-        'line-width': 3,
-        'line-length': 10,
-        'text-margin': 20,
-        'font-size': 12,
-        'font-family': 'Open Sans',
-        'font-color': 'black',
-        'line-color': 'black',
-        'element-color': 'black',
-        fill: 'white',
-        'yes-text': 'Tenant files motions',
-        'no-text': 'Tenant does nothing',
-        'arrow-end': 'block',
-        scale: 1,
-        symbols: {
-          start: {
-            'font-color': 'black',
-            'element-color': 'skyblue',
-            'font-weight': 'bold',
-          },
-          end: {
-            'font-color': 'black',
-            'element-color': 'orange',
-            'font-weight': 'bold',
-          },
-        },
-        flowstate: {
-          department1: { fill: 'pink' },
-          department2: { fill: 'yellow' },
-          external: { fill: 'green' },
-        },
-      };
 
       // const tree = {
       //   type: 'info',
@@ -152,21 +87,12 @@ export default class Eviction extends React.Component {
       };
 
       this.state = {
-        code,
-        opt,
-        elementText: 'none',
         allSteps,
         currentStep: allSteps,
         events: allSteps.events,
       }
     }
 
-    handleCodeChange(e) {
-      this.setState({
-        code: e.target.value,
-      });
-
-    }
 
     handleNext(answer) {
       this.setState({
@@ -180,12 +106,6 @@ export default class Eviction extends React.Component {
       });
     }
 
-    handleOptChange(e) {
-      this.setState({
-        opt: JSON.parse(e.target.value),
-      });
-    }
-
     handleReset() {
       this.setState({
         currentStep: this.state.allSteps,
@@ -194,7 +114,7 @@ export default class Eviction extends React.Component {
     }
 
     render() {
-      const { code, currentStep, events, opt, elementText } = this.state;
+      const { currentStep, events} = this.state;
       return (
         <RentersLayout>
 
@@ -202,7 +122,7 @@ export default class Eviction extends React.Component {
             <div className="page-header">
               <h1>Tenant Eviction Process</h1>
             </div>
-  
+
             <p>
               Select one of the buttons below to walk through the eviction process in the State of California.
             </p>
@@ -256,17 +176,6 @@ export default class Eviction extends React.Component {
                 </table>
               </div>
             </div>
-
-            {/*<h3>Tenant Eviction</h3>
-
-            <br/>
-            <h4>Eviction Process for California Residents</h4>
-            <p>The following chart provides general instructions that apply to most tenants. Learn more about <a href="http://www.courts.ca.gov/27953.htm" target="_blank">special situations</a> and <a href="/renters">local San José ordinances</a>.</p>
-            <Flowchart
-              chartCode={code}
-              options={opt}
-              onClick={elementText => this.setState({elementText})}
-            />*/}
 
             <br/>
             <h4> Special Situations </h4>
