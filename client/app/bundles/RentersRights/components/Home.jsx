@@ -9,7 +9,7 @@ export default class Home extends React.Component {
       <RentersLayout>
         <div className="content-container">
           <div className="page-header">
-            <h1>Helping renters in San José understand the laws and programs in place to protect them.
+            <h1>Helping renters in San José, California understand the laws and programs in place to protect them.
             </h1>
           </div>
           <br/>
