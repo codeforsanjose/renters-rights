@@ -2,23 +2,23 @@ import React from 'react';
 
 const stages = {
   moveOut: {
-    title: 'Tenant receives 3-day, 30-day, 60-day, or 90-day notice to move out.',    
+    title: 'You receive 3-day, 30-day, 60-day, or 90-day notice to move out.',
     next: ['summons'],
-  }, 
+  },
   summons: {
-    title: 'Tenant is served "Summons" and "Complaint - Unlawful Detainer".',
+    title: 'You are served "Summons" and "Complaint - Unlawful Detainer".',
     next: ['fileMotionQuestion'],
   },
   fileMotionQuestion: {
-    title: 'Does the tenant file a motion within 5 days?',
+    title: 'Do you file a motion within 5 days?',
     next: ['fileMotionResult', 'doesNotFileMotion'],
   },
   fileMotionResult: {
-    title: 'Tenant files motion(s) within 5 days',
+    title: 'You file motion(s) within 5 days',
     next: ['fileAnswer'],
   },
   fileAnswer: {
-    title: 'Tenant files "Answer" within 5 days',
+    title: 'You file "Answer" within 5 days',
     next: ['discovery'],
   },
   discovery: {
@@ -28,13 +28,13 @@ const stages = {
   counterRequest: {
     title: 'Landlord files "Request/Counter-Request to Set Case for Trial"',
     next: ['hearing'],
-  },                
+  },
   hearing: {
     title: 'Notice of Hearing',
     next: ['trialQuestion'],
   },
   trialQuestion: {
-    title: 'Is the trial held within 20 days?',
+    title: 'The trial is held within 20 days. Jugdment is decided in your favor or the landlord\'s favor?',
     next: ['tenantJudgment', 'landlordJudgment'],
   },
   tenantJudgment: {
@@ -42,27 +42,27 @@ const stages = {
     next: ['tenantResult'],
   },
   tenantResult: {
-    title: 'Tenant Stays',
+    title: 'You Stay',
     next: [],
   },
   landlordJudgment: {
     title: 'Judgement for Landlord',
     next: ['evictionNotice'],
-  },  
+  },
   evictionNotice: {
-    title: 'Tenant receives Sheriff\'s 5-day eviction notice',
+    title: 'You receive the Sheriff\'s 5-day eviction notice',
     next: ['motionToStay'],
   },
   motionToStay: {
-    title: 'Optional: Tenant files "Motion for Stay of Execution" (to buy more days to stay)',
+    title: 'Optional: You file a "Motion for Stay of Execution" (to buy more days to stay)',
     next: ['sheriffEviction'],
   },
   sheriffEviction: {
-    title: 'Sheriff evicts tenant(s)',
+    title: 'Sheriff evicts you',
     next: [],
   },
   doesNotFileMotion: {
-    title: 'Tenant does nothing within 5 days',
+    title: 'You do nothing within 5 days',
     next: ['defaultRequest'],
   },
   defaultRequest: {
@@ -74,7 +74,7 @@ const stages = {
     next: ['defaultTenantMotion'],
   },
   defaultTenantMotion: {
-    title: 'Optional: Tenant files "Motion to Set Aside Default and Default Judgement"',
+    title: 'Optional: You file "Motion to Set Aside Default and Default Judgement"',
     next: ['evictionNotice'],
   },
 };
@@ -82,20 +82,20 @@ const stages = {
 export default class EvictionWizard extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       currentStageId: 'moveOut',
       history: [],
     };
-    
+
     this.handleNext = this.handleNext.bind(this);
     this.handleReset = this.handleReset.bind(this);
   }
-  
+
   componentDidUpdate() {
     $('[data-toggle="tooltip"]').tooltip();
   }
-  
+
   getCurrentStage() {
     return stages[this.state.currentStageId];
   }
@@ -111,7 +111,7 @@ export default class EvictionWizard extends React.Component {
       ],
     });
   }
-  
+
   handleOption(stageId) {
     this.setState({
       currentStageId: stages[stageId].next[0],
@@ -124,39 +124,36 @@ export default class EvictionWizard extends React.Component {
       ],
     });
   }
-  
+
   handleReset() {
     this.setState({
       currentStageId: 'moveOut',
       history: [],
     });
   }
-  
-  render() {        
+
+  render() {
     return (
       <div>
-        <div className="page-header">
-          <h1>Tenant Eviction Process</h1>
-        </div>
-        <p>Click "Next" to walk through the eviction process.</p>
-        <p>This is a simulation of what may happen in the eviction process in the State of California. </p>
+        <h2>Demo the Eviction Process</h2>
+        <p>This is a simulation of what may happen in the eviction process in the State of California. Click "Next" to walk through the simulation. </p>
         <p>If you are seeking legal aid, please consult a lawyer immediately. </p>
-        <hr />
+
         {this.renderCurrentStage()}
         <hr />
         {this.renderHistory()}
       </div>
     );
   }
-  
+
   renderCurrentStage() {
     const { history } = this.state;
-    
+
     const currentStage = this.getCurrentStage();
-    
+
     return (
       <div>
-        <h2>Step {history.length + 1} of the Eviction Process</h2>
+        <h3>Step {history.length + 1} of the Eviction Process</h3>
         <p>{currentStage.title}</p>
         {currentStage.next.length > 1 && <div>
           {currentStage.next.map(stageId => {
@@ -164,7 +161,7 @@ export default class EvictionWizard extends React.Component {
             return (
               <div className="form-group" key={stageId}>
                 <button
-                  className="btn btn-primary" 
+                  className="btn btn-primary"
                   onClick={() => this.handleOption(stageId)}
                   type="button"
                 >
@@ -185,7 +182,7 @@ export default class EvictionWizard extends React.Component {
         </div>}
         {currentStage.next.length === 0 && <div>
           <p>
-            <em>You have reached the end of the simulation of the eviction process in California. To restart the simulation, click Reset.</em>
+            <em>You have reached the end of the simulation of the eviction process. To restart, click Reset.</em>
           </p>
           <div className="form-group">
             <button
@@ -200,13 +197,13 @@ export default class EvictionWizard extends React.Component {
       </div>
     );
   }
-  
+
   renderHistory() {
     const { history } = this.state;
-    
+
     return (
       <div>
-        <h2>Eviction Process Timeline in California</h2>
+        <h3>Eviction Process Timeline</h3>
         <ul className="list-group">
           {history.map((item, i) => (
             <li
