@@ -7,7 +7,7 @@ export default class Resources extends React.Component {
 
     return (
       <RentersLayout>
-        <div className="content-container">
+        <div className="content-container language-paragraph">
           <div className="dashboard-container">
             <div className="dashboard-text">
               <div className="page-header">
