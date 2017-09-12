@@ -14,7 +14,7 @@ export default class Home extends React.Component {
           </div>
           <br/>
           <div className="home-links">
-            <div className="col-sm-12 col-md-7">
+            <div className="col-sm-12 col-md-6">
               <h3> How can we help you today? </h3>
               <div className="list-group">
                 <a href="/eviction" className="list-group-item list-group-item-danger">
