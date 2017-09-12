@@ -2,7 +2,7 @@
   "name": "renters_rights_app",
   "private": true,
   "engines": {
-    "node": "8.2.1"
+    "node": "8.4.0"
   },
   "dependencies": {
     "react": "^15.6.1",

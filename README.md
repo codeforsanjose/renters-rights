@@ -16,7 +16,7 @@ Set up the following dependencies
 | Ruby            | 2.3.3         |
 | Rails           | 5.0.4         |
 | PostgreSQL      | 9.6.3         |
-| Node            | 8.2.1         |
+| Node            | 8.4.0         |
 
 After you install the dependencies, to start the frontend:
 
@@ -28,6 +28,11 @@ After you install the dependencies, to start the frontend:
 1. ```gem install foreman```
 1. ```foreman start -f Procfile.dev```
 1. Navigate to ```localhost:3000``` to see the index
+
+## How to create postgres user
+```
+create role postgres login createdb;
+```
 
 ## How You Can Contribute
 Join the #rails_team channel on our [Slack](https://slackin-c4sj.herokuapp.com/) and message [Yan-Yin Choy](https://github.com/ychoy)
