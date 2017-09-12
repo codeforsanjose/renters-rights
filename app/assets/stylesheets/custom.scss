@@ -107,6 +107,24 @@ h1 {
   background-color: $mist;
 }
 
+.btn-primary:hover {
+  color: #fff;
+  background-color: $cerulean;
+  border-color: $mist;
+}
+
+.btn-primary:active {
+  color: #fff;
+  background-color: $cerulean;
+  border-color: $mist;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: $honey;
+  border-color: $honey;
+}
+
 /* Panel */
 .panel-info>.panel-heading {
   color: white;
