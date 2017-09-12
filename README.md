@@ -29,7 +29,7 @@ After you install the dependencies, to start the frontend:
 1. ```foreman start -f Procfile.dev```
 1. Navigate to ```localhost:3000``` to see the index
 
-## How to create postgres user
+## How to Create Postgres User
 ```
 create role postgres login createdb;
 ```
