@@ -62,7 +62,7 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 }
 
 .navbar-default .navbar-brand {
-  color: $honey;
+  color: $cerulean;
 }
 
 .navbar-default .navbar-brand > .active > a:focus > a:hover {
@@ -131,16 +131,16 @@ a {
 }
 
 a:hover {
-  color: $cerulean;
+  color: black;
   text-decoration: none;
 }
 
 a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
-  background-color: $honey;
+  background-color: $cerulean;
 }
 
 a.list-group-item-danger, button.list-group-item-danger {
-  background-color: $cerulean;
+  background-color: $honey;
 }
 
 a.list-group-item-warning, button.list-group-item-warning {
