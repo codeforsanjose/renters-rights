@@ -7,7 +7,7 @@ export default class FAQ extends React.Component {
 
     return (
       <RentersLayout>
-        <div className="content-container">
+        <div className="content-container language-paragraph">
           <div className="page-header">
             <h1>Frequently Asked Questions
             </h1>

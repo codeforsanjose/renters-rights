@@ -9,13 +9,13 @@ export default class Home extends React.Component {
       <RentersLayout>
         <div className="content-container">
           <div className="page-header">
-            <h1>Helping renters in San José, California understand the laws and programs in place to protect them.
-            </h1>
+            <h3>Helping renters in San José, California understand the laws and programs in place to protect them.
+            </h3>
           </div>
           <br/>
           <div className="home-links">
             <div className="col-sm-12 col-md-7">
-              <h4> How can we help you today? </h4>
+              <h3> How can we help you today? </h3>
               <div className="list-group">
                 <a href="/eviction" className="list-group-item list-group-item-danger">
                   <h4 className="list-group-item-heading">I want to learn about tenant eviction.</h4>
