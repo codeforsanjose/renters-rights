@@ -24,7 +24,6 @@ After you install the dependencies, to start the frontend:
 1. ```gem install bundler```
 1. ```bundle install```
 1. ```bundle exec rails db:setup```
-1. ```yarn```
 1. ```gem install foreman```
 1. ```foreman start -f Procfile.dev```
 1. Navigate to ```localhost:3000``` to see the index
