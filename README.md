@@ -1,5 +1,5 @@
 # Renter's Rights Guide
-Renter's Rights Guide is a Code for San José open source web application to help renters in San José understand the laws and programs in place to protect them. View the [demo](https://renters-rights.herokuapp.com)
+Renter's Rights Guide is a Code for San José open source web application to help renters in San José understand the laws and programs in place to protect them. View the [demo](https://rentersrightsguide.org)
 
 ## Why Renter's Rights
 We learned from conducting user research and stakeholder interviews that renters deal with common issues - how to navigate the eviction process, increased rent, and find affordable housing. It can be difficult to navigate policy jargon to understand renters rights and procedures to address issues with landlords. We hope to build an application that will empower renters to understand their rights and resources. 
@@ -34,7 +34,8 @@ create role postgres login createdb;
 ```
 
 ## How You Can Contribute
-Join the #rails_team channel on the Code for San José [Slack](https://slackin-c4sj.herokuapp.com/).
+Join the #renters_rights channel on the Code for San José [Slack](https://slackin-c4sj.herokuapp.com/)
+Check the list of issues.
 
 ## Made with <3 by Code for San José
 
