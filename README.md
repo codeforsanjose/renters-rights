@@ -34,11 +34,11 @@ create role postgres login createdb;
 ```
 
 ## How You Can Contribute
-Join the #renters_rights channel on the Code for San José [Slack](https://codeforsanjose.slack.com/).
+Join the #renters_rights channel on our (Slack)[https://codeforsanjose.slack.com] 
 
 Check the list of issues.
 
-## Made with <3 by (Code for San José)[https://codeforsanjose.com]
+## Made with <3 by Code for San José
 
 * [Yan-Yin Choy](https://github.com/ychoy), Developer
 * [Matthew King](https://github.com/mking), Developer
