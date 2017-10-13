@@ -23,6 +23,7 @@ export default function RentersHeader({
 				{/* Collect the nav links, forms, and other content for toggling */}
 				<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul className="nav navbar-nav navbar-right">
+						<li><a href="/rent-calculator"><strong>Rent Calculator</strong></a></li>
 						<li><a href="/resources"><strong>Resources</strong></a></li>
 						<li><a href="/faq"><strong>FAQ</strong></a></li>
 					</ul>

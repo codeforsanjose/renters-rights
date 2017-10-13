@@ -15,6 +15,9 @@ class RentersRightsController < ApplicationController
   def resources
   end
 
+  def rent_calculator
+  end
+
   private
 
   def path_to_asset(asset)
