@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/renters', to: 'renters_rights#renters'
   get '/eviction', to: 'renters_rights#eviction'
   get '/resources', to: 'renters_rights#resources'
+  get '/rent-calculator', to: 'renters_rights#rent_calculator'
 end

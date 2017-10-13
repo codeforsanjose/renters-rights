@@ -4,6 +4,7 @@ import Renters from '../components/Renters';
 import Eviction from '../components/Eviction';
 import FAQ from '../components/FAQ';
 import Resources from '../components/Resources';
+import RentCalculator from '../components/RentCalculator';
 
 // This is how react_on_rails can see the components in the browser.
 ReactOnRails.register({
@@ -12,4 +13,5 @@ ReactOnRails.register({
   Resources,
   Eviction,
   Renters,
+  RentCalculator,
 });

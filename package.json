@@ -2,12 +2,7 @@
   "name": "renters_rights_app",
   "private": true,
   "engines": {
-    "node": "8.4.0"
-  },
-  "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-simple-flowchart": "^1.2.2"
+    "node": "8.7.0"
   },
   "scripts": {
     "postinstall": "cd client && npm install"
