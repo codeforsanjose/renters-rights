@@ -5,6 +5,7 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 .DS_Store
+.vscode
 tmp/cache/
 log/ #Ignore development log
 

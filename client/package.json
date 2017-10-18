@@ -26,6 +26,7 @@
     "js-yaml": "^3.8.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-intl": "^2.4.0",
     "react-on-rails": "8.0.3",
     "webpack": "^2.3.3",
     "webpack-manifest-plugin": "^1.1.0"

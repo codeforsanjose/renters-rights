@@ -2,11 +2,12 @@
   "name": "renters_rights_app",
   "private": true,
   "engines": {
-    "node": "8.4.0"
+    "node": "8.7.0"
   },
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-intl": "^2.4.0",
     "react-simple-flowchart": "^1.2.2"
   },
   "scripts": {
