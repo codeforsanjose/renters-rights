@@ -197,7 +197,7 @@ DEPENDENCIES
   webpacker_lite
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.4.2p198
 
 BUNDLED WITH
    1.15.4
