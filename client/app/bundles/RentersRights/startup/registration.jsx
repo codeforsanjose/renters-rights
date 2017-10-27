@@ -6,6 +6,11 @@ import FAQ from '../components/FAQ';
 import Resources from '../components/Resources';
 import RentCalculator from '../components/RentCalculator';
 
+import { addLocaleData } from 'react-intl';
+import esLocaleData from 'react-intl/locale-data/es';
+
+addLocaleData(esLocaleData);
+
 // This is how react_on_rails can see the components in the browser.
 ReactOnRails.register({
   Home,
