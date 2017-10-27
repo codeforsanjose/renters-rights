@@ -2,9 +2,9 @@ import EvictionWizard from './EvictionWizard';
 import React from 'react';
 import RentersLayout from './RentersLayout';
 
-export default function Eviction() {
+export default function Eviction({ locale }) {
   return (
-    <RentersLayout>
+    <RentersLayout locale={locale}>
       <div className="content-container language-paragraph">
         <div className="page-header">
           <h1>Tenant Eviction</h1>
