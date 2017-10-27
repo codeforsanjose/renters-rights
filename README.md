@@ -13,7 +13,7 @@ Set up the following dependencies
 
 | Dependency      | Version       |
 | --------------: |--------------:|
-| Ruby            | 2.3.3         |
+| Ruby            | 2.4.2         |
 | Rails           | 5.0.4         |
 | PostgreSQL      | 9.6.3         |
 | Node            | 8.4.0         |
@@ -25,6 +25,8 @@ After you install the dependencies, to start the frontend:
 1. ```bundle install```
 1. ```bundle exec rails db:setup```
 1. ```gem install foreman```
+1. ```npm install```
+1. ```cd client; npm install; cd ..```
 1. ```foreman start -f Procfile.dev```
 1. Navigate to ```localhost:3000``` to see the index
 
