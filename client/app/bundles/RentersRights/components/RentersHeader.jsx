@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function RentersHeader({ className, locale }) {	
 //	const availableLocales = ['en', 'es'];
-	  const availablelocales = ['en'];
+	  const availableLocales = ['en'];
 	return (
 		<header
 			className={classNames('pt-4', className)}
@@ -24,7 +24,7 @@ export default function RentersHeader({ className, locale }) {
 				{/* Collect the nav links, forms, and other content for toggling */}
 				<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul className="nav navbar-nav navbar-right">
-						<li><a href={`/${locale}/rent-calculator`}><strong>Rent Calculator</strong></a></li>
+						<li><a href={`/${locale}/rent-calculator`}><strong><FormattedMessage defaultMessage="Rent Calculator" id="header.rent-calculator" /></strong></a></li>
 				{/*		<li><a href="/resources"><strong>Resources</strong></a></li>
 						<li><a href="/faq"><strong>FAQ</strong></a></li> */} 
             <li><a href={`/${locale}/resources`}><strong><FormattedMessage defaultMessage="Resources" id="header.resources" /></strong></a></li>
