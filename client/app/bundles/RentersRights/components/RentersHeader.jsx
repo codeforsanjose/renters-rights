@@ -29,6 +29,7 @@ export default function RentersHeader({ className, locale }) {
 						<li><a href="/faq"><strong>FAQ</strong></a></li> */} 
             <li><a href={`/${locale}/resources`}><strong><FormattedMessage defaultMessage="Resources" id="header.resources" /></strong></a></li>
 						<li><a href={`/${locale}/faq`}><strong><FormattedMessage defaultMessage="FAQ" id="header.faq" /></strong></a></li>
+        {/* 
 						<li className="dropdown">
 							<a 
 								className="dropdown-toggle"
@@ -50,6 +51,7 @@ export default function RentersHeader({ className, locale }) {
 								))}
 							</ul>
 						</li>
+        */}
 					</ul>
 					</div>
 				</div>
