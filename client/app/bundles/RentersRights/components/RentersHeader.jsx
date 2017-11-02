@@ -1,10 +1,17 @@
 import classNames from 'classnames';
-import { FormattedMessage } from 'react-intl';
+{/* locale set up. Remove comment when app is translated 
+  import { FormattedMessage } from 'react-intl';
+  */} 
 import React from 'react';
 
+export default function RentersHeader({ className }) {	
+{/* locale set up. Remove comment when app is translated  
+
 export default function RentersHeader({ className, locale }) {	
-//	const availableLocales = ['en', 'es'];
-	  const availableLocales = ['en'];
+    const availableLocales = ['en', 'es'];
+    const availableLocales = ['en'];
+  */}
+
 	return (
 		<header
 			className={classNames('pt-4', className)}
@@ -18,18 +25,27 @@ export default function RentersHeader({ className, locale }) {
 						<span className="icon-bar"></span>
 						<span className="icon-bar"></span>
 					</button>
-					<a className="navbar-brand" href={`/${locale}`}><strong><FormattedMessage defaultMessage="Renter's Rights Guide" id="header.title" /></strong></a>
+				  {/* locale set up. Remove comment when app is translated. 
+          	<a className="navbar-brand" href={`/${locale}`}><strong><FormattedMessage defaultMessage="Renter's Rights Guide" id="header.title" /></strong></a>
+            */}
+              
+          	<a className="navbar-brand" href={/}><strong><FormattedMessage defaultMessage="Renter's Rights Guide" id="header.title" /></strong></a>
 				</div>
 
 				{/* Collect the nav links, forms, and other content for toggling */}
 				<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul className="nav navbar-nav navbar-right">
-						<li><a href={`/${locale}/rent-calculator`}><strong><FormattedMessage defaultMessage="Rent Calculator" id="header.rent-calculator" /></strong></a></li>
-				{/*		<li><a href="/resources"><strong>Resources</strong></a></li>
-						<li><a href="/faq"><strong>FAQ</strong></a></li> */} 
-            <li><a href={`/${locale}/resources`}><strong><FormattedMessage defaultMessage="Resources" id="header.resources" /></strong></a></li>
-						<li><a href={`/${locale}/faq`}><strong><FormattedMessage defaultMessage="FAQ" id="header.faq" /></strong></a></li>
-        {/* 
+				
+        {/* locale set up. Remove comment when app is translated.  		
+          <li><a href={`/${locale}/rent-calculator`}><strong><FormattedMessage defaultMessage="Rent Calculator" id="header.rent-calculator" /></strong></a></li>
+          <li><a href={`/${locale}/resources`}><strong><FormattedMessage defaultMessage="Resources" id="header.resources" /></strong></a></li>
+				  <li><a href={`/${locale}/faq`}><strong><FormattedMessage defaultMessage="FAQ" id="header.faq" /></strong></a></li> 
+          */}
+            <li><a href="/rent-calculator"><strong>Rent Calculator</a></li> 
+				    <li><a href="/resources"><strong>Resources</strong></a></li>
+						<li><a href="/faq"><strong>FAQ</strong></a></li> 
+        
+        {/* locale set up. Remove comment when app is translated.  		
 						<li className="dropdown">
 							<a 
 								className="dropdown-toggle"
