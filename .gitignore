@@ -8,6 +8,7 @@
 .vscode
 tmp/cache/
 log/ #Ignore development log
+.vscode
 
 # Ignore bundler config.
 /.bundle
