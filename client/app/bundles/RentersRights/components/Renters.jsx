@@ -3,17 +3,16 @@ import RentersLayout from './RentersLayout'
 
 export default class Renters extends React.Component {
   render() {
+
 {/* Locale set up. Remove comment when app is translated.
     const { locale } = this.props;
-  */} 
-      const {} = this.props;
+    <RentersLayout locale={locale}>
+  */}
+
+    const {} = this.props;
 
     return (
-
-{/* Locale set up. Remove comment when app is translated.
-      <RentersLayout locale={locale}>
-  */}
-        <RentersLayout>
+      <RentersLayout>
         <div className="content-container language-paragraph">
           <div className="dashboard-container">
             <div className="dashboard-text">

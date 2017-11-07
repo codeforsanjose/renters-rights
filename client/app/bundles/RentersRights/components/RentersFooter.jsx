@@ -1,8 +1,9 @@
-import { FormattedMessage } from 'react-intl';
+//import { FormattedMessage } from 'react-intl';
 import React from 'react';
 
 export default class RentersFooter extends React.Component {
   render() {
+ /* comment out for locale set up. uncomment this when app is ready for translation
     return (
       <footer
         className="renters-footer"
@@ -36,6 +37,22 @@ export default class RentersFooter extends React.Component {
             />
           </p>
           <p className="text-center">© 2017 Code for San José</p>
+        </div>
+      </footer>
+    )
+  }
+}
+*/
+    return (
+      <footer
+        className="renters-footer"
+      >
+        <br/>
+        <br/>
+        <div className="content-container">
+          <p className="text-center">
+            This app only covers San José, California. This app is not a substitute for legal advice. If you are seeking legal aid, please consult a lawyer immediately. Find a <a href="https://lawhelpca.org">legal aid office</a>.</p>
+          <p className="text-center">© 2017 <a href="http://www.codeforsanjose.com">Code for San José</a></p>
         </div>
       </footer>
     )

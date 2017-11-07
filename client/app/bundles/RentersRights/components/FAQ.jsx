@@ -2,11 +2,18 @@ import React from 'react';
 import RentersLayout from './RentersLayout'
 
 export default class FAQ extends React.Component {
-  render() {
+
+/*  render() {
     const { locale } = this.props;
 
-    return (
-      <RentersLayout locale={locale}>
+    <Renters Layout locale={locale}>
+  */ 
+  render() {
+  
+  const {} = this.props;
+  
+  return (
+      <RentersLayout>
         <div className="content-container language-paragraph">
           <div className="page-header">
             <h1>Frequently Asked Questions

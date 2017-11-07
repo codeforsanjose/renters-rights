@@ -29,7 +29,7 @@ export default function RentersHeader({ className, locale }) {
           	<a className="navbar-brand" href={`/${locale}`}><strong><FormattedMessage defaultMessage="Renter's Rights Guide" id="header.title" /></strong></a>
             */}
               
-          	<a className="navbar-brand" href={/}><strong><FormattedMessage defaultMessage="Renter's Rights Guide" id="header.title" /></strong></a>
+          	<a className="navbar-brand" href="/"><strong>Renter's Rights Guide</strong></a>
 				</div>
 
 				{/* Collect the nav links, forms, and other content for toggling */}
@@ -41,7 +41,7 @@ export default function RentersHeader({ className, locale }) {
           <li><a href={`/${locale}/resources`}><strong><FormattedMessage defaultMessage="Resources" id="header.resources" /></strong></a></li>
 				  <li><a href={`/${locale}/faq`}><strong><FormattedMessage defaultMessage="FAQ" id="header.faq" /></strong></a></li> 
           */}
-            <li><a href="/rent-calculator"><strong>Rent Calculator</a></li> 
+            <li><a href="/rent-calculator"><strong>Rent Calculator</strong></a></li> 
 				    <li><a href="/resources"><strong>Resources</strong></a></li>
 						<li><a href="/faq"><strong>FAQ</strong></a></li> 
         
