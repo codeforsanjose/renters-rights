@@ -2,10 +2,17 @@
   "name": "renters_rights_app",
   "private": true,
   "engines": {
-    "node": "8.2.1"
+    "node": "8.7.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash-es": "^4.17.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-number-format": "^2",
+    "react-intl": "^2.4.0",
+    "react-simple-flowchart": "^1.2.2"
+  },
   "scripts": {
-    "postinstall": "cd client && yarn install"
+    "postinstall": "cd client && npm install"
   }
 }

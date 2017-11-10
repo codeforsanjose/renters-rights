@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
-  root 'renters_rights#index'
+  root to: 'renters_rights#index'
   # reference: http://guides.rubyonrails.org/routing.html
+  get '/faq', to: 'renters_rights#faq'
+  get '/renters', to: 'renters_rights#renters'
+  get '/eviction', to: 'renters_rights#eviction'
+  get '/resources', to: 'renters_rights#resources'
+  get '/rent-calculator', to: 'renters_rights#rent_calculator'
 
-  post '/', to: 'renters_rights#index_post'
-  get '/not-applicable', to: 'renters_rights#not_applicable'
-  get '/help-type', to: 'renters_rights#help_type'
-  post '/help-type', to: 'renters_rights#help_type_post'
-  get '/renters-reasons', to: 'renters_rights#renters_reasons'
-  post '/renters-reasons', to: 'renters_rights#renters_reasons_post'
-  get '/tenant-reallocation', to: 'renters_rights#tenant_reallocation'
-  get '/eviction-resources', to: 'renters_rights#eviction_resources'
+  # get '/:locale', to: 'renters_rights#index'
+  # get '/:locale/faq', to: 'renters_rights#faq'
+  # get '/:locale/renters', to: 'renters_rights#renters'
+  # get '/:locale/eviction', to: 'renters_rights#eviction'
+  # get '/:locale/resources', to: 'renters_rights#resources'
+  # get '/:locale/rent-calculator', to: 'renters_rights#rent_calculator'
 end
