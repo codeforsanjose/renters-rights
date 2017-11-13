@@ -105,9 +105,9 @@ h1 {
 /* Buttons */
 
 .btn-sq-lg {
-  width: 225px !important;
-  height: 225px !important;
-  font-size: 20px;
+  width: 250px !important;
+  height: 250px !important;
+  font-size: 120%;
 }
 .btn-sq-lg:hover {
   border: 3px solid white;
@@ -118,9 +118,8 @@ h1 {
 }
 
 .btn-primary:hover {
-  color: $morning-sky;
-  background-color: $honey;
-  border-color: $honey;
+  border: 3px solid white;
+  font-weight: 800;
 }
 
 .btn-primary:active {
@@ -133,6 +132,10 @@ h1 {
   color: #fff;
   background-color: $morning-sky;
   border-color: $white;
+}
+
+span.glyphicon.glyphicon-asterisk:before {
+ font-size: 1000%;
 }
 
 /* Panel */
