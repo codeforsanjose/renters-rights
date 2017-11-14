@@ -18,6 +18,12 @@ class RentersRightsController < ApplicationController
   def rent_calculator
   end
 
+  def legal_aid
+  end
+  
+  def shelter
+  end
+
   private
 
   def path_to_asset(asset)
