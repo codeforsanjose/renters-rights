@@ -87,7 +87,7 @@ export default class Home extends React.Component {
                   <a href="/renters" className="btn btn-sq-lg btn-success">
                     <span className="glyphicon glyphicon-signal"></span> <br/>My Rent Is Increasing
                   </a>
-                  <a href="/#" className="btn btn-sq-lg btn-warning">
+                  <a href="/shelter" className="btn btn-sq-lg btn-warning">
                    <span className="glyphicon glyphicon-home"></span> <br/>  I Need Shelter
                   </a>
                   <a href="#" className="btn btn-sq-lg btn-info">
@@ -96,7 +96,7 @@ export default class Home extends React.Component {
                   <a href="/renters" className="btn btn-sq-lg btn-warning">
                     <span className="glyphicon glyphicon-map-marker"></span> <br/>Do I Live Within San Jose?
                   </a>
-                  <a href="#" className="btn btn-sq-lg btn-primary">
+                  <a href="/legalaid" className="btn btn-sq-lg btn-primary">
                     <span className="glyphicon glyphicon-question-sign"></span> <br/>I Need Legal Help
                   </a>
                 </p>
