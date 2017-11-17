@@ -40,7 +40,6 @@ export default class FAQ extends React.Component {
                   <li> <a href="https://github.com/EngineerEmily" target="_blank">Emily Ramos, UX Researcher</a></li>
                   <li> <a href="https://github.com/sanazjamloo" target="_blank">Sanaz Jamloo, UX Researcher</a></li>
                 </ul>
-                <p>Want to contact us? <a href="mailto:rentersrightsinfo@gmail.com">Email us</a>.</p>
                 </div>
               </div>
             </div>
@@ -58,6 +57,21 @@ export default class FAQ extends React.Component {
                 </div>
               </div>
             </div>
+
+            <div className="panel panel-default">
+              <div className="panel-heading">
+                <h3 className="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                  How can I report issues about my landlord or renters rights??</a>
+                </h3>
+              </div>
+              <div id="collapse5" className="panel-collapse collapse">
+                <div className="panel-body">
+                Email <a href="mailto:rrp@sanjoseca.gov">City of San Jose Renter's Rights and Referrals Program</a>.
+                </div>
+              </div>
+            </div>
+ 
             <div className="panel panel-default">
               <div className="panel-heading">
                 <h3 className="panel-title">
