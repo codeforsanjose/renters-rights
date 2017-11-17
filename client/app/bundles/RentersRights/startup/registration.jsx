@@ -6,6 +6,8 @@ import FAQ from '../components/FAQ';
 import RentCalculator from '../components/RentCalculator';
 import Shelter from '../components/Shelter';
 import LegalAid from '../components/LegalAid';
+import Resources from '../components/Resources';
+
 //import { addLocaleData } from 'react-intl';
 //import esLocaleData from 'react-intl/locale-data/es';
 
@@ -20,4 +22,5 @@ ReactOnRails.register({
   Shelter,
   LegalAid,
   RentCalculator,
+  Resources
 });
