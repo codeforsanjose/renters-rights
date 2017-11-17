@@ -1,6 +1,8 @@
 import React from 'react';
 import RentersLayout from './RentersLayout'
 
+{/* TODO: Styling */}
+
 export default class Shelter extends React.Component {
   render() {
    {/* locale setup - remove comment when app translation is ready. Also add locale={locale} to RentersLayout below
@@ -8,100 +10,81 @@ export default class Shelter extends React.Component {
     const {} = this.props;
     return (
       <RentersLayout>
-              <div className="row">
-                <div className="col-sm-10 col-md-8"> 
-                  <h3>Homeless Resources</h3>
+          <div className="row">
+            <div className="col-sm-10 col-md-8"> 
+              <p>
+              For Immediate Assistance Call Emergency Bed Hotline
+              at 1.800.7.SHELTER (1.800.7.743.5837)
+              (Spanish/English)
+              </p>
+              <h3>Shelters for Adults Without Children</h3>
+              <p>City Team – Rescue Mission
+              408-288-2153
+              1174 Old Bayshore Highway, San Jose, CA 95112
+              Overnight emergency shelter for men; check-in begins at 5:30 p.m.; first come, first served 
 
-                  <br/>
-                  <h5>Housing Helpline</h5>
-                  <p>(408) 510-7600	</p>
-                  <p>Information on service agencies and housing opportunities for homeless individuals </p>
+              HomeFirst – Boccardo Reception Center
+              408-294-2100
+              2011 Little Orchard Street, San Jose, CA 95125
+              Emergency shelter for men and women; check-in begins at 3:30 p.m.; first come, first served
 
-                  <h4>Homeless Drop In Center</h4>
+              LifeMoves – Georgia Travis House
+              408-271-1630
+              Shelter for women; call for more information
 
-                  <br/><h5> BILL WILSON CENTER</h5>
-                  <p>The Homeless Youth Drop-In Center, located in downtown San Jose, is a safe place where young people can begin to form bonds with caring adults and access essential resources for their overall well-being. The primary goal of the program is to get homeless youth into safe and permanent housing.</p>
-                  <p>www.billwilsoncenter.org</p>
-                  <p>Phone: 1-408-243-0222</p>
+              LifeMoves – Montgomery Street Inn
+              408-271-5160
+              358 North Montgomery Street, San Jose, CA  95110
+              Emergency shelter for men; program assessments Monday through Friday at 12:30 p.m.
 
-                  <br/><h5> ST. JOSEPH'S CATHEDRAL SOCIAL MINISTRY OFFICE</h5>
-                  <p>Offers a safe place for the homeless to receive mail while living in a shelter, phone service available to make appointments and receive messages, sandwiches and something to drink, once a week grocery food bag and referrals to shelter, clothing, housing and community resources.</p>
-                  <p>Phone: 1-408-283-8100</p>
+              Salvation Army – Emmanuel House
+              408-282-1175
+              405 North Fourth Street, San Jose, CA 95112
+              Emergency shelter for men; suggested arrival time is between 1:30 p.m. to 2:30 p.m.
+              </p> 
+              <h3>Shelters for Families With Children</h3>
+              <p>Casa de Clara 297.8330
+              Call for location
+              Temporary shelter for women and women with children.
+              InnVision/Commercial Street Inn 271.1630
+              260 Commercial Street
+              8:30-4:30 Mon-Sun
+              Shared housing for women and women with children (boys under 12
+              years) - 30 days free, 60 day maximum, monthly bus passes.
+              Family Supportive Housing 926.8885
+              San José Family Shelter
+              1590 Las Plumas Avenue
+              Call at 10 Mon-Fri for room availability
+              Shelter, comprehensive day services, monthly bus passes. Parents over 18
+              and boys up to 17 years. Program fee. 90 day limit. Child care, Head Start
+              and on-site tutoring.
+              St. Joseph Cathedral Office of Social Ministry
+              80 South Market Street 283.8119
+              9:30-12 Tues and 1:30-5 Mon-Fri
+              Free transitional program for clean, sober, single working women with
+              children and men. Must be working steadily during the day. Day bus
+              passes available. Call first.
+              Catholic Charities 468.0100
+              Housing Search and Stabilization 325.5277
+              2625 Zanker Road,Suite 201
+              8-5 Mon-Fri
+              Call for application procedures and appointment times
+              Matching program for single parents with children under 12 years.
+              Housing search for below market rate apartments and affordable housing.
+              City Team-Heritage Home 294.1238
+              Emergency shelter for homeless or abandoned pregnant women 18 and
+              over during their last trimester of pregnancy. Call intake coordinator. </p>
+              <h3>Shelter for Veterans</h3>
+              <p>HomeFirst - Veterans Services
+408-510-7522
+2011 Little Orchard Street, San Jose, CA, 95125
 
-                  <br/><h5> COMMUNITY WORKING GROUP - OPPORTUNITY CENTER</h5>
-                  <p>Offers drop-in services, showers and laundry facilities, lockers, light snacks, information and referral, transportation assistance, a clothes closet, medical and psychiatric screening and referral, inter-faith chaplaincy, and fellowship.</p>
-                  <p>Phone: 650-853-8672</p>
-
-                  <br/><h5> GILROY COMPASSION CENTER</h5>
-                  <p>Offers bathroom, resource listings, jackets, clothing, telephone, the internet, laundry, mail, messages, compassion, and respite from the street.</p>
-                  <p>Shower, laundry, and medical service available every Thursday starting at 10am and finishing at 12pm. </p>
-                  <p>Phone: 1-408-763-7120</p>
-
-                  <br/>
-                  <h4>Hot Meals</h4>
-                  <br/><h5> CITY OF SAN JOSE DEPARTMENT OF PARKS, RECREATION AND NEIGHBORHOOD SERVICES</h5>
-                  <p>Senior Nutrition Program</p>
-                  <p>Phone: 408-535-3570</p>
-
-                  <br/><h5> CATHOLIC CHARITIES OF SANTA CLARA COUNTY</h5>
-                  <p>Senior Nutrition Program</p>
-                  <p>www.ccsj.org</p>
-                  <p>Phone: 408-846-0428</p>
-
-                  <br/><h5> PORTUGUESE ORGANIZATION FOR SOCIAL SERVICES AND OPPORTUNITIES</h5>
-                  <p>Services include senior nutrition, escorting to doctors visits, translation services, and case management</p>
-                  <p>portuguesecenter.org</p>
-                  <p>Phone: 1-408-293-0877</p>
-
-                  <br/><h5> MARTHA'S KITCHEN</h5>
-                  <p>Provides meals to men, women, and children</p>
-                  <p>www.marthas-kitchen.org</p>
-
-                  <br/><h5> YU-AI-KAI</h5>
-                  <p>Senior Services</p>
-                  <p>www.yuaikai.org</p>
-                  <p>Phone: 1-408-294-2505</p>
-
-                  <br/><h5> JTS Northside Senior Community Center</h5>
-                  <p>Senior Wellness Program</p>
-                  <p>Phone: 1-408-343-7711</p>
-
-                  <br/><h5> ASIAN AMERICANS FOR COMMUNITY INVOLVEMENT OF SANTA CLARA COUNTY, INC</h5>
-                  <p>Senior Support Program</p>
-                  <p>Phone: 408-975-2730</p>
-
-                  <br/><h5> CITY OF CAMPBELL RECREATION AND COMMUNITY SERVICES</h5>
-                  <p>The Lunch Program offers nutritious meals Monday-Friday </p>
-                  <p>www.cityofcampbell.com</p>
-                  <p>Phone: 1-408-866-2764</p>
-
-                  <br/><h5> CITY OF MILPITAS RECREATION SERVICES DEPARTMENT</h5>
-                  <p>Offers a senior nutrition lunch program at the Senior Center</p>
-                  <p>Phone: 1-408-586-2425</p>
-
-                  <br/><h5> CITY OF SUNNYVALE COMMUNITY SERVICES</h5>
-                  <p>Offers educational, recreational and cultural activities for seniors.</p>
-                  <p>Phone: 1-408-730-7360</p>
-
-                  <br/><h5> ST. THOMAS EPISCOPAL CHURCH</h5>
-                  <p>Offers hot meals three days a week to hungry people without restriction.</p>
-                  <p>www.stthomas-svale.org</p>
-
-                  <br/><h5> COMMUNITY SERVICES AGENCY OF MOUNTAIN VIEW AND LOS ALTOS</h5>
-                  <p>Mountain View Senior Nutrition Program</p>
-                  <p>www.csacares.org/senior-services</p>
-                  <p>Phone: 1-650-964-6586</p>
-
-                  <br/><h5> SECOND HARVEST FOOD BANK OF SANTA CLARA AND SAN MATEO COUNTIES</h5>
-                  <p>Food Connection Hotline</p>
-                  <p>www.shfb.org</p>
-
-
-               </div>
-                <div className="col-sm-2 col-md-4"> 
-                  More questions? Check out <a href="https://www.auntbertha.com/" target="_blank">Aunt Bertha</a>, a resource for finding free or reduced cost services
-                </div>
+Emergency Shelter and Transitional Housing for veterans; veterans can access first come first served shelter beds (check in at 3:30 p.m.) before being screened for veteran bed eligibility.</p>
             </div>
+            <div className="col-sm-2 col-md-4"> 
+              More questions? Check out <a href="https://www.auntbertha.com/" target="_blank">Aunt Bertha</a>, a resource for finding free or reduced cost services
+            </div>
+          </div>
       </RentersLayout>
     )
   }
