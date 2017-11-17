@@ -42,7 +42,7 @@ export default function RentersHeader({ className, locale }) {
 				  <li><a href={`/${locale}/faq`}><strong><FormattedMessage defaultMessage="FAQ" id="header.faq" /></strong></a></li> 
           */}
             <li><a href="/rent-calculator"><strong>Rent Calculator</strong></a></li> 
-				    <li><a href="https://www.auntbertha.com"><strong>Resources</strong></a></li>
+				    <li><a href="/resources"><strong>Resources</strong></a></li>
 						<li><a href="/faq"><strong>FAQ</strong></a></li> 
         
         {/* locale set up. Remove comment when app is translated.  		
