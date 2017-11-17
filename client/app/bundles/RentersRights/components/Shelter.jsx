@@ -10,8 +10,14 @@ export default class Shelter extends React.Component {
     const {} = this.props;
     return (
       <RentersLayout>
+        <div className="content-container">
+          <div className="page-header">
+             <h3>
+              Shelters 
+             </h3>
+          </div>
           <div className="row">
-            <div className="col-sm-10 col-md-8"> 
+            <div className="col-md-9"> 
               <p>
               For Immediate Assistance Call Emergency Bed Hotline
               at 1.800.7.SHELTER (1.800.7.743.5837)
@@ -81,10 +87,11 @@ export default class Shelter extends React.Component {
 
 Emergency Shelter and Transitional Housing for veterans; veterans can access first come first served shelter beds (check in at 3:30 p.m.) before being screened for veteran bed eligibility.</p>
             </div>
-            <div className="col-sm-2 col-md-4"> 
-              More questions? Check out <a href="https://www.auntbertha.com/" target="_blank">Aunt Bertha</a>, a resource for finding free or reduced cost services
+            <div className="col-md-3"> 
+              More questions? Check out <a href="https://www.1degree.org" target="_blank">One Degree</a> for more resources in San Francisco Bay Area. 
             </div>
           </div>
+        </div> 
       </RentersLayout>
     )
   }
