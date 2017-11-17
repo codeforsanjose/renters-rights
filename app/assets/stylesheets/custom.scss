@@ -133,9 +133,8 @@ h1 {
   background-color: $morning-sky;
   border-color: $white;
 }
-
-span.glyphicon.glyphicon-asterisk:before {
- font-size: 1000%;
+.glyphicon-file:before, .glyphicon-question-sign:before, .glyphicon-signal:before, .glyphicon-home:before, .glyphicon-map-marker:before, .glyphicon-pencil:before {
+ font-size: 750%;
 }
 
 /* Panel */
