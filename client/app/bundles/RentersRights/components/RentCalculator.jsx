@@ -30,45 +30,48 @@ export default class RentCalculator extends React.Component {
 
     return (
       <RentersLayout>
-        <form>
-          <div className="form-group">
-            <label htmlFor="previous-rent">
-              Previous Rent
-            </label>
-            <NumberFormat
-              autoFocus
-              className="form-control"
-              id="previous-rent"
-              onChange={this.handlePreviousRentChange}
-              thousandSeparator
-              value={previousRent}
-              prefix="$"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="current-rent">
-              Current Rent
-            </label>
-            <NumberFormat
-              className="form-control"
-              id="current-rent"
-              onChange={this.handleCurrentRentChange}
-              thousandSeparator
-              value={currentRent}
-              prefix="$"
-            />
-          </div>
-          <div className="panel panel-default">
-            <div className="panel-heading">
-              <h5>Percentage Increase</h5>
+        <div className="col-md-6">
+          <h3>Rent Increase Calculator</h3>
+          <form>
+            <div className="form-group">
+              <label htmlFor="previous-rent">
+                Previous Rent
+              </label>
+              <NumberFormat
+                autoFocus
+                className="form-control"
+                id="previous-rent"
+                onChange={this.handlePreviousRentChange}
+                thousandSeparator
+                value={previousRent}
+                prefix="$"
+              />
             </div>
-            <div className="panel-body">
-              <p>
-                {previousRent === 0 ? <span>&mdash;</span> : Math.round(((currentRent - previousRent) / previousRent) * 100)}%
-              </p>
+            <div className="form-group">
+              <label htmlFor="current-rent">
+                Current Rent
+              </label>
+              <NumberFormat
+                className="form-control"
+                id="current-rent"
+                onChange={this.handleCurrentRentChange}
+                thousandSeparator
+                value={currentRent}
+                prefix="$"
+              />
             </div>
-          </div>
-        </form>
+            <div className="panel panel-default">
+              <div className="panel-heading">
+                <h5>Percentage Increase</h5>
+              </div>
+              <div className="panel-body">
+                <p>
+                  {previousRent === 0 ? <span>&mdash;</span> : Math.round(((currentRent - previousRent) / previousRent) * 100)}%
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
       </RentersLayout>
     );
   }

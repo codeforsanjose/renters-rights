@@ -4,11 +4,10 @@
 
 /*** Variables ***/
 /* colors */
-$cerulean: #00303F;
-$carmine-pink: #E2504A;
-$morning-sky: #CAE4DB;
-$mist: #7A9D96;
-$honey: #DCAE1D;
+$cream: #FCFFE4;
+$morning-sky: #4A90E2;
+$white: #fff;
+$honey: #b6d2f3;
 
 /* fonts */
 $logo-font: 'Karla', sans-serif;
@@ -25,8 +24,8 @@ $body-font: 'Karla', sans-serif;
 
 /* NavBar */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: white;  /*Sets the text hover color on navbar*/
-  background-color: $mist;
+  color: $morning-sky;  /*Sets the text hover color on navbar*/
+  background-color: $honey;
 }
 
 
@@ -46,47 +45,47 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: $cerulean;
+  background-color: $white;
 }
 
 .navbar-default {
   background-color: $morning-sky;
-  border-color: transparent;
+  border-color: white;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: transparent;
 }
 .navbar-default .navbar-nav > li > a {
-  color: $cerulean; /*Change active text color here*/
+  color: $white; /*Change active text color here*/
 }
 
 .navbar-default .navbar-brand {
-  color: $cerulean;
+  color: $white;
 }
 
 .navbar-default .navbar-brand > .active > a:focus > a:hover {
-  color: $cerulean;
+  color: $white;
 }
 
 .nav-pills>li>a:hover{
-    background-color: $mist;
-    color: $cerulean;
+    background-color: $honey;
+    color: $morning-sky;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background-color: $honey;
+    background-color: $morning-sky;
 }
 
 body {
   padding-top: 70px;
   font-family: $body-font;
-  background: linear-gradient(to top, white, $morning-sky) fixed;
+  background-color: $white;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
-  color: $cerulean
+  color: $morning-sky;
 }
 
 h1 {
@@ -103,32 +102,45 @@ h1 {
   font-size: 120%;
 }
 
+/* Buttons */
+
+.btn-sq-lg {
+  width: 250px !important;
+  height: 250px !important;
+  font-size: 120%;
+}
+.btn-sq-lg:hover {
+  border: 3px solid white;
+  font-weight: 800;
+}
 .btn-default {
-  background-color: $mist;
+  background-color: $morning-sky;
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: $cerulean;
-  border-color: $mist;
+  border: 3px solid white;
+  font-weight: 800;
 }
 
 .btn-primary:active {
-  color: #fff;
-  background-color: $cerulean;
-  border-color: $mist;
-}
-
-.btn-primary {
   color: #fff;
   background-color: $honey;
   border-color: $honey;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: $morning-sky;
+  border-color: $white;
+}
+.glyphicon-file:before, .glyphicon-question-sign:before, .glyphicon-signal:before, .glyphicon-home:before, .glyphicon-map-marker:before, .glyphicon-pencil:before {
+ font-size: 750%;
+}
+
 /* Panel */
 .panel-info>.panel-heading {
   color: white;
-  background-color: $mist;
+  background-color: $morning-sky;
 }
 
 .panel-info>.panel-heading+.panel-collapse>.panel-body {
@@ -145,7 +157,7 @@ h1 {
 }
 
 a {
-  color: #006a8c;
+  color: $morning-sky;
 }
 
 a:hover {
@@ -154,21 +166,17 @@ a:hover {
 }
 
 a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
-  background-color: $cerulean;
-}
-
-a.list-group-item-danger, button.list-group-item-danger {
   background-color: $honey;
 }
 
-a.list-group-item-warning, button.list-group-item-warning {
-  background-color: $mist;
-}
-
-a.list-group-item-info, button.list-group-item-info {
+a.list-group-item-danger, button.list-group-item-danger {
   background-color: $morning-sky;
 }
 
 a.list-group-item .list-group-item-heading {
-    color: white;
+  color: white;
+}
+
+a.list-group-item:hover .list-group-item-heading:hover {
+  color: black;
 }
