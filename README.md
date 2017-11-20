@@ -9,7 +9,7 @@ This web application is built with  Rails, React.js, React-on-Rails gem, and Pos
 
 ## How to Run This
 
-Set up the following dependencies
+First, set up the following dependencies:
 
 | Dependency      | Version       |
 | --------------: |--------------:|
@@ -17,6 +17,8 @@ Set up the following dependencies
 | Rails           | 5.0.4         |
 | PostgreSQL      | 9.6.3         |
 | Node            | 8.4.0         |
+
+After you install the dependencies:
 
 1. Git clone this repo
 1. ``cd``` into the repo directory 
