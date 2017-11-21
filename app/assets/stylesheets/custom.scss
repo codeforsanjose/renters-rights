@@ -5,7 +5,7 @@
 /*** Variables ***/
 /* colors */
 $cream: #FCFFE4;
-$morning-sky: #4A90E2;
+$morning-sky: #1A7DD7;
 $white: #fff;
 $honey: #b6d2f3;
 
@@ -30,7 +30,8 @@ $body-font: 'Karla', sans-serif;
 
 
 .navbar-default .navbar-toggle.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: $morning-sky;
+  background-color: $honey;
+  color: $white;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
@@ -61,12 +62,13 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 }
 
 .navbar-default .navbar-brand {
+  &:hover {
+    background-color: $honey;
+    color: $morning-sky;
+  }
   color: $white;
 }
 
-.navbar-default .navbar-brand > .active > a:focus > a:hover {
-  color: $white;
-}
 
 .nav-pills>li>a:hover{
     background-color: $honey;
@@ -109,30 +111,45 @@ h1 {
   height: 250px !important;
   font-size: 120%;
 }
-.btn-sq-lg:hover {
-  border: 3px solid white;
-  font-weight: 800;
-}
+
 .btn-default {
   background-color: $morning-sky;
 }
 
-.btn-primary:hover {
-  border: 3px solid white;
-  font-weight: 800;
+.btn-eviction, .btn-renters, .btn-shelter, .btn-issue, .btn-legal, .btn-location {
+  color: #fff;
+  border: 1px solid #fff;
+  &:hover {
+    border: 3px solid white;
+    font-weight: 800;
+    color: #fff;
+  }
 }
 
-.btn-primary:active {
-  color: #fff;
-  background-color: $honey;
-  border-color: $honey;
+.btn-eviction {
+  background-color: #03275A;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: $morning-sky;
-  border-color: $white;
+.btn-renters {
+  background-color: #1A7DD7;
 }
+
+.btn-shelter {
+  background-color: #F2B809;
+}
+
+.btn-issue {
+  background-color: #139EB2;
+}
+
+.btn-legal {
+  background-color: #F34605;
+}
+
+.btn-location {
+  background-color: #07BD00;
+}
+
 .glyphicon-file:before, .glyphicon-question-sign:before, .glyphicon-signal:before, .glyphicon-home:before, .glyphicon-map-marker:before, .glyphicon-pencil:before {
  font-size: 750%;
 }
@@ -156,14 +173,8 @@ h1 {
   align-items: center;
 }
 
-a {
-  color: $morning-sky;
-}
 
-a:hover {
-  color: black;
-  text-decoration: none;
-}
+
 
 a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
   background-color: $honey;
@@ -177,6 +188,4 @@ a.list-group-item .list-group-item-heading {
   color: white;
 }
 
-a.list-group-item:hover .list-group-item-heading:hover {
-  color: black;
-}
+

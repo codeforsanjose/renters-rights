@@ -74,29 +74,29 @@ export default class Home extends React.Component {
      return (
        <RentersLayout>
          <div className="content-container">
-           <div className="page-header">
+           <div className="page-header text-center">
              <h3>Helping renters in San José, California understand the laws and programs in place to protect them.
              </h3>
            </div>
            <div className="row">
-              <div className="col-sm-6 col-md-12">
+              <div className=" col-md-12 text-center">
                 <p>
-                  <a href="/eviction" className="btn btn-sq-lg btn-primary">
+                  <a href="/eviction" className="btn btn-sq-lg btn-eviction">
                     <br/><span className="glyphicon glyphicon-file"></span> <br/>I Am Getting Evicted
                   </a>
-                  <a href="/renters" className="btn btn-sq-lg btn-success">
+                  <a href="/renters" className="btn btn-sq-lg btn-renters">
                     <br/><span className="glyphicon glyphicon-signal"></span> <br/>My Rent Is Increasing
                   </a>
-                  <a href="/shelter" className="btn btn-sq-lg btn-warning">
+                  <a href="/shelter" className="btn btn-sq-lg btn-shelter">
                    <br/><span className="glyphicon glyphicon-home"></span> <br/>  I Need Shelter
                   </a>
-                  <a href="#" className="btn btn-sq-lg btn-info">
+                  <a href="#" className="btn btn-sq-lg btn-issue">
                     <br/><span className="glyphicon glyphicon-pencil"></span> <br/>I Want To Report An Issue
                   </a>
-                  <a href="/renters" className="btn btn-sq-lg btn-warning">
+                  <a href="/renters" className="btn btn-sq-lg btn-location">
                     <br/><span className="glyphicon glyphicon-map-marker"></span> <br/>Do I Live Within San Jose?
                   </a>
-                  <a href="/legal-aid" className="btn btn-sq-lg btn-primary">
+                  <a href="/legal-aid" className="btn btn-sq-lg btn-legal">
                     <br/><span className="glyphicon glyphicon-question-sign"></span> <br/>I Need Legal Help
                   </a>
                 </p>
