@@ -9,7 +9,7 @@ This web application is built with  Rails, React.js, React-on-Rails gem, and Pos
 
 ## How to Run This
 
-Set up the following dependencies
+First, set up the following dependencies:
 
 | Dependency      | Version       |
 | --------------: |--------------:|
@@ -18,22 +18,21 @@ Set up the following dependencies
 | PostgreSQL      | 9.6.3         |
 | Node            | 8.4.0         |
 
-After you install the dependencies, to start the frontend:
+After you install the dependencies:
 
 1. Git clone this repo
+1. ``cd``` into the repo directory 
 1. ```gem install bundler```
 1. ```bundle install```
+1. ```psql```
+1. Create Postgres User:  ```create role postgres login createdb;```
+1. exit out of psql: ```\q```
 1. ```bundle exec rails db:setup```
 1. ```gem install foreman```
 1. ```npm install```
 1. ```cd client; npm install; cd ..```
 1. ```foreman start -f Procfile.dev```
 1. Navigate to ```localhost:3000``` to see the index
-
-## How to Create Postgres User
-```
-create role postgres login createdb;
-```
 
 ## How You Can Contribute
 Join the #renters_rights channel on our [Slack](https://codeforsanjose.slack.com)
