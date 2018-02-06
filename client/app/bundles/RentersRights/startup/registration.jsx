@@ -9,6 +9,7 @@ import LegalAid from '../components/LegalAid';
 import Resources from '../components/Resources';
 import ReportIssue from '../components/ReportIssue';
 import FindJurisdiction from '../components/FindJurisdiction';
+import RentIncrease from '../components/RentIncrease';
 
 //import { addLocaleData } from 'react-intl';
 //import esLocaleData from 'react-intl/locale-data/es';
@@ -25,6 +26,7 @@ ReactOnRails.register({
   Shelter,
   LegalAid,
   RentCalculator,
+  RentIncrease,
   Resources,
   FindJurisdiction
 });
