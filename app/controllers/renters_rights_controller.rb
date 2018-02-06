@@ -12,9 +12,6 @@ class RentersRightsController < ApplicationController
   def eviction
   end
 
-  def renters
-  end
-  
   def rent_increase
   end
    
