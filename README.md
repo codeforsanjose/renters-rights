@@ -32,7 +32,7 @@ After you install the dependencies:
 1. ```npm install```
 1. ```cd client; npm install; cd ..```
 1. ```foreman start -f Procfile.dev```
-1. Navigate to ```localhost:3000``` to see the index
+1. Navigate to ```http://0.0.0.0:5100/```
 
 ## How You Can Contribute
 Join the #renters_rights channel on our [Slack](https://codeforsanjose.slack.com)
@@ -42,6 +42,7 @@ Join the #renters_rights channel on our [Slack](https://codeforsanjose.slack.com
 * [Yan-Yin Choy](https://github.com/ychoy), Developer
 * [Matthew King](https://github.com/mking), Developer
 * [Julie Kim](https://github.com/jliekim), UX Researcher & Designer
+* [David Pindrys](https://github.com/dpindrys), UX Researcher & Designer
 * [Sanaz Jamloo](https://github.com/sanazjamloo), UX Researcher
 * [Emily Ramos](https://github.com/EngineerEmily), UX Researcher
 * [Lorin Camargo](https://www.linkedin.com/in/lorincamargo), UX Researcher
