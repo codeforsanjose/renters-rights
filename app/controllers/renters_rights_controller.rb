@@ -12,7 +12,7 @@ class RentersRightsController < ApplicationController
   def eviction
   end
 
-  def renters
+  def rent_increase
   end
    
   def report_issue

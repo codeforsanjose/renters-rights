@@ -2,8 +2,6 @@ import { isNumber } from 'lodash-es';
 import NumberFormat from 'react-number-format';
 import React from 'react';
 
-import RentersLayout from './RentersLayout';
-
 export default class RentCalculator extends React.Component {
   constructor(props) {
     super(props);
@@ -29,9 +27,8 @@ export default class RentCalculator extends React.Component {
     const { currentRent, previousRent } = this.state;
 
     return (
-      <RentersLayout>
         <div className="col-md-6">
-          <h3>Rent Increase Calculator</h3>
+          <h3>Calculate Rent Increase</h3>
           <form>
             <div className="form-group">
               <label htmlFor="previous-rent">
@@ -72,7 +69,6 @@ export default class RentCalculator extends React.Component {
             </div>
           </form>
         </div>
-      </RentersLayout>
     );
   }
 

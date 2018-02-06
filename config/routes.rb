@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   root to: 'renters_rights#index'
   # reference: http://guides.rubyonrails.org/routing.html
   get '/about', to: 'renters_rights#about'
-  get '/renters', to: 'renters_rights#renters'
   get '/eviction', to: 'renters_rights#eviction'
   get '/resources', to: 'renters_rights#resources'
   get '/rent-calculator', to: 'renters_rights#rent_calculator'
@@ -10,6 +9,7 @@ Rails.application.routes.draw do
   get '/shelter', to: 'renters_rights#shelter'
   get '/report-issue', to: 'renters_rights#report_issue'
   get '/find-jurisdiction', to: 'renters_rights#find_jurisdiction'
+  get '/rent-increase', to: 'renters_rights#rent_increase'
   # get '/:locale', to: 'renters_rights#index'
   # get '/:locale/about', to: 'renters_rights#faq'
   # get '/:locale/renters', to: 'renters_rights#renters'

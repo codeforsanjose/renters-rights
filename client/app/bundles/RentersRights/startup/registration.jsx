@@ -1,6 +1,5 @@
 import ReactOnRails from 'react-on-rails';
 import Home from '../components/Home';
-import Renters from '../components/Renters';
 import Eviction from '../components/Eviction';
 import About from '../components/About';
 import RentCalculator from '../components/RentCalculator';
@@ -9,6 +8,7 @@ import LegalAid from '../components/LegalAid';
 import Resources from '../components/Resources';
 import ReportIssue from '../components/ReportIssue';
 import FindJurisdiction from '../components/FindJurisdiction';
+import RentIncrease from '../components/RentIncrease';
 
 //import { addLocaleData } from 'react-intl';
 //import esLocaleData from 'react-intl/locale-data/es';
@@ -21,10 +21,10 @@ ReactOnRails.register({
   About,
   ReportIssue,
   Eviction,
-  Renters,
   Shelter,
   LegalAid,
   RentCalculator,
+  RentIncrease,
   Resources,
   FindJurisdiction
 });
