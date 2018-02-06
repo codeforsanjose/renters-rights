@@ -93,7 +93,7 @@ export default class Home extends React.Component {
                   <a href="/report-issue" className="btn btn-sq-lg btn-issue">
                     <br/><span className="glyphicon glyphicon-pencil"></span> <br/>I Want To Report An Issue
                   </a>
-                  <a href="/renters" className="btn btn-sq-lg btn-location">
+                  <a href="/find-jurisdiction" className="btn btn-sq-lg btn-location">
                     <br/><span className="glyphicon glyphicon-map-marker"></span> <br/>Do I Live Within San Jose?
                   </a>
                   <a href="/legal-aid" className="btn btn-sq-lg btn-legal">
