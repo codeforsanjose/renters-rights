@@ -14,6 +14,9 @@ class RentersRightsController < ApplicationController
 
   def renters
   end
+  
+  def rent_increase
+  end
    
   def report_issue
   end
