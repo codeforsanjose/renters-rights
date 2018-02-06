@@ -43,7 +43,7 @@ export default function RentersHeader({ className, locale }) {
 		          */}
 		        		<li><a href="/rent-calculator"><strong>Rent Calculator</strong></a></li> 
 					    <li><a href="/resources"><strong>Resources</strong></a></li>
-						<li><a href="/faq"><strong>FAQ</strong></a></li> 
+						<li><a href="/about"><strong>About</strong></a></li> 
         
         {/* locale set up. Remove comment when app is translated.  		
 						<li className="dropdown">
