@@ -1,6 +1,5 @@
 import ReactOnRails from 'react-on-rails';
 import Home from '../components/Home';
-import Renters from '../components/Renters';
 import Eviction from '../components/Eviction';
 import About from '../components/About';
 import RentCalculator from '../components/RentCalculator';
@@ -22,7 +21,6 @@ ReactOnRails.register({
   About,
   ReportIssue,
   Eviction,
-  Renters,
   Shelter,
   LegalAid,
   RentCalculator,
