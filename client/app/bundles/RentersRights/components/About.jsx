@@ -32,10 +32,10 @@ export default class About extends React.Component {
               <div id="collapse1" className="panel-collapse collapse">
                 <div className="panel-body">
 
-                This web application helps inform San José, California renters about the local laws and programs in place to protect them. <br/>
-                This app only covers San José, California. This app is not a substitute for legal advice. If you are seeking legal aid, please consult a lawyer immediately. <br/>
-
-                We are a group of volunteer developers, desginers and researchers concerned about the housing crisis in Silicon Valley. We are involved with <a href="http://www.codeforsanjose.com/" target="_blank">Code for San José</a>, a chapter of <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>.
+                This web application helps inform San José, California renters about the local laws and programs in place to protect them. <br/><br/>
+                This web app only covers San José, California. This app is not a substitute for legal advice. If you are seeking legal aid, please consult a lawyer immediately. <br/><br/>
+                This web app is built by volunteer researchers, designers and developers with <a href="http://www.codeforsanjose.com/" target="_blank">Code for San José</a>, a chapter of <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>. We are concerned with the affordable housing crisis in Silicon Valley.
+                <br/><br/>
                 <p>Team:</p>
                 <ul>
                   <li> <a href="https://www.linkedin.com/in/yanyinchoy" target="_blank">Yan-Yin Choy, Software Engineer and Product Manager</a></li>
