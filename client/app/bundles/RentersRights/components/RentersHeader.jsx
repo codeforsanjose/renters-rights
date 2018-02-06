@@ -41,7 +41,7 @@ export default function RentersHeader({ className, locale }) {
           				<li><a href={`/${locale}/resources`}><strong><FormattedMessage defaultMessage="Resources" id="header.resources" /></strong></a></li>
 						<li><a href={`/${locale}/faq`}><strong><FormattedMessage defaultMessage="FAQ" id="header.faq" /></strong></a></li> 
 		          */}
-		        		<li><a href="/rent-calculator"><strong>Rent Calculator</strong></a></li> 
+		        		<li><a href="/report-issue"><strong>Report Rental Issue</strong></a></li> 
 					    <li><a href="/resources"><strong>Resources</strong></a></li>
 						<li><a href="/about"><strong>About</strong></a></li> 
         
