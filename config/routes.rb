@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/legal-aid', to: 'renters_rights#legal_aid'
   get '/shelter', to: 'renters_rights#shelter'
   get '/report-issue', to: 'renters_rights#report_issue'
+  get '/find-jurisdiction', to: 'renters_rights#find_jurisdiction'
   # get '/:locale', to: 'renters_rights#index'
   # get '/:locale/about', to: 'renters_rights#faq'
   # get '/:locale/renters', to: 'renters_rights#renters'
