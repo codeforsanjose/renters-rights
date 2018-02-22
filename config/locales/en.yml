@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  exception_handler:
+    not_found: "404 Not Found" 
+
