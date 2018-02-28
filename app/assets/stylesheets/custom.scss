@@ -174,9 +174,7 @@ h1 {
 }
 
 
-
-
-a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+a.list-group-iem:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
   background-color: $honey;
 }
 
@@ -187,5 +185,25 @@ a.list-group-item-danger, button.list-group-item-danger {
 a.list-group-item .list-group-item-heading {
   color: white;
 }
+
+/* Error */
+.error h1 {
+  font-weight: 100;
+  font-family: $logo-font;
+  text-align: center;
+}
+
+.error h2 {
+  font-weight: 90;
+  font-family: $logo-font;
+  text-align: center;
+}
+
+.error p {
+  font-weight: 90;
+  font-family: $logo-font;
+  text-align: center;
+}
+
 
 
