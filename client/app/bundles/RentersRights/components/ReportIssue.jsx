@@ -7,11 +7,11 @@ export default class ReportIssue extends React.Component {
     const { locale } = this.props;
 
     <Renters Layout locale={locale}>
-  */ 
+  */
   render() {
-  
+
   const {} = this.props;
-  
+
   return (
       <RentersLayout>
         <div className="content-container language-paragraph">
