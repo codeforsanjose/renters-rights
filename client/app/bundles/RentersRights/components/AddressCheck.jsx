@@ -16,7 +16,10 @@ export default class AddressCheck extends React.Component {
            </div>
           <div className="row">
             <div className="col-md-12">
-              
+              <h3> 
+                Enter Your Address
+              </h3>
+              <input id="address-input" type="text" className="form-control" placeholder="Address" />
             </div> 
         </div>
        </div>
