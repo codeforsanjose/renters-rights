@@ -33,6 +33,9 @@ class RentersRightsController < ApplicationController
   def shelter
   end
 
+  def address_check
+  end
+
   private
 
   def path_to_asset(asset)
