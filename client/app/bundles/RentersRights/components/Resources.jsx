@@ -10,15 +10,16 @@ export default class Resources extends React.Component {
    {/* locale setup - remove comment when app translation is ready. Also add locale={locale} to RentersLayout below
        const { locale } = this.props; */}
 
-    const resourceList = tsvParse(small);
+    const resourceList = tsvParse(resources);
 
     const {} = this.props;
     return (
       <RentersLayout>
         {
-          resourceList.map(resource => (
+          resourceList.map((resource, idx) => (
             <ResourceIndexItem
               resource={resource}
+              key={idx}
               />
           ))
         }
