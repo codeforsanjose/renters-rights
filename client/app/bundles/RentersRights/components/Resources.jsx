@@ -2,7 +2,6 @@ import React from 'react';
 import RentersLayout from './RentersLayout'
 import { tsvParse } from '../../../resources/test.js';
 import { resources } from '../../../resources/resources.js';
-import { small } from '../../../resources/small.js';
 import ResourceIndexItem from './ResourceIndexItem';
 
 export default class Resources extends React.Component {
