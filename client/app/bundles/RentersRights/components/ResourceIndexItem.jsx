@@ -22,7 +22,7 @@ export default class ResourceIndexItem extends React.Component {
         <p>{description}</p>
         <p>Contact: </p>
         <p><span className="glyphicon glyphicon-earphone"></span>   Phone: {phone}</p>
-        <p><span className="glyphicon glyphicon-home"></span>  Address: {address}</p>
+        <p>  Address: {address}</p>
       </div>
     )
   }
