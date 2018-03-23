@@ -1,21 +1,18 @@
-// import React from "react";
-// import { resources } from './resources.js';
-
 export const tsvParse = (str) => {
   const lines = str.split("\n");
   let resourceKeys = lines[1].split("\t");
-	let result = [];
+	let resourceList = [];
 
 	for (let i = 2; i < lines.length; i++) {
-	  let obj = {};
+	  let resource = {};
 		let currentLine = lines[i].split("\t");
 
 		for (let j = 0; j < resourceKeys.length; j++) {
-		  obj[resourceKeys[j]] = currentLine[j];
+		  resource[resourceKeys[j]] = currentLine[j];
 		}
 
-		result.push(obj);
+		resourceList.push(resource);
 	}
 
-	return result;
+	return resourceList;
 }
