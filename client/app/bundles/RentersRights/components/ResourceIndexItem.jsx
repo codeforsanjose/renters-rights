@@ -18,7 +18,7 @@ export default class ResourceIndexItem extends React.Component {
 
     return (
       <div>
-        <a href={website}><h3>{organization}</h3></a>
+        <a href={website} target="_blank"><h3>{organization}</h3></a>
         <p>{description}</p>
         <p>Contact: </p>
         <p><span className="glyphicon glyphicon-earphone"></span>   Phone: {phone}</p>
