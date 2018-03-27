@@ -14,24 +14,11 @@ export default class Resources extends React.Component {
       filter: 'none'
     };
 
-    this.handleAllClick = this.handleAllClick.bind(this);
-    this.handleLegalClick = this.handleLegalClick.bind(this);
-    this.handleShelterClick = this.handleShelterClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleAllClick(e) {
-    e.preventDefault();
-    this.setState({filter: 'none'});
-  }
-
-  handleLegalClick(e) {
-    e.preventDefault();
-    this.setState({filter: 'legal'});
-  }
-
-  handleShelterClick(e) {
-    e.preventDefault();
-    this.setState({filter: 'shelter'});
+  handleClick(filter) {
+    this.setState({filter})
   }
 
   filterResources() {
@@ -49,7 +36,7 @@ export default class Resources extends React.Component {
     return resourceList;
   }
 
-  findTitle() {
+  getTitle() {
     const { filter } = this.state;
     let title;
 
@@ -63,13 +50,9 @@ export default class Resources extends React.Component {
   render() {
    {/* locale setup - remove comment when app translation is ready. Also add locale={locale} to RentersLayout below
        const { locale } = this.props; */}
+    const filterProps = { handleClick: this.handleClick };
     const resourceList = this.filterResources();
-    const filterProps = {
-      handleAllClick: this.handleAllClick,
-      handleLegalClick: this.handleLegalClick,
-      handleShelterClick: this.handleShelterClick,
-    };
-    const title = this.findTitle();
+    const title = this.getTitle();
 
     return (
       <RentersLayout>
