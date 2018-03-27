@@ -5,11 +5,10 @@ import About from '../components/About';
 import RentCalculator from '../components/RentCalculator';
 import Shelter from '../components/Shelter';
 import LegalAid from '../components/LegalAid';
-import Resources from '../components/Resources';
+import Resources from '../components/resources/Resources';
 import ReportIssue from '../components/ReportIssue';
 import FindJurisdiction from '../components/FindJurisdiction';
 import RentIncrease from '../components/RentIncrease';
-import ResourceIndexItem from '../components/ResourceIndexItem';
 
 //import { addLocaleData } from 'react-intl';
 //import esLocaleData from 'react-intl/locale-data/es';
@@ -28,5 +27,4 @@ ReactOnRails.register({
   RentIncrease,
   Resources,
   FindJurisdiction,
-  ResourceIndexItem,
 });
