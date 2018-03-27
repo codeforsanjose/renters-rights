@@ -1,7 +1,7 @@
 import React from 'react';
 import RentersLayout from '../RentersLayout'
-import { tsvParse } from '../../../../resources/test.js';
-import { resources } from '../../../../resources/resources.js';
+import { tsvParse } from '../../../../resources/tsvParser';
+import { resources } from '../../../../resources/resources';
 import ResourceIndexItem from './ResourceIndexItem';
 import ResourceFilter from './ResourceFilter';
 import EmergencyResource from './EmergencyResource';
