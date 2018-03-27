@@ -42,19 +42,20 @@ export default class Resources extends React.Component {
     } else if (this.state.filter === 'shelter') {
       title = 'Shelter Information'
       resourceList = resourceList.filter( (row)=> {return row.filter_tags === 'Shelter'} );
-    } else if (this.state.filter === 'none') {
-      title = 'Legal and Shelter Information'
-      resourceList = resourceList;      
     }
+    console.log(resourceList)
+    //  else if (this.state.filter === 'none') {
+    //   title = 'Legal and Shelter Information'
+    //   resourceList = resourceList;      
+    // }
     return (
       <RentersLayout>
         <div className='content-container'>
-          <a onClick={this.handleShelterClick}  className="btn btn-sq-lg btn-shelter">
-            <br/><span className="glyphicon glyphicon-home"></span> <br/>  I Need Shelter
-          </a>
-          <a onClick={this.handleLegalClick} className="btn btn-sq-lg btn-legal">
-            <br/><span className="glyphicon glyphicon-question-sign"></span> <br/>I Need Legal Help
-          </a>      
+          <ul className="nav nav-pills">
+            <li className="active"><a data-toggle="pill" onClick={this.handleAllClick}  href="#menu1">All Information</a></li>
+            <li><a data-toggle="pill" onClick={this.handleLegalClick} href="#menu2">Legal Information</a></li>
+            <li><a data-toggle="pill" onClick={this.handleShelterClick} href="#menu2">Shelter Information</a></li>
+          </ul>
           <div className="row">
             <div className="col-md-9">
               <h2>{title}</h2>
@@ -79,6 +80,7 @@ export default class Resources extends React.Component {
     )
   }
 }
+
 
 
 
