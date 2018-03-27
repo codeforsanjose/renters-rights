@@ -15,6 +15,7 @@ export default class ResourceIndexItem extends React.Component {
       description,
       address,
     } = this.props.resource;
+    const homeSize = {fontSize: '2px'}; // for some reason is default to 750%
 
     return (
       <div>
@@ -22,7 +23,7 @@ export default class ResourceIndexItem extends React.Component {
         <p>{description}</p>
         <p>Contact: </p>
         <p><span className="glyphicon glyphicon-earphone"></span>   Phone: {phone}</p>
-        <p>  Address: {address}</p>
+        <p><span style={homeSize}className="glyphicon glyphicon-home"></span>  Address: {address}</p>
       </div>
     )
   }
