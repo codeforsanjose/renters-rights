@@ -11,10 +11,14 @@ export default class Resources extends React.Component {
     super(props);
 
     this.state = {
-      filter: 'none'
+      filter: 'all'
     };
 
     this.handleClick = this.handleClick.bind(this);
+  }
+
+  componentWillMount () {
+    this.setState({filter: this.props.filter})
   }
 
   handleClick(filter) {
@@ -40,7 +44,7 @@ export default class Resources extends React.Component {
     const { filter } = this.state;
     let title;
 
-    if (filter === 'none') title = 'All Resources';
+    if (filter === 'all') title = 'All Resources';
     if (filter === 'legal') title = 'Legal Information';
     if (filter === 'shelter') title = 'Shelter Information';
 
@@ -57,7 +61,7 @@ export default class Resources extends React.Component {
     return (
       <RentersLayout>
         <div className='content-container'>
-          <ResourceFilter {...filterProps} />
+          <ResourceFilter {...filterProps} currentActive={this.state.filter}/>
           <div className="row">
             <div className="col-md-9">
               <h2>{title}</h2>
