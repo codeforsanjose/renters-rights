@@ -6,20 +6,19 @@ export default class ResourceFilter extends React.Component {
   }
 
   render() {
-    const { handleClick } = this.props;
-
+    const { handleClick, currentActive } = this.props;
     return(
       <ul className="nav nav-pills">
-        <li className="active">
+        <li className= {currentActive === 'all' ? "active" : "inactive"}>
           <a
             data-toggle="pill"
-            onClick={ () => handleClick('none')}
+            onClick={ () => handleClick('all')}
             href="#menu1"
           >
             All Information
           </a>
         </li>
-        <li>
+        <li className= {currentActive === 'legal' ? "active" : "inactive"}>
           <a
             data-toggle="pill"
             onClick={ () => handleClick('legal')}
@@ -28,7 +27,7 @@ export default class ResourceFilter extends React.Component {
             Legal Information
           </a>
         </li>
-        <li>
+        <li className= {currentActive === 'shelter' ? "active" : "inactive"}>
           <a data-toggle="pill"
             onClick={ () => handleClick('shelter')}
             href="#menu2"
