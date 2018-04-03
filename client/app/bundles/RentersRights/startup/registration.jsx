@@ -3,9 +3,9 @@ import Home from '../components/Home';
 import Eviction from '../components/Eviction';
 import About from '../components/About';
 import RentCalculator from '../components/RentCalculator';
-import Shelter from '../components/Shelter';
-import LegalAid from '../components/LegalAid';
-import Resources from '../components/Resources';
+// import Shelter from '../components/Shelter';
+// import LegalAid from '../components/LegalAid';
+import Resources from '../components/resources/Resources';
 import ReportIssue from '../components/ReportIssue';
 import FindJurisdiction from '../components/FindJurisdiction';
 import RentIncrease from '../components/RentIncrease';
@@ -21,10 +21,8 @@ ReactOnRails.register({
   About,
   ReportIssue,
   Eviction,
-  Shelter,
-  LegalAid,
   RentCalculator,
   RentIncrease,
   Resources,
-  FindJurisdiction
+  FindJurisdiction,
 });
