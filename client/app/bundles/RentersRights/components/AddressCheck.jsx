@@ -1,6 +1,6 @@
 import React from 'react';
 import RentersLayout from './RentersLayout'
-import axios from 'axios';
+// import axios from 'axios';
 
 export default class AddressCheck extends React.Component {
 
@@ -16,7 +16,8 @@ export default class AddressCheck extends React.Component {
        state: '',
        city: '',
        zip: '',
-       totalUnits: ''
+       totalUnits: '',
+       yearBuilt: ''
      }
     /*
       Collect values in the input fields using onChange listeners
@@ -44,34 +45,35 @@ export default class AddressCheck extends React.Component {
      console.log(this.state.state);
      console.log(this.state.zip);
      console.log(this.state.totalUnits);
+     console.log(this.state.yearBuilt);
      // prevent the default behavior of redirecting away from the page
      event.preventDefault();
-     componentDidMount();
-     componentWillUnmount();
+     // componentDidMount();
+     // componentWillUnmount();
   }
 
 
-  addressCheck(key,address,citystatezip) {
-
-    key=$kws_id;
-    url="http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=#{$kws_id}&address=#{street}&citystatezip=#{citystatezip}";
-
-  }
-
-  componentDidMount() {
-    var _this = this;
-    var url = "http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=#{zwd_id}&address=#{street}&citystatezip=#{citystatezip}";
-    this.serverRequest =
-      axios
-        .get(url)
-        .then(function(result) {
-           console.log(result)
-        })
-  };
-
-  componentWillUnmount() {
-    this.serverRequest.abort();
-  };
+  // addressCheck(key,address,citystatezip) {
+  //
+  //   key=$kws_id;
+  //   url="http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=#{$kws_id}&address=#{street}&citystatezip=#{citystatezip}";
+  //
+  // }
+  //
+  // componentDidMount() {
+  //   var _this = this;
+  //   var url = "http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=#{zwd_id}&address=#{street}&citystatezip=#{citystatezip}";
+  //   this.serverRequest =
+  //     axios
+  //       .get(url)
+  //       .then(function(result) {
+  //          console.log(result)
+  //       })
+  // };
+  //
+  // componentWillUnmount() {
+  //   this.serverRequest.abort();
+  // };
 
   render(){
     return (
@@ -172,14 +174,46 @@ export default class AddressCheck extends React.Component {
                         name="totalUnits"
                         type="radio"
                         required="true"
-                        value="4orMore"
-                        checked={this.state.totalUnits === "4orMore" }
+                        value="4+"
+                        checked={this.state.totalUnits === "4+" }
                         onChange={this.handleChange}
                       />
                       4 or more. <em> I have more than three neighbors.</em>
                     </label>
                   </div>
                   <br/>
+                </div>
+              </div>
+
+              <h3> Approximately when was your building built? </h3>
+              <div className="form-group row">
+                <div className="container radio-buttons">
+                  <div className="radio">
+                    <label>
+                      <input
+                        name="yearBuilt"
+                        type="radio"
+                        required="true"
+                        value="before"
+                        checked={this.state.yearBuilt === "before"}
+                        onChange={this.handleChange}
+                      />
+                      Before September 7, 1979
+                    </label>
+                  </div>
+                  <div className="radio">
+                    <label>
+                      <input
+                        name="yearBuilt"
+                        type="radio"
+                        required="true"
+                        value="after"
+                        checked={this.state.yearBuilt === "after"}
+                        onChange={this.handleChange}
+                      />
+                      After September 7, 1979
+                    </label>
+                  </div>
                 </div>
               </div>
 
