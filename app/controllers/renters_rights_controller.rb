@@ -14,10 +14,10 @@ class RentersRightsController < ApplicationController
 
   def rent_increase
   end
-   
+
   def report_issue
   end
-   
+
   def find_jurisdiction
   end
 
@@ -30,11 +30,35 @@ class RentersRightsController < ApplicationController
 
   def legal_aid
   end
-  
+
   def shelter
   end
 
   def address_check
+  end
+
+  def address_check_post
+    if params[:city].strip.upcase == "SAN JOSE" && this.state.totalUnits == "4+" && this.state.yearBuilt == "before"
+      redirect_to '/renters-types'
+    elsif params[:city].strip.upcase == "SAN JOSE" && this.state.totalUnits == "3" && this.state.yearBuilt == "before"
+      redirect_to '/renters-ARO-TPO'
+    elsif params[:city].strip.upcase == "SAN JOSE" && this.state.totalUnits == "2"
+      redirect_to '/renters-duplex'
+    elsif params[:city].strip.upcase != "SAN JOSE"
+      redirect_to '/not-applicable'
+    end
+  end
+
+  def renters_types
+  end
+
+  def renters_ARO_TPO
+  end
+
+  def renters_duplex
+  end
+
+  def not_applicable
   end
 
   private

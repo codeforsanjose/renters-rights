@@ -11,6 +11,10 @@ import FindJurisdiction from '../components/FindJurisdiction';
 import RentIncrease from '../components/RentIncrease';
 import AddressCheck from '../components/AddressCheck';
 import ResourceIndexItem from '../components/ResourceIndexItem';
+import RentersTypes from '../components/RentersTypes';
+import RentersDuplex from '../components/RentersDuplex';
+import RentersAROTPO from '../components/RentersAROTPO';
+import NotApplicable from '../components/NotApplicable';
 
 //import { addLocaleData } from 'react-intl';
 //import esLocaleData from 'react-intl/locale-data/es';
@@ -22,6 +26,10 @@ ReactOnRails.register({
   Home,
   About,
   ReportIssue,
+  RentersTypes,
+  RentersDuplex,
+  RentersAROTPO,
+  NotApplicable,
   Eviction,
   RentCalculator,
   RentIncrease,
