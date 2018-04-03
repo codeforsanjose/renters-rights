@@ -9,7 +9,6 @@ export default function AddressCheck({
      <div className="content-container">
        <div className="page-header">
         </div>
-
        <div className="row">
          <form method="post">
            <h3> What is your address?</h3>

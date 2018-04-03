@@ -46,6 +46,8 @@ class RentersRightsController < ApplicationController
       redirect_to '/renters-duplex'
     elsif params[:city].strip.upcase != "SAN JOSE"
       redirect_to '/not-applicable'
+    else
+      redirect_to '/not-applicable'
     end
   end
 
