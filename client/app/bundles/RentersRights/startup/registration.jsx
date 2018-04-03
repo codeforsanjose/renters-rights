@@ -10,7 +10,7 @@ import ReportIssue from '../components/ReportIssue';
 import FindJurisdiction from '../components/FindJurisdiction';
 import RentIncrease from '../components/RentIncrease';
 import AddressCheck from '../components/AddressCheck';
-import ResourceIndexItem from '../components/ResourceIndexItem';
+import ResourceIndexItem from '../components/resources/ResourceIndexItem';
 import RentersTypes from '../components/RentersTypes';
 import RentersDuplex from '../components/RentersDuplex';
 import RentersAROTPO from '../components/RentersAROTPO';
@@ -35,6 +35,6 @@ ReactOnRails.register({
   RentIncrease,
   Resources,
   FindJurisdiction,
-  AddressCheck
+  AddressCheck,
   ResourceIndexItem,
 });
