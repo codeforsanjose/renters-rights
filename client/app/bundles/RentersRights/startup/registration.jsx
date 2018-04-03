@@ -3,12 +3,19 @@ import Home from '../components/Home';
 import Eviction from '../components/Eviction';
 import About from '../components/About';
 import RentCalculator from '../components/RentCalculator';
-import Shelter from '../components/Shelter';
-import LegalAid from '../components/LegalAid';
-import Resources from '../components/Resources';
+// import Shelter from '../components/Shelter';
+// import LegalAid from '../components/LegalAid';
+import Resources from '../components/resources/Resources';
 import ReportIssue from '../components/ReportIssue';
 import FindJurisdiction from '../components/FindJurisdiction';
 import RentIncrease from '../components/RentIncrease';
+import AddressCheck from '../components/AddressCheck';
+import ResourceIndexItem from '../components/resources/ResourceIndexItem';
+import RentersTypes from '../components/RentersTypes';
+import RentersDuplex from '../components/RentersDuplex';
+import RentersTypes2 from '../components/RentersTypes2';
+import NotApplicable from '../components/NotApplicable';
+import AddressType from '../components/AddressType';
 
 //import { addLocaleData } from 'react-intl';
 //import esLocaleData from 'react-intl/locale-data/es';
@@ -19,12 +26,17 @@ import RentIncrease from '../components/RentIncrease';
 ReactOnRails.register({
   Home,
   About,
+  AddressCheck,
+  AddressType,
   ReportIssue,
+  RentersTypes,
+  RentersDuplex,
+  RentersTypes2,
+  NotApplicable,
   Eviction,
-  Shelter,
-  LegalAid,
   RentCalculator,
   RentIncrease,
   Resources,
-  FindJurisdiction
+  FindJurisdiction,
+  ResourceIndexItem,
 });
