@@ -15,6 +15,7 @@ export default class AddressCheck extends React.Component {
        state: '',
        city: '',
        zip: '',
+       totalUnits: ''
      }
     /*
       Collect values in the input fields using onChange listeners
@@ -36,34 +37,17 @@ export default class AddressCheck extends React.Component {
    }
 
    handleSubmit(event) {
-     // console.log(this.state.street);
-     // console.log(this.state.aptOrUnit);
-     // console.log(this.state.city);
-     // console.log(this.state.state);
-     // console.log(this.state.zip);
+     console.log(this.state.street);
+     console.log(this.state.aptOrUnit);
+     console.log(this.state.city);
+     console.log(this.state.state);
+     console.log(this.state.zip);
+     console.log(this.state.totalUnits);
+     // prevent the default behavior of redirecting away from the page
      event.preventDefault();
+
    }
 
-
-  // addressCheck(key,address,citystatezip) {
-  //
-  //   key="X1-ZWz18q9c4vs1e3_af1tq";
-  //   url="http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=#{key}&address=#{address}&citystatezip=#{citystatezip}";
-  //   $.getJSON(url);
-  //
-  // }
-
-  /*
-  componentDidMount() {
-    this.Address();
-  }
-
-  Address() {
-    $.getJSON('https://randomuser.me/api/')
-      .then(({ results }) => this.setState({ person: results }));
-  }
-
-  */
   render(){
     return (
       <RentersLayout>
@@ -81,6 +65,7 @@ export default class AddressCheck extends React.Component {
                     className="form-control"
                     name="street"
                     type="text"
+                    required="true"
                     onChange={this.handleChange}
                   />
                 </div>
@@ -101,6 +86,7 @@ export default class AddressCheck extends React.Component {
                     className="form-control"
                     name="city"
                     type="text"
+                    required="true"
                     onChange={this.handleChange}
                   />
                 </div>
@@ -109,6 +95,7 @@ export default class AddressCheck extends React.Component {
                   <input
                     className="form-control"
                     name="state"
+                    required="true"
                     type="text"
                     onChange={this.handleChange}
                   />
@@ -117,12 +104,60 @@ export default class AddressCheck extends React.Component {
                 <div className="col-sm-3 col-md-3">
                   <input
                     className="form-control"
+                    required="true"
                     name="city"
                     type="text"
                     onChange={this.handleChange}
                   />
                 </div>
               </div>
+
+              <h3> How many units are in your building? </h3>
+              <div className="form-group row">
+                <div className="container radio-buttons">
+                  <div class="radio">
+                    <label>
+                      <input
+                        name="totalUnits"
+                        type="radio"
+                        required="true"
+                        value="2"
+                        checked={this.state.totalUnits === "2"}
+                        onChange={this.handleChange}
+                      />
+                      2 units. <em>It is me plus one neighbor.</em>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input
+                        name="totalUnits"
+                        type="radio"
+                        required="true"
+                        value="3"
+                        checked={this.state.totalUnits === "3"}
+                        onChange={this.handleChange}
+                      />
+                      3 units. <em>It is me plus two neighbors.</em>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input
+                        name="totalUnits"
+                        type="radio"
+                        required="true"
+                        value="4orMore"
+                        checked={this.state.totalUnits === "4orMore" }
+                        onChange={this.handleChange}
+                      />
+                      4 or more. <em> I have more than three neighbors.</em>
+                    </label>
+                  </div>
+                  <br/>
+                </div>
+              </div>
+
               <button
                 className="btn btn-primary"
                 type="submit"
