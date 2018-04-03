@@ -75,16 +75,16 @@ export default class Home extends React.Component {
        <RentersLayout>
          <div className="content-container">
            <div className="page-header text-center">
-             <h3>Helping renters in San José, California understand the laws and programs in place to protect them.
+             <h3>Know Your Rights as a San José, California renter.
              </h3>
            </div>
            <div className="row">
               <div className=" col-md-12 text-center">
                 <p>
-                  <a href="/eviction" className="btn btn-sq-lg btn-eviction">
+                  <a href="/address-check" className="btn btn-sq-lg btn-eviction">
                     <br/><span className="glyphicon glyphicon-file"></span> <br/>I Am Getting Evicted
                   </a>
-                  <a href="/rent-increase" className="btn btn-sq-lg btn-renters">
+                  <a href="/address-check" className="btn btn-sq-lg btn-renters">
                     <br/><span className="glyphicon glyphicon-signal"></span> <br/>My Rent Is Increasing
                   </a>
                   <a href="/resources/shelter" className="btn btn-sq-lg btn-shelter">

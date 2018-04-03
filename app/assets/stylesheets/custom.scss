@@ -82,6 +82,7 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 body {
   padding-top: 70px;
   font-family: $body-font;
+  font-size: 16px;
   background-color: $white;
 }
 
@@ -204,6 +205,3 @@ a.list-group-item .list-group-item-heading {
   font-family: $logo-font;
   text-align: center;
 }
-
-
-
