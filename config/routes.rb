@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # reference: http://guides.rubyonrails.org/routing.html
   get '/about', to: 'renters_rights#about'
   get '/address-type', to: 'renters_rights#address_type'
-  post '/address-type', to: 'renters_rights#address)type_post'
+  post '/address-type', to: 'renters_rights#address_type_post'
   get '/eviction', to: 'renters_rights#eviction'
   get '/address-check', to: 'renters_rights#address_check'
   post '/address-check', to: 'renters_rights#address_check_post'
