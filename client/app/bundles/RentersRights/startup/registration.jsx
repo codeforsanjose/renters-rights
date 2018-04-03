@@ -10,6 +10,7 @@ import ReportIssue from '../components/ReportIssue';
 import FindJurisdiction from '../components/FindJurisdiction';
 import RentIncrease from '../components/RentIncrease';
 import AddressCheck from '../components/AddressCheck';
+import ResourceIndexItem from '../components/ResourceIndexItem';
 
 //import { addLocaleData } from 'react-intl';
 //import esLocaleData from 'react-intl/locale-data/es';
@@ -29,4 +30,5 @@ ReactOnRails.register({
   Resources,
   FindJurisdiction,
   AddressCheck
+  ResourceIndexItem,
 });
