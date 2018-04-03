@@ -36,6 +36,7 @@ export default class AddressCheck extends React.Component {
 
    }
 
+
    handleSubmit(event) {
      console.log(this.state.street);
      console.log(this.state.aptOrUnit);
@@ -45,8 +46,8 @@ export default class AddressCheck extends React.Component {
      console.log(this.state.totalUnits);
      // prevent the default behavior of redirecting away from the page
      event.preventDefault();
-
    }
+
 
   render(){
     return (
@@ -115,7 +116,7 @@ export default class AddressCheck extends React.Component {
               <h3> How many units are in your building? </h3>
               <div className="form-group row">
                 <div className="container radio-buttons">
-                  <div class="radio">
+                  <div className="radio">
                     <label>
                       <input
                         name="totalUnits"
@@ -128,7 +129,7 @@ export default class AddressCheck extends React.Component {
                       2 units. <em>It is me plus one neighbor.</em>
                     </label>
                   </div>
-                  <div class="radio">
+                  <div className="radio">
                     <label>
                       <input
                         name="totalUnits"
@@ -141,7 +142,7 @@ export default class AddressCheck extends React.Component {
                       3 units. <em>It is me plus two neighbors.</em>
                     </label>
                   </div>
-                  <div class="radio">
+                  <div className="radio">
                     <label>
                       <input
                         name="totalUnits"
