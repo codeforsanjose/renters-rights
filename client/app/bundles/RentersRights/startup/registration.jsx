@@ -13,8 +13,9 @@ import AddressCheck from '../components/AddressCheck';
 import ResourceIndexItem from '../components/resources/ResourceIndexItem';
 import RentersTypes from '../components/RentersTypes';
 import RentersDuplex from '../components/RentersDuplex';
-import RentersAROTPO from '../components/RentersAROTPO';
+import RentersTypes2 from '../components/RentersTypes2';
 import NotApplicable from '../components/NotApplicable';
+import AddressType from '../components/AddressType';
 
 //import { addLocaleData } from 'react-intl';
 //import esLocaleData from 'react-intl/locale-data/es';
@@ -25,16 +26,17 @@ import NotApplicable from '../components/NotApplicable';
 ReactOnRails.register({
   Home,
   About,
+  AddressCheck,
+  AddressType,
   ReportIssue,
   RentersTypes,
   RentersDuplex,
-  RentersAROTPO,
+  RentersTypes2,
   NotApplicable,
   Eviction,
   RentCalculator,
   RentIncrease,
   Resources,
   FindJurisdiction,
-  AddressCheck,
   ResourceIndexItem,
 });

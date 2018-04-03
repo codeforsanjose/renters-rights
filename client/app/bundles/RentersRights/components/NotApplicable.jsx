@@ -1,12 +1,9 @@
 import React from 'react';
-import RentersLayout from './RentersLayout'
+import RentersLayout from './RentersLayout';
 
-export default class NotApplicable extends React.Component {
-
-  render() {
-
-  const {} = this.props;
-
+export default function NotApplicable({
+  className,
+}) {
   return (
       <RentersLayout>
         <div className="content-container">
@@ -29,4 +26,3 @@ export default class NotApplicable extends React.Component {
       </RentersLayout>
     )
   }
-}
