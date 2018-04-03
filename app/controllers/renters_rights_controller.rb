@@ -50,20 +50,18 @@ class RentersRightsController < ApplicationController
   end
 
   def address_type_post
-    puts "city :" +  params[:totalUnits]
-    puts "city :" +  params[:yearBuilt]
-    puts "**********************************"
-    puts "city :" +  params[:fourOrMore]
-    puts "city :" +  params[:before1979]
-    puts "city :" +  params[:threeUnits]
-    puts "city :" +  params[:twoUnits]
-    puts "city :" +  params[:after1979]
-    if params[:fourOrMore] == "on" && params[:yearBuilt] == "yes"
+    puts "totalUnits :" +  params[:totalUnits]
+    puts "yearBuilt :" +  params[:yearBuilt]
+    if params[:yearBuilt] == "no" && params[:totalUnits] == "threeUnits" || params[:totalUnits] == "fourOrMore"
+        redirect_to '/not-applicable'
+    elsif  params[:totalUnits] == "fourOrMore" && params[:yearBuilt] == "yes"
         redirect_to '/renters-types'
-    elsif params[:threeUnits] == "on" && params[:yearBuilt] == "no"
+    elsif params[:totalUnits] == "threeUnits" && params[:yearBuilt] == "no"
         redirect_to '/renters-types-2'
-    elsif params[:twoUnits]== "on"
+    elsif params[:totalUnits] == "twoUnits"
         redirect_to '/renters-duplex'
+    elsif params[:yearBuilt] == "no" && params[:totalUnits] == "twoUnits"
+        redirect_to '/not-applicable'
     else
       redirect_to '/not-applicable'
     end

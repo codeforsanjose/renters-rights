@@ -10,11 +10,13 @@ export default function AddressType({
        <div className="page-header">
        </div>
        <div className="row">
-         <form method="post">
+         <form
+           className="form-horizontal"
+           method="post">
            <h3> How many units are in your building? </h3>
            <div className="form-group row">
-             <div className="container checkbox">
-               <div className="radio">
+             <div className="checkbox" required="true">
+
                  <label>
                    <input
                      name="totalUnits"
@@ -23,8 +25,7 @@ export default function AddressType({
                    />
                    2 units. <em>It is me plus one neighbor.</em>
                  </label>
-               </div>
-               <div className="radio">
+
                  <label>
                    <input
                      name="totalUnits"
@@ -33,8 +34,7 @@ export default function AddressType({
                    />
                    3 units. <em>It is me plus two neighbors.</em>
                  </label>
-               </div>
-               <div className="radio">
+
                  <label>
                    <input
                      name="totalUnits"
@@ -43,15 +43,14 @@ export default function AddressType({
                    />
                    4 or more. <em> I have more than three neighbors.</em>
                  </label>
-               </div>
+
                <br/>
              </div>
            </div>
 
            <h3> Was your building built before September 7, 1979?</h3>
            <div className="form-group row">
-             <div className="container checkbox">
-               <div className="radio">
+             <div className="checkbox" required="true">
                  <label>
                    <input
                      name="yearBuilt"
@@ -60,8 +59,7 @@ export default function AddressType({
                    />
                    Yes, Before September 7, 1979
                  </label>
-               </div>
-               <div className="radio">
+
                  <label>
                    <input
                      name="yearBuilt"
@@ -70,7 +68,7 @@ export default function AddressType({
                    />
                    No, After September 7, 1979
                  </label>
-               </div>
+
              </div>
            </div>
            <input name="authenticity_token" type="hidden" value={token} />
