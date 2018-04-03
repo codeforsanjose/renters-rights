@@ -1,5 +1,6 @@
 import React from 'react';
 import RentersLayout from './RentersLayout'
+import axios from 'axios';
 
 export default class AddressCheck extends React.Component {
 
@@ -36,7 +37,6 @@ export default class AddressCheck extends React.Component {
 
    }
 
-
    handleSubmit(event) {
      console.log(this.state.street);
      console.log(this.state.aptOrUnit);
@@ -46,8 +46,32 @@ export default class AddressCheck extends React.Component {
      console.log(this.state.totalUnits);
      // prevent the default behavior of redirecting away from the page
      event.preventDefault();
-   }
+     componentDidMount();
+     componentWillUnmount();
+  }
 
+
+  addressCheck(key,address,citystatezip) {
+
+    key=$kws_id;
+    url="http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=#{$kws_id}&address=#{street}&citystatezip=#{citystatezip}";
+
+  }
+
+  componentDidMount() {
+    var _this = this;
+    var url = "http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=#{zwd_id}&address=#{street}&citystatezip=#{citystatezip}";
+    this.serverRequest =
+      axios
+        .get(url)
+        .then(function(result) {
+           console.log(result)
+        })
+  };
+
+  componentWillUnmount() {
+    this.serverRequest.abort();
+  };
 
   render(){
     return (
