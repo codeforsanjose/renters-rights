@@ -1,13 +1,13 @@
 {/* Locale set up. Remove comment when app is translated.
   import { FormattedMessage } from 'react-intl';
-  */} 
+  */}
 import React from 'react';
 import RentersLayout from './RentersLayout'
 
-{/* Locale set up. Remove comment when app is translated. 
+{/* Locale set up. Remove comment when app is translated.
 
 export default class Home extends React.Component {
-    render () { 
+    render () {
     const { locale } = this.props;
 
     return (
@@ -51,7 +51,7 @@ export default class Home extends React.Component {
                 </a>
               </div>
                <div className="list-group">
-  
+
                 <a href={`/${locale}/resources`} className="list-group-item list-group-item-danger">
                   <h4 className="list-group-item-heading">
                     <FormattedMessage
@@ -65,29 +65,29 @@ export default class Home extends React.Component {
           </div>
         </div>
       </RentersLayout>
-    */} 
+    */}
 
   export default class Home extends React.Component {
    render() {
      const { } = this.props;
- 
+
      return (
        <RentersLayout>
          <div className="content-container">
            <div className="page-header text-center">
-             <h3>Helping renters in San José, California understand the laws and programs in place to protect them.
+             <h3>Know Your Rights as a San José, California renter.
              </h3>
            </div>
            <div className="row">
               <div className=" col-md-12 text-center">
                 <p>
-                  <a href="/eviction" className="btn btn-sq-lg btn-eviction">
+                  <a href="/address-check" className="btn btn-sq-lg btn-eviction">
                     <br/><span className="glyphicon glyphicon-file"></span> <br/>I Am Getting Evicted
                   </a>
-                  <a href="/rent-increase" className="btn btn-sq-lg btn-renters">
+                  <a href="/address-check" className="btn btn-sq-lg btn-renters">
                     <br/><span className="glyphicon glyphicon-signal"></span> <br/>My Rent Is Increasing
                   </a>
-                  <a href="/shelter" className="btn btn-sq-lg btn-shelter">
+                  <a href="/resources/shelter" className="btn btn-sq-lg btn-shelter">
                    <br/><span className="glyphicon glyphicon-home"></span> <br/>  I Need Shelter
                   </a>
                   <a href="/report-issue" className="btn btn-sq-lg btn-issue">
@@ -96,7 +96,7 @@ export default class Home extends React.Component {
                   <a href="/find-jurisdiction" className="btn btn-sq-lg btn-location">
                     <br/><span className="glyphicon glyphicon-map-marker"></span> <br/>Do I Live Within San Jose?
                   </a>
-                  <a href="/legal-aid" className="btn btn-sq-lg btn-legal">
+                  <a href="/resources/legal" className="btn btn-sq-lg btn-legal">
                     <br/><span className="glyphicon glyphicon-question-sign"></span> <br/>I Need Legal Help
                   </a>
                 </p>
