@@ -190,8 +190,8 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
-  httparty (= 0.16.0)
   exception_handler (= 0.7.7.0)
+  httparty (= 0.16.0)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
