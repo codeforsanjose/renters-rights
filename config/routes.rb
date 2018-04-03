@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   get '/report-issue', to: 'renters_rights#report_issue'
   get '/find-jurisdiction', to: 'renters_rights#find_jurisdiction'
   get '/rent-increase', to: 'renters_rights#rent_increase'
-
+  get '/not-applicable' to: 'renters_rights#not_applicable'
+  get '/renters_types' to: 'renters_rights#renters_types'
+  get '/renters_aro_tpo' to: 'renters_rights#renters_aro_tpo'
+  get '/renters_duplex' to: 'renters_rights#renters_duplex'
   get '/address-check', to: 'renters_rights#address_check'
   # get '/:locale', to: 'renters_rights#index'
   # get '/:locale/about', to: 'renters_rights#faq'
