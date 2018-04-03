@@ -9,6 +9,7 @@ export default function AddressCheck({
      <div className="content-container">
        <div className="page-header">
         </div>
+
        <div className="row">
          <form method="post">
            <h3> What is your address?</h3>
@@ -70,7 +71,7 @@ export default function AddressCheck({
                      name="totalUnits"
                      type="radio"
                      required="true"
-                     value="2"
+                     value="two"
                    />
                    2 units. <em>It is me plus one neighbor.</em>
                  </label>
@@ -81,7 +82,7 @@ export default function AddressCheck({
                      name="totalUnits"
                      type="radio"
                      required="true"
-                     value="3"
+                     value="three"
                    />
                    3 units. <em>It is me plus two neighbors.</em>
                  </label>
@@ -92,7 +93,7 @@ export default function AddressCheck({
                      name="totalUnits"
                      type="radio"
                      required="true"
-                     value="4+"
+                     value="fourOrMore"
                    />
                    4 or more. <em> I have more than three neighbors.</em>
                  </label>
@@ -110,7 +111,7 @@ export default function AddressCheck({
                      name="yearBuilt"
                      type="radio"
                      required="true"
-                     value="before"
+                     value="before1979"
                    />
                    Before September 7, 1979
                  </label>
@@ -121,7 +122,7 @@ export default function AddressCheck({
                      name="yearBuilt"
                      type="radio"
                      required="true"
-                     value="after"
+                     value="after1979"
                    />
                    After September 7, 1979
                  </label>

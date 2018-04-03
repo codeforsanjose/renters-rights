@@ -38,17 +38,14 @@ class RentersRightsController < ApplicationController
   end
 
   def address_check_post
-    if params[:city].strip.upcase == "SAN JOSE" && params[:totalUnits]== "4+" && params[:yearBuilt] == "before"
+    if params[:city].strip.upcase == "SAN JOSE" && params[:fourOrMore]== "on" && params[:before1979] == "on"
       redirect_to '/renters-types'
-    elsif params[:city].strip.upcase == "SAN JOSE" && params[:totalUnits]== "3" && params[:yearBuilt] == "before"
+    elsif params[:city].strip.upcase == "SAN JOSE" && params[:three]== "on" && params[:before1979] == "on"
       redirect_to '/renters-ARO-TPO'
-    elsif params[:city].strip.upcase == "SAN JOSE" && params[:totalUnits]== "2"
+    elsif params[:city].strip.upcase == "SAN JOSE" && params[:two]== "on"
       redirect_to '/renters-duplex'
-    elsif params[:city].strip.upcase != "SAN JOSE"
-      redirect_to '/not-applicable'
-    else
-      redirect_to '/not-applicable'
     end
+    redirect_to '/not-applicable'
   end
 
   def renters_types
