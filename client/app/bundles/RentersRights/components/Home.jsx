@@ -81,10 +81,10 @@ export default class Home extends React.Component {
            <div className="row">
               <div className=" col-md-12 text-center">
                 <p>
-                  <a href="/address-check" className="btn btn-sq-lg btn-eviction">
+                  <a href="/eviction" className="btn btn-sq-lg btn-eviction">
                     <br/><span className="glyphicon glyphicon-file"></span> <br/>I Am Getting Evicted
                   </a>
-                  <a href="/address-check" className="btn btn-sq-lg btn-renters">
+                  <a href="/rent-increase" className="btn btn-sq-lg btn-renters">
                     <br/><span className="glyphicon glyphicon-signal"></span> <br/>My Rent Is Increasing
                   </a>
                   <a href="/resources/shelter" className="btn btn-sq-lg btn-shelter">
