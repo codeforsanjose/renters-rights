@@ -1,6 +1,6 @@
 module RentersRightsHelper
 
-  def getInfo(address,citystatezip,key="X1-ZWz18q9c4vs1e3_af1tq")
+  def getInfo(address,citystatezip,key=kws_id)
     url="http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=#{key}&address=#{address}&citystatezip=#{citystatezip}"
     puts url
     page=HTTParty.get(url)
