@@ -48,10 +48,40 @@ class RentersRightsController < ApplicationController
     citystatezip=params[:city]+"%2C"+params[:state]
     puts "citystatezip" + citystatezip
 
+    # [type,useCode,yearBuilt]
     if params[:city].strip.upcase == "SAN JOSE"
       info=getInfo(params[:street],citystatezip)
       binding.pry
-      # [useCode,yearBuilt,bedrooms]
+      case info[0] #type
+        when "neighborhood"
+          case info[1] #useCode
+            when "MultiFamily5Plus"
+              if info[2]<1979
+                #display PAGE
+
+              else 
+                #handle error
+              end 
+            when "Triplex"
+              if info[2]<1979
+                #display PAGE
+              else 
+                #handle error
+              end 
+            when "Quadruplex"
+              #handle error
+            when "MultiFamily2To4"
+              #display ASK FORM
+            when "Condominium"
+              #display ASK 
+            else 
+        end
+        when "city"
+          #GEN Page 
+        else 
+          #handle error
+      end 
+
      
       info=getInfo(address,citystatezip)
       redirect_to '/address-type'
