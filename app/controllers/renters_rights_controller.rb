@@ -110,6 +110,9 @@ class RentersRightsController < ApplicationController
   def not_applicable
   end
 
+  def housing_discrimination
+  end
+
   private
 
   def path_to_asset(asset)

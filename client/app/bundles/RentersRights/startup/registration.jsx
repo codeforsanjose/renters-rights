@@ -16,6 +16,7 @@ import RentersDuplex from '../components/RentersDuplex';
 import RentersTypes2 from '../components/RentersTypes2';
 import NotApplicable from '../components/NotApplicable';
 import AddressType from '../components/AddressType';
+import HousingDiscrimination from '../components/HousingDiscrimination';
 
 //import { addLocaleData } from 'react-intl';
 //import esLocaleData from 'react-intl/locale-data/es';
@@ -39,4 +40,5 @@ ReactOnRails.register({
   Resources,
   FindJurisdiction,
   ResourceIndexItem,
+  HousingDiscrimination
 });

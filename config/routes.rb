@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get '/renters-types', to: 'renters_rights#renters_types'
   get '/renters-types-2', to: 'renters_rights#renters_types_2'
   get '/renters-duplex', to: 'renters_rights#renters_duplex'
+  get '/housing-discrimination', to: 'renters_rights#housing_discrimination'
   # get '/:locale', to: 'renters_rights#index'
   # get '/:locale/about', to: 'renters_rights#faq'
   # get '/:locale/renters', to: 'renters_rights#renters'
