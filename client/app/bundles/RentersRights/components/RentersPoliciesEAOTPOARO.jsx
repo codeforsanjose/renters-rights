@@ -1,7 +1,7 @@
 import React from 'react';
 import RentersLayout from './RentersLayout';
 
-export default function RentersTypes({
+export default function RentersPoliciesEAOTPOARO({
   className,
 }) {
   return (
