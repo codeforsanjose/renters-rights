@@ -51,22 +51,16 @@ class RentersRightsController < ApplicationController
     # [type,useCode,yearBuilt]
     if params[:city].strip.upcase == "SAN JOSE"
       info=getInfo(params[:street],citystatezip)
-      binding.pry
       case info[0] #type
         when "neighborhood"
           case info[1] #useCode
             when "MultiFamily5Plus"
               if info[2]<1979
                 #display PAGE
-
-              else 
-                #handle error
               end 
             when "Triplex"
               if info[2]<1979
                 #display PAGE
-              else 
-                #handle error
               end 
             when "Quadruplex"
               #handle error
@@ -75,15 +69,15 @@ class RentersRightsController < ApplicationController
             when "Condominium"
               #display ASK 
             else 
+
+            end
         end
         when "city"
           #GEN Page 
         else 
           #handle error
+        end
       end 
-
-     
-      info=getInfo(address,citystatezip)
       redirect_to '/address-type'
     else
       redirect_to '/not-applicable'
