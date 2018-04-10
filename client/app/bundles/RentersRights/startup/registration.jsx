@@ -11,10 +11,11 @@ import FindJurisdiction from '../components/FindJurisdiction';
 import RentIncrease from '../components/RentIncrease';
 import AddressCheck from '../components/AddressCheck';
 import ResourceIndexItem from '../components/resources/ResourceIndexItem';
-import RentersTypes from '../components/RentersTypes';
-import RentersDuplex from '../components/RentersDuplex';
-import RentersTypes2 from '../components/RentersTypes2';
-import NotApplicable from '../components/NotApplicable';
+import RentersPolicies_TPOARO from '../components/RentersPoliciesTPOARO';
+import RentersPolicies_General from '../components/RentersPoliciesGeneral';
+import RentersPolicies_TPO from '../components/RentersPoliciesTPO';
+import RentersPolicies_MHO from '../components/RentersPoliciesMHO';
+import RentersPolicies_EAOTPOARO from '../components/RentersPoliciesEAOTPOARO';
 import AddressType from '../components/AddressType';
 
 //import { addLocaleData } from 'react-intl';
@@ -29,10 +30,11 @@ ReactOnRails.register({
   AddressCheck,
   AddressType,
   ReportIssue,
-  RentersTypes,
-  RentersDuplex,
-  RentersTypes2,
-  NotApplicable,
+  RentersPolicies_General,
+  RentersPolicies_TPO,
+  RentersPolicies_MHO,
+  RentersPolicies_TPOARO,
+  RentersPolicies_EAOTPOARO,
   Eviction,
   RentCalculator,
   RentIncrease,
