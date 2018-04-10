@@ -16,9 +16,8 @@ export default class TenantProtectionOrdinance extends React.Component {
       <RentersLayout>
         <div className="content-container language-paragraph">
           <div className="page-header">
-            <h1>Determine If You Live Within San José limits </h1>
+            <h1>Tenant Protection Ordinance (TPO)</h1>
           </div>
-          <h3>Tenant Protection Ordinance (TPO)</h3>
 
                   <p>The City of San José Tenant Protection Ordinance (TPO) outlines landlord responsibilities and tenant rights regarding notices to terminate for properties covered by the ordinance. </p>
                   <br/>

@@ -15,7 +15,9 @@ export default class EllisActOrdinance extends React.Component {
   return (
       <RentersLayout>
         <div className="content-container language-paragraph">
-          <h3>Ellis Act Ordinance</h3>
+           <div className="page-header">
+            <h1>Ellis Act Ordinance</h1>
+          </div>
                   <div className="panel-group" id="accordion">
                     <p>The City of San José Ellis Act Ordinance provides requirements for landlords removing apartments covered by the ordinance from the rental housing market.</p>
                     
