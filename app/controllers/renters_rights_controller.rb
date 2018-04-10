@@ -95,11 +95,11 @@ class RentersRightsController < ApplicationController
       redirect_to '/renters-policies-TPOARO' # applies to TPO and ARO
     elsif params[:totalUnits] == "twoUnits" # duplexes are not covered by San Jose policies ARO, EAO, TPO or MHO
       redirect_to '/renters-policies-general'
-    elsif params[:typeOfHome] == "guestRoom" && params[:totalUnits] == "threeUnits" || params[:totalUnits] == "fourUnits"
+    elsif params[:typeOfHome] == "guestRoom" && params[:totalUnits] == "threeUnits" || params[:totalUnits] == "fourUnits" || params[:totalUnits] == "oneUnit"
       redirect_to '/renters-policies-TPO'
-    elsif params[:typeOfHome] == "guestHouse" && params[:totalUnits] == "threeUnits" || params[:totalUnits] == "fourUnits"
+    elsif params[:typeOfHome] == "guestHouse" && params[:totalUnits] == "threeUnits" || params[:totalUnits] == "fourUnits" || params[:totalUnits] == "oneUnit"
       redirect_to '/renters-policies-TPO' 
-    elsif params[:typeOfHome] == "unpermittedUnit" && params[:totalUnits] == "threeUnits" || params[:totalUnits] == "fourUnits"
+    elsif params[:typeOfHome] == "unpermittedUnit" && params[:totalUnits] == "threeUnits" || params[:totalUnits] == "fourUnits" || params[:totalUnits] == "oneUnit"
       redirect_to '/renters-policies-TPO'
     else 
       redirect_to '/renters-policies-general'
