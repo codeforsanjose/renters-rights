@@ -44,11 +44,12 @@ class RentersRightsController < ApplicationController
   def address_check_post
     puts "city :" +  params[:city]
     puts "Address: " + params[:street]
+    address = params[:street] 
     citystatezip=params[:city]+"%2C"+params[:state]
     puts "citystatezip" + citystatezip
 
     if params[:city].strip.upcase == "SAN JOSE"
-      info=getInfo(params[:street],citystatezip)
+      info=getInfo(address,citystatezip)
       redirect_to '/address-type'
     else
       redirect_to '/not-applicable'
