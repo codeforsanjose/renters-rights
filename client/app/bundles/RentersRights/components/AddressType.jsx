@@ -16,6 +16,15 @@ export default function AddressType({
            <h3> How many units are in your building? </h3>
            <div className="form-group row">
              <div className="checkbox" required="true">
+                <label>
+                   <input
+                     name="totalUnits"
+                     type="radio"
+                     value="oneUnit"
+                   />
+                   1 unit
+                 </label>
+
 
                  <label>
                    <input
@@ -23,7 +32,7 @@ export default function AddressType({
                      type="radio"
                      value="twoUnits"
                    />
-                   2 units. <em>It is me plus one neighbor.</em>
+                   2 units
                  </label>
 
                  <label>
@@ -32,7 +41,7 @@ export default function AddressType({
                      type="radio"
                      value="threeUnits"
                    />
-                   3 units. <em>It is me plus two neighbors.</em>
+                   3 units
                  </label>
 
                  <label>
@@ -41,32 +50,41 @@ export default function AddressType({
                      type="radio"
                      value="fourOrMore"
                    />
-                   4 or more. <em> I have more than three neighbors.</em>
+                   4 or more units
                  </label>
 
                <br/>
              </div>
            </div>
 
-           <h3> Was your building built before September 7, 1979?</h3>
+           <h3> Do you live in any of the following types of home?</h3>
            <div className="form-group row">
-             <div className="checkbox" required="true">
+             <div className="checkbox">
                  <label>
                    <input
-                     name="yearBuilt"
+                     name="typeOfHome"
                      type="radio"
-                     value="yes"
+                     value="guestRoom"
                    />
-                   Yes, Before September 7, 1979
+                   Guest Room
                  </label>
 
                  <label>
                    <input
-                     name="yearBuilt"
+                     name="typeOfHome"
                      type="radio"
-                     value="no"
+                     value="guestHouse"
                    />
-                   No, After September 7, 1979
+                   Guest House
+                 </label>
+
+                 <label>
+                   <input
+                     name="typeOfHome"
+                     type="radio"
+                     value="unpermittedUnit"
+                   />
+                   Unpermitted Unit: a structure or parts of a structure that are being rented as a home, residence, or sleeping place, where the use is not authorized, permitted, or otherwise approved by the City of San Jose
                  </label>
 
              </div>
