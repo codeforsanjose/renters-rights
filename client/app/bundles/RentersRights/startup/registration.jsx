@@ -17,6 +17,12 @@ import RentersPolicies_TPO from '../components/RentersPoliciesTPO';
 import RentersPolicies_MHO from '../components/RentersPoliciesMHO';
 import RentersPolicies_EAOTPOARO from '../components/RentersPoliciesEAOTPOARO';
 import AddressType from '../components/AddressType';
+import HousingDiscrimination from '../components/HousingDiscrimination';
+import MobileHomeOrdinance from '../components/MobileHomeOrdinance';
+import EllisActOrdinance from '../components/EllisActOrdinance';
+import TenantProtectionOrdinance from '../components/TenantProtectionOrdinance';
+import ApartmentRentOrdinance from '../components/ApartmentRentOrdinance';
+
 
 //import { addLocaleData } from 'react-intl';
 //import esLocaleData from 'react-intl/locale-data/es';
@@ -41,4 +47,9 @@ ReactOnRails.register({
   Resources,
   FindJurisdiction,
   ResourceIndexItem,
+  HousingDiscrimination,
+  MobileHomeOrdinance,
+  EllisActOrdinance,
+  TenantProtectionOrdinance,
+  ApartmentRentOrdinance
 });
