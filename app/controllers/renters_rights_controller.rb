@@ -44,6 +44,7 @@ class RentersRightsController < ApplicationController
   def address_check_post
     puts "city :" +  params[:city]
     puts "Address: " + params[:street]
+    address = params[:street] 
     citystatezip=params[:city]+"%2C"+params[:state]
     puts "citystatezip" + citystatezip
 
@@ -52,6 +53,7 @@ class RentersRightsController < ApplicationController
       binding.pry
       # [useCode,yearBuilt,bedrooms]
      
+      info=getInfo(address,citystatezip)
       redirect_to '/address-type'
     else
       redirect_to '/not-applicable'
