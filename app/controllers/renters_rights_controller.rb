@@ -49,6 +49,9 @@ class RentersRightsController < ApplicationController
 
     if params[:city].strip.upcase == "SAN JOSE"
       info=getInfo(params[:street],citystatezip)
+      binding.pry
+      # [useCode,yearBuilt,bedrooms]
+     
       redirect_to '/address-type'
     else
       redirect_to '/not-applicable'

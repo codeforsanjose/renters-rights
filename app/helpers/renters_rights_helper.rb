@@ -5,10 +5,10 @@ module RentersRightsHelper
     puts url
     page=HTTParty.get(url)
     if (page.parsed_response["searchresults"]["message"]["code"] == "0")
+      type=page.parsed_response["searchresults"]["response"]["results"]["result"]["localRealEstate"]["region"]["type"]
       useCode=page.parsed_response["searchresults"]["response"]["results"]["result"]["useCode"]
       yearBuilt=page.parsed_response["searchresults"]["response"]["results"]["result"]["yearBuilt"]
-      bedrooms=page.parsed_response["searchresults"]["response"]["results"]["result"]["bedrooms"]
-      return [useCode,yearBuilt,bedrooms]
+      return [type,useCode,yearBuilt]
     else
       # Handle error here 
     end
