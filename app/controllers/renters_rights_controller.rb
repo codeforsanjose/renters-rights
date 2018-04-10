@@ -52,7 +52,7 @@ class RentersRightsController < ApplicationController
     if params[:city].strip.upcase == "SAN JOSE"
       info=getInfo(address,citystatezip)
       case info[0] #type
-        when "neighborhood"
+        when "neighborhood" #when the property is a part of incorporated City of San Jose neighborhood 
           case info[1] #useCode
             when "MultiFamily5Plus"
               if info[2]<1979
@@ -61,7 +61,7 @@ class RentersRightsController < ApplicationController
                 #handle error
               end 
             when "Triplex"
-              if info[2]<1979
+              if info[2]<1979 #yearBuilt
                 #display PAGE
               else 
                 #handle error
@@ -75,10 +75,10 @@ class RentersRightsController < ApplicationController
               #display ASK FORM 
               redirect_to '/address-type'
           end 
-        when "city"
+        when "city" #when the property is a part of unincorporated Santa Clara County
           #GEN Page
         end 
-    else
+    else #when property is outside of San Jose, or possibly not covered by San Jose's rent stabilization policies
       #GEN
     end
   end
