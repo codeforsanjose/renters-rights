@@ -44,74 +44,81 @@ class RentersRightsController < ApplicationController
   def address_check_post
     puts "city :" +  params[:city]
     puts "Address: " + params[:street]
+    puts "citystatezip" + citystatezip
     address = params[:street] 
     citystatezip=params[:city]+"%2C"+params[:state]
-    puts "citystatezip" + citystatezip
 
     # [type,useCode,yearBuilt]
     if params[:city].strip.upcase == "SAN JOSE"
       info=getInfo(address,citystatezip)
-      case info[0] #type
-        when "neighborhood" #when the property is a part of incorporated City of San Jose neighborhood 
-          case info[1] #useCode
-            when "MultiFamily5Plus"
-              if info[2]<1979
-                #display PAGE
-              else 
-                #handle error
-              end 
-            when "Triplex"
-              if info[2]<1979 #yearBuilt
-                #display PAGE
-              else 
-                #handle error
-              end 
-            when "Quadruplex"
-              #handle error
-            when "MultiFamily2To4"
-              #display ASK FORM
-              redirect_to '/address-type'
-            when "Condominium" || "Apartment"
-              #display ASK FORM 
-              redirect_to '/address-type'
+      case info[0] # type
+        when "neighborhood" # when the property is a part of incorporated City of San Jose neighborhood 
+          if info[2]<=1979 #if the property is built before (or the year of 1979). 
+          # Note that we don't get specific details if the property ws built before September 7, 1979
+            case info[1] # useCode
+              when "MultiFamily5Plus" # applies to ARO, TPO and EAO 
+                redirect_to '/renters-policies-EAOTPOARO'
+              when "Triplex" # applies to ARO and TPO
+                redirect_to '/renters-policies-TPOARO'
+              when "MultiFamily2To4" # clarify number of units
+                # display ASK FORM
+                redirect_to '/address-type'
+              when "Condominium" || "Apartment" # clarify type of unit 
+                # display ASK FORM 
+                redirect_to '/address-type' 
+              when "Unknown" || "SingleFamily" || "Quadruplex" || "Cooperative" || "Timeshare" || "Miscellaneous"  # clarify type of unit 
+                # display ASK FORM
+                redirect_to '/address-type'             
+              when "Mobile"
+                # Mobile Home Ordinance
+                redirect_to '/renters-policies-MHO'
+            end 
+
+          else  # if property was built after 1979 
+            redirect_to '/renters-policies-general'
           end 
-        when "city" #when the property is a part of unincorporated Santa Clara County
-          #GEN Page
+        when "city" # when the property is a part of unincorporated Santa Clara County
+          redirect_to '/renters-policies-general'
         end 
-    else #when property is outside of San Jose, or possibly not covered by San Jose's rent stabilization policies
-      #GEN
+    else # when property is outside of San Jose, or possibly not covered by San Jose's rent stabilization policies
+      redirect_to '/renters-policies-general'
     end
   end
 
   def address_type_post
-    puts "totalUnits :" +  params[:totalUnits]
-    puts "yearBuilt :" +  params[:yearBuilt]
-    if params[:yearBuilt] == "no" && params[:totalUnits] == "threeUnits" || params[:totalUnits] == "fourOrMore"
-        redirect_to '/not-applicable'
-    elsif  params[:totalUnits] == "fourOrMore" && params[:yearBuilt] == "yes"
-        redirect_to '/renters-types'
-    elsif params[:totalUnits] == "threeUnits" && params[:yearBuilt] == "no"
-        redirect_to '/renters-types-2'
-    elsif params[:totalUnits] == "twoUnits"
-        redirect_to '/renters-duplex'
-    elsif params[:yearBuilt] == "no" && params[:totalUnits] == "twoUnits"
-        redirect_to '/not-applicable'
-    else
-      redirect_to '/not-applicable'
+    puts "totalUnits :" +  params[:totalUnits] 
+    puts "typeOfHome :" +  params[:typeOfHome]
+    # puts "yearBuilt :" + params[:yearBuilt]
+    if  params[:totalUnits] == "fourOrMore" # applies to EAO, ARO and TPO 
+      redirect_to '/renters-policies-EAOTPOARO'
+    elsif params[:totalUnits] == "threeUnits"
+      redirect_to '/renters-policies-TPOARO' # applies to TPO and ARO
+    elsif params[:totalUnits] == "twoUnits" # duplexes are not covered by San Jose policies ARO, EAO, TPO or MHO
+      redirect_to '/renters-policies-general'
+    elsif params[:typeOfHome] == "guestRoom" && params[:totalUnits] == "threeUnits" || params[:totalUnits] == "fourUnits"
+      redirect_to '/renters-policies-TPO'
+    elsif params[:typeOfHome] == "guestHouse" && params[:totalUnits] == "threeUnits" || params[:totalUnits] == "fourUnits"
+      redirect_to '/renters-policies-TPO' 
+    elsif params[:typeOfHome] == "unpermittedUnit" && params[:totalUnits] == "threeUnits" || params[:totalUnits] == "fourUnits"
+      redirect_to '/renters-policies-TPO'
+    else 
+      redirect_to '/renters-policies-general'
     end
   end
+  
+  def renters_policies_MHO
+  end 
 
-
-  def renters_types
+  def renters_policies_general
   end
 
-  def renters_types_2
+  def renters_policies_TPO
   end
 
-  def renters_duplex
+  def renters_policies_TPOARO
   end
 
-  def not_applicable
+  def renters_policies_EAOTPOARO
   end
 
   private
