@@ -12,7 +12,7 @@ module RentersRightsApp
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.exception_handler = { 
-      dev: true,
+      # dev: true,
       layouts: {
         404 => "errors",
         422 => "errors",

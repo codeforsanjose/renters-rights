@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class RentersRightsController < ApplicationController
+  include RentersRightsHelper
   layout "renters_rights"
 
   def index
@@ -42,8 +43,13 @@ class RentersRightsController < ApplicationController
 
   def address_check_post
     puts "city :" +  params[:city]
+    puts "Address: " + params[:street]
+    citystatezip=params[:city]+"%2C"+params[:state]
+    puts "citystatezip" + citystatezip
+
     if params[:city].strip.upcase == "SAN JOSE"
-        redirect_to '/address-type'
+      info=getInfo(params[:street],citystatezip)
+      redirect_to '/address-type'
     else
       redirect_to '/not-applicable'
     end
