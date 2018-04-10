@@ -18,6 +18,7 @@ export default class EllisActOrdinance extends React.Component {
           <h3>Ellis Act Ordinance</h3>
                   <div className="panel-group" id="accordion">
                     <p>The City of San José Ellis Act Ordinance provides requirements for landlords removing apartments covered by the ordinance from the rental housing market.</p>
+                    
                     <div className="panel panel-default">
                       <div className="panel-heading">
                         <h4 className="panel-title">
@@ -25,12 +26,13 @@ export default class EllisActOrdinance extends React.Component {
                           Who does this apply to?</a>
                         </h4>
                       </div>
-                      <div id="collapse2" className="panel-collapse collapse">
+                      <div id="collapse1" className="panel-collapse collapse">
                         <div className="panel-body">
                         <p>This ordinance applies to all apartments with 4+ units covered by the Apartment Rent Ordinance in the City of San José. </p>
                         </div>
                       </div>
                     </div>
+
                     <div className="panel panel-default">
                       <div className="panel-heading">
                         <h4 className="panel-title">
@@ -55,6 +57,7 @@ export default class EllisActOrdinance extends React.Component {
                         </div>
                       </div>
                     </div>
+
                     <div className="panel panel-default">
                       <div className="panel-heading">
                         <h4 className="panel-title">
@@ -83,6 +86,7 @@ export default class EllisActOrdinance extends React.Component {
                         <div className="panel-body">You may be entitled to relocation assistance. The City of San José’s Relocation Consultant will determine the amount of relocation benefits you are entitled to, otherwise the determination will be based on the information provided by your Landlord.</div>
                       </div>
                     </div>
+
                     <div className="panel panel-default">
                       <div className="panel-heading">
                         <h4 className="panel-title">
