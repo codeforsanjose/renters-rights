@@ -113,6 +113,18 @@ class RentersRightsController < ApplicationController
   def housing_discrimination
   end
 
+  def ellis_act_ordinance
+  end
+
+  def tenant_protection_ordinance 
+  end
+
+  def apartment_rent_ordinance
+  end
+
+  def mobile_home_ordinance
+  end
+
   private
 
   def path_to_asset(asset)
