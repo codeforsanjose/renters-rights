@@ -66,21 +66,16 @@ class RentersRightsController < ApplicationController
               #handle error
             when "MultiFamily2To4"
               #display ASK FORM
-            when "Condominium"
-              #display ASK 
-            else 
-
-            end
-        end
+              redirect_to '/address-type'
+            when "Condominium" || "Apartment"
+              #display ASK FORM 
+              redirect_to '/address-type'
+          end 
         when "city"
-          #GEN Page 
-        else 
-          #handle error
-        end
-      end 
-      redirect_to '/address-type'
+          #GEN Page
+        end 
     else
-      redirect_to '/not-applicable'
+      #GEN
     end
   end
 
