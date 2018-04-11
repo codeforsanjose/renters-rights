@@ -89,8 +89,7 @@ class RentersRightsController < ApplicationController
               renters_policies_general #redirect_to '/renters-policies-general'
             elsif !info[2]
               renters_policies_general #redirect_to '/renters-policies-general'
-            end
-          end #ending if statement
+            end #ending if statement
         when "city" # when the property is a part of unincorporated Santa Clara County
           renters_policies_general_SCC #redirect_to '/renters-policies-general-SCC'
       end #ending case
