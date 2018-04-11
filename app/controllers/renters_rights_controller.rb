@@ -44,13 +44,13 @@ class RentersRightsController < ApplicationController
   def address_check_post
     puts "city :" +  params[:city]
     puts "Address: " + params[:street]
-    puts "citystatezip" + citystatezip
     address = params[:street] 
     citystatezip=params[:city]+"%2C"+params[:state]
+    puts "citystatezip" + citystatezip
 
-    # [type,useCode,yearBuilt]
-    if params[:city].strip.upcase == "SAN JOSE"
-      info=getInfo(address,citystatezip)
+    info=getInfo(address,citystatezip)
+    # [type,useCode,yearBuilt, street]
+    if params[:city].strip.upcase == "SAN JOSE"  && if params[:street] == info[3]
       case info[0] # type
         when "neighborhood" # when the property is a part of incorporated City of San Jose neighborhood 
           if info[2]<=1979 #if the property is built before (or the year of 1979). 
@@ -78,9 +78,9 @@ class RentersRightsController < ApplicationController
             redirect_to '/renters-policies-general'
           end 
         when "city" # when the property is a part of unincorporated Santa Clara County
-          redirect_to '/renters-policies-general'
-        end 
-    else # when property is outside of San Jose, or possibly not covered by San Jose's rent stabilization policies
+          redirect_to '/renters-policies-general-SCC'
+      end 
+    else # when property is outside of San Jose, not returning the same address that was inputted, or possibly not covered by San Jose's rent stabilization policies
       redirect_to '/renters-policies-general'
     end
   end
@@ -120,6 +120,9 @@ class RentersRightsController < ApplicationController
 
   def renters_policies_EAOTPOARO
   end
+
+  def renters_polciies_general_SCC
+  end 
 
   def housing_discrimination
   end
