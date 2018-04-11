@@ -50,7 +50,7 @@ class RentersRightsController < ApplicationController
 
     info=getInfo(address,citystatezip)
     # [type,useCode,yearBuilt, street]
-    if params[:city].strip.upcase == "SAN JOSE"  && if params[:street] == info[3]
+    if params[:city].strip.upcase == "SAN JOSE" && params[:street] == info[3]
       case info[0] # type
         when "neighborhood" # when the property is a part of incorporated City of San Jose neighborhood 
           if info[2]<=1979 #if the property is built before (or the year of 1979). 
