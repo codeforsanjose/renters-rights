@@ -44,7 +44,6 @@ class RentersRightsController < ApplicationController
   def address_check_post
     puts "city :" +  params[:city]
     puts "Address: " + params[:street]
-    puts "citystatezip" + citystatezip
     address = params[:street] 
     citystatezip=params[:city]+"%2C"+params[:state]
 
