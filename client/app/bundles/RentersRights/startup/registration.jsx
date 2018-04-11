@@ -13,6 +13,7 @@ import AddressCheck from '../components/AddressCheck';
 import ResourceIndexItem from '../components/resources/ResourceIndexItem';
 import RentersPolicies_TPOARO from '../components/RentersPoliciesTPOARO';
 import RentersPolicies_General from '../components/RentersPoliciesGeneral';
+import RentersPolicies_General_SCC from '../components/RentersPoliciesGeneralSCC';
 import RentersPolicies_TPO from '../components/RentersPoliciesTPO';
 import RentersPolicies_MHO from '../components/RentersPoliciesMHO';
 import RentersPolicies_EAOTPOARO from '../components/RentersPoliciesEAOTPOARO';
@@ -37,6 +38,7 @@ ReactOnRails.register({
   AddressType,
   ReportIssue,
   RentersPolicies_General,
+  RentersPolicies_General_SCC,
   RentersPolicies_TPO,
   RentersPolicies_MHO,
   RentersPolicies_TPOARO,
