@@ -11,12 +11,12 @@ import FindJurisdiction from '../components/FindJurisdiction';
 import RentIncrease from '../components/RentIncrease';
 import AddressCheck from '../components/AddressCheck';
 import ResourceIndexItem from '../components/resources/ResourceIndexItem';
-import RentersPolicies_TPOARO from '../components/RentersPoliciesTPOARO';
-import RentersPolicies_General from '../components/RentersPoliciesGeneral';
-import RentersPolicies_General_SCC from '../components/RentersPoliciesGeneralSCC';
-import RentersPolicies_TPO from '../components/RentersPoliciesTPO';
-import RentersPolicies_MHO from '../components/RentersPoliciesMHO';
-import RentersPolicies_EAOTPOARO from '../components/RentersPoliciesEAOTPOARO';
+import RentersPoliciesTPOARO from '../components/RentersPoliciesTPOARO';
+import RentersPoliciesGeneral from '../components/RentersPoliciesGeneral';
+import RentersPoliciesGeneralSCC from '../components/RentersPoliciesGeneralSCC';
+import RentersPoliciesTPO from '../components/RentersPoliciesTPO';
+import RentersPoliciesMHO from '../components/RentersPoliciesMHO';
+import RentersPoliciesEAOTPOARO from '../components/RentersPoliciesEAOTPOARO';
 import AddressType from '../components/AddressType';
 import HousingDiscrimination from '../components/HousingDiscrimination';
 import MobileHomeOrdinance from '../components/MobileHomeOrdinance';
@@ -37,12 +37,12 @@ ReactOnRails.register({
   AddressCheck,
   AddressType,
   ReportIssue,
-  RentersPolicies_General,
-  RentersPolicies_General_SCC,
-  RentersPolicies_TPO,
-  RentersPolicies_MHO,
-  RentersPolicies_TPOARO,
-  RentersPolicies_EAOTPOARO,
+  RentersPoliciesGeneral,
+  RentersPoliciesGeneralSCC,
+  RentersPoliciesTPO,
+  RentersPoliciesMHO,
+  RentersPoliciesTPOARO,
+  RentersPoliciesEAOTPOARO,
   Eviction,
   RentCalculator,
   RentIncrease,
