@@ -101,7 +101,6 @@ export default class ApartmentRentOrdinance extends React.Component {
                             <div className="panel-body">
                             <p>The maximum annual allowable rent increase is 5%.</p>
                             <p>Rent increases may only be given once in a 12-month period. </p>
-                            <RentCalculator/>
                             </div>
                           </div>
                         </div>
