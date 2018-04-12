@@ -1,18 +1,19 @@
 // @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500');
 // @import url('https://fonts.googleapis.com/css?family=Poppins:500');
-@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lora');
 
 /*** Variables ***/
 /* colors */
 $cream: #FCFFE4;
-$morning-sky: #1A7DD7;
+$brick-red: #7E2222; 
 $white: #fff;
 $honey: #b6d2f3;
 
 /* fonts */
-$logo-font: 'Karla', sans-serif;
-$heading-font: 'Karla', sans-serif;
-$body-font: 'Karla', sans-serif;
+$logo-font: 'Montserrat', sans-serif;
+$heading-font: 'Montserrat', sans-serif;
+$body-font: 'Lora', sans-serif;
 
 /* Center the content and keep it under 750px*/
 @media (min-width: 1200px) {
@@ -22,9 +23,15 @@ $body-font: 'Karla', sans-serif;
   }
 }
 
+/* Footer */
+
+.renters-footer {
+  padding-top: 60px;
+}
+
 /* NavBar */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: $morning-sky;  /*Sets the text hover color on navbar*/
+  color: $brick-red;  /*Sets the text hover color on navbar*/
   background-color: $honey;
 }
 
@@ -36,7 +43,7 @@ $body-font: 'Karla', sans-serif;
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
 a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: $morning-sky; /*BACKGROUND color for active*/
+  color: $brick-red; /*BACKGROUND color for active*/
  /*background-color: white;*/
  /*box-shadow: 10px 10px bd;*/
 }
@@ -50,7 +57,7 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 }
 
 .navbar-default {
-  background-color: $morning-sky;
+  background-color: $brick-red;
   border-color: white;
 }
 
@@ -64,7 +71,7 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 .navbar-default .navbar-brand {
   &:hover {
     background-color: $honey;
-    color: $morning-sky;
+    color: $brick-red;
   }
   color: $white;
 }
@@ -72,11 +79,11 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 
 .nav-pills>li>a:hover{
     background-color: $honey;
-    color: $morning-sky;
+    color: $brick-red;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background-color: $morning-sky;
+    background-color: $brick-red;
 }
 
 body {
@@ -88,7 +95,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
-  color: $morning-sky;
+  color: $brick-red;
 }
 
 h1 {
@@ -98,7 +105,7 @@ h1 {
 
 /* Header */
 .page-header {
-  border-bottom: $morning-sky;
+  border-bottom: $brick-red;
 }
 
 .language-paragraph {
@@ -114,10 +121,10 @@ h1 {
 }
 
 .btn-default {
-  background-color: $morning-sky;
+  background-color: $brick-red;
 }
 
-.btn-eviction, .btn-renters, .btn-shelter, .btn-issue, .btn-legal, .btn-location {
+.btn-eviction, .btn-rent-increase, .btn-discrimination {
   color: #fff;
   border: 1px solid #fff;
   &:hover {
@@ -128,15 +135,15 @@ h1 {
 }
 
 .btn-eviction {
-  background-color: #03275A;
+  background-color: #7E2222;
 }
 
-.btn-renters {
-  background-color: #1A7DD7;
+.btn-rent-increase {
+  background-color: #D3B124;
 }
 
-.btn-shelter {
-  background-color: #F2B809;
+.btn-discrimination {
+  background-color: #3D792F;
 }
 
 .btn-issue {
@@ -158,12 +165,12 @@ h1 {
 /* Panel */
 .panel-info>.panel-heading {
   color: white;
-  background-color: $morning-sky;
+  background-color: $brick-red;
 }
 
 .panel-info>.panel-heading+.panel-collapse>.panel-body {
-  background-color: $morning-sky;
-  border-top-color: $morning-sky;
+  background-color: $brick-red;
+  border-top-color: $brick-red;
 }
 
 /* Links */
@@ -180,7 +187,7 @@ a.list-group-iem:focus, a.list-group-item:hover, button.list-group-item:focus, b
 }
 
 a.list-group-item-danger, button.list-group-item-danger {
-  background-color: $morning-sky;
+  background-color: $brick-red;
 }
 
 a.list-group-item .list-group-item-heading {
