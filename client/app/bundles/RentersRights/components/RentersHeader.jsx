@@ -29,7 +29,7 @@ export default function RentersHeader({ className, locale }) {
           	<a className="navbar-brand" href={`/${locale}`}><strong><FormattedMessage defaultMessage="Renter's Rights Guide" id="header.title" /></strong></a>
             */}
               
-          	<a className="navbar-brand" href="/"><strong>Renter's Rights Guide</strong></a>
+          	<a className="navbar-brand" href="/"><strong>San José Renter's Rights Guide</strong></a>
 				</div>
 
 				{/* Collect the nav links, forms, and other content for toggling */}

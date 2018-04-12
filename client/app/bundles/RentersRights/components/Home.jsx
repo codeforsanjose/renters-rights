@@ -81,13 +81,13 @@ export default class Home extends React.Component {
               <div className=" col-md-12 text-center">
                 <p>
                   <a href="/eviction" className="btn btn-sq-lg btn-eviction">
-                    <br/><span className="glyphicon glyphicon-file"></span> <br/>Facing Evictiond
+                    <br/><span className="glyphicon glyphicon-file"></span> <br/>Facing Eviction
                   </a>
-                  <a href="/rent-increase" className="btn btn-sq-lg btn-renters">
+                  <a href="/rent-increase" className="btn btn-sq-lg btn-rent-increase">
                     <br/><span className="glyphicon glyphicon-signal"></span> <br/>Handling Rent Increase
                   </a>
-                  <a href="/housing-discrimination/" className="btn btn-sq-lg btn-shelter">
-                   <br/><span className="glyphicon glyphicon-home"></span> <br/> Addressing Housing Discrimination
+                  <a href="/housing-discrimination/" className="btn btn-sq-lg btn-discrimination">
+                   <br/><span className="glyphicon glyphicon-home"></span> <br/> Facing Discrimination
                   </a>
                 </p>
               </div>
