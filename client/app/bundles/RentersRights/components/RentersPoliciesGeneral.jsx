@@ -8,6 +8,7 @@ export default function RentersPoliciesGeneral({
       <RentersLayout>
         <div className="content-container">
           <div className="page-header">
+            General
           </div>
 
           <div className="row">

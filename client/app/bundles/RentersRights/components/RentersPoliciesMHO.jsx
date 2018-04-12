@@ -8,6 +8,7 @@ export default function RentersPoliciesMHO({
       <RentersLayout>
         <div className="content-container">
           <div className="page-header">
+            MHO
           </div>
 
           <div className="row">

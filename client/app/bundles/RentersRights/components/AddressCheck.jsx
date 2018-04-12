@@ -13,13 +13,24 @@ export default function AddressCheck({
          <form method="post">
            <h3> What is your address?</h3>
            <div className="form-group row">
-             <label className="col-sm-1 col-md-1 col-form-label" htmlFor="street">Street Address:</label>
-             <div className="col-sm-8 col-md-8">
+             <label className="col-sm-2 col-md-2 col-form-label" htmlFor="street">Street Address:</label>
+             <div className="col-sm-10 col-md-10">
                <input
                  className="form-control"
                  name="street"
                  type="text"
                  required="true"
+               />
+             </div>
+           </div>
+           <div className="form-group row">
+             <label className="col-sm-2 col-md-2 col-form-label" htmlFor="apt">Apartment Number:</label>
+             <div className="col-sm-10 col-md-10">
+               <input
+                 className="form-control"
+                 name="apt"
+                 placeholder="Enter your apartment or unit number. Don't include the abbreviations 'Apt' or 'Unit'."
+                 type="text"
                />
              </div>
            </div>

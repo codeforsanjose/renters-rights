@@ -8,6 +8,7 @@ export default function RentersPoliciesGeneralSCC({
       <RentersLayout>
         <div className="content-container">
           <div className="page-header">
+            General SCC
           </div>
 
           <div className="row">
