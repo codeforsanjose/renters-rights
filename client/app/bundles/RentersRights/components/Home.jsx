@@ -75,29 +75,19 @@ export default class Home extends React.Component {
        <RentersLayout>
          <div className="content-container">
            <div className="page-header text-center">
-             <h3>Know Your Rights as a San José, California renter.
-             </h3>
+             <h3>Know Your Rights as a San José, California Renter</h3>
            </div>
            <div className="row">
               <div className=" col-md-12 text-center">
                 <p>
-                  <a href="/address-check" className="btn btn-sq-lg btn-eviction">
-                    <br/><span className="glyphicon glyphicon-file"></span> <br/>I Am Getting Evicted
+                  <a href="/eviction" className="btn btn-sq-lg btn-eviction">
+                    <br/><span className="glyphicon glyphicon-file"></span> <br/>Facing Eviction
                   </a>
-                  <a href="/address-check" className="btn btn-sq-lg btn-renters">
-                    <br/><span className="glyphicon glyphicon-signal"></span> <br/>My Rent Is Increasing
+                  <a href="/rent-increase" className="btn btn-sq-lg btn-rent-increase">
+                    <br/><span className="glyphicon glyphicon-signal"></span> <br/>Handling Rent Increase
                   </a>
-                  <a href="/resources/shelter" className="btn btn-sq-lg btn-shelter">
-                   <br/><span className="glyphicon glyphicon-home"></span> <br/>  I Need Shelter
-                  </a>
-                  <a href="/report-issue" className="btn btn-sq-lg btn-issue">
-                    <br/><span className="glyphicon glyphicon-pencil"></span> <br/>I Want To Report An Issue
-                  </a>
-                  <a href="/find-jurisdiction" className="btn btn-sq-lg btn-location">
-                    <br/><span className="glyphicon glyphicon-map-marker"></span> <br/>Do I Live Within San Jose?
-                  </a>
-                  <a href="/resources/legal" className="btn btn-sq-lg btn-legal">
-                    <br/><span className="glyphicon glyphicon-question-sign"></span> <br/>I Need Legal Help
+                  <a href="/housing-discrimination/" className="btn btn-sq-lg btn-discrimination">
+                   <br/><span className="glyphicon glyphicon-home"></span> <br/> Facing Discrimination
                   </a>
                 </p>
               </div>

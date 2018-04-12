@@ -29,7 +29,7 @@ export default function RentersHeader({ className, locale }) {
           	<a className="navbar-brand" href={`/${locale}`}><strong><FormattedMessage defaultMessage="Renter's Rights Guide" id="header.title" /></strong></a>
             */}
               
-          	<a className="navbar-brand" href="/"><strong>Renter's Rights Guide</strong></a>
+          	<a className="navbar-brand" href="/"><strong>San José Renter's Rights Guide</strong></a>
 				</div>
 
 				{/* Collect the nav links, forms, and other content for toggling */}
@@ -41,8 +41,7 @@ export default function RentersHeader({ className, locale }) {
           				<li><a href={`/${locale}/resources`}><strong><FormattedMessage defaultMessage="Resources" id="header.resources" /></strong></a></li>
 						<li><a href={`/${locale}/faq`}><strong><FormattedMessage defaultMessage="FAQ" id="header.faq" /></strong></a></li> 
 		          */}
-		        		<li><a href="/report-issue"><strong>Report Rental Issue</strong></a></li> 
-					    <li><a href="/resources/all"><strong>Resources</strong></a></li>
+					  <li><a href="/resources/all"><strong>Resources</strong></a></li>
 						<li><a href="/about"><strong>About</strong></a></li> 
         
         {/* locale set up. Remove comment when app is translated.  		
