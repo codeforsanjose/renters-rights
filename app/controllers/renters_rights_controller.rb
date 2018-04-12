@@ -45,7 +45,11 @@ class RentersRightsController < ApplicationController
     puts "city :" +  params[:city]
     puts "Address: " + params[:street]
     puts "Apt: + params[:apt]"
-    address = params[:street] + "Apt" + params[:apt]
+    if params[:apt] # if the apt value exists, include it in the address
+      address = params[:street] + "Apt" + params[:apt]
+    else 
+      address = params[:street]
+    end 
     citystatezip=params[:city]+"%2C"+params[:state]
     puts "citystatezip" + citystatezip
 
