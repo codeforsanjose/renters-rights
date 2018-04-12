@@ -15,11 +15,4 @@ Rails.application.routes.draw do
   get '/tenant-protection-ordinance', to: 'renters_rights#tenant_protection_ordinance'
   get '/apartment-rent-ordinance', to: 'renters_rights#apartment_rent_ordinance'
   get '/mobile-home-ordinance', to: 'renters_rights#mobile_home_ordinance'
-
-  # get '/:locale', to: 'renters_rights#index'
-  # get '/:locale/about', to: 'renters_rights#faq'
-  # get '/:locale/renters', to: 'renters_rights#renters'
-  # get '/:locale/eviction', to: 'renters_rights#eviction'
-  # get '/:locale/resources', to: 'renters_rights#resources'
-  # get '/:locale/rent-calculator', to: 'renters_rights#rent_calculator'
 end
