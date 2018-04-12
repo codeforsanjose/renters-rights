@@ -44,7 +44,8 @@ class RentersRightsController < ApplicationController
   def address_check_post
     puts "city :" +  params[:city]
     puts "Address: " + params[:street]
-    address = params[:street]
+    puts "Apt: + params[:apt]"
+    address = params[:street] + "Apt" + params[:apt]
     citystatezip=params[:city]+"%2C"+params[:state]
     puts "citystatezip" + citystatezip
 
@@ -53,7 +54,6 @@ class RentersRightsController < ApplicationController
     if params[:city].strip.upcase == "SAN JOSE" && params[:street] == info[3]
       case info[0] # type
         when "neighborhood" # when the property is a part of incorporated City of San Jose neighborhood
-          #TODO - address edge case if the yearBuilt doesn't exist.
           if info[2]<=1979 #if the property is built before (or the year of 1979).
             # Note that we don't get specific details if the property ws built before September 7, 1979
               case info[1] # useCode
@@ -87,7 +87,8 @@ class RentersRightsController < ApplicationController
 
             elsif info[2]>1979 # if property was built after 1979
               renters_policies_general #redirect_to '/renters-policies-general'
-            elsif !info[2]
+            elsif !info[2] # if the yearBuilt doesn't exist for the response. 
+              # Later possible TODO - if this condition is true, then search query within spreadsheet of rent stabilized apartments from City of SJ
               renters_policies_general #redirect_to '/renters-policies-general'
             end #ending if statement
         when "city" # when the property is a part of unincorporated Santa Clara County
