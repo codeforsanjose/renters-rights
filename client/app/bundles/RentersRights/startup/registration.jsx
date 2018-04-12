@@ -9,15 +9,7 @@ import Resources from '../components/resources/Resources';
 import ReportIssue from '../components/ReportIssue';
 import FindJurisdiction from '../components/FindJurisdiction';
 import RentIncrease from '../components/RentIncrease';
-import AddressCheck from '../components/AddressCheck';
 import ResourceIndexItem from '../components/resources/ResourceIndexItem';
-import RentersPoliciesTPOARO from '../components/RentersPoliciesTPOARO';
-import RentersPoliciesGeneral from '../components/RentersPoliciesGeneral';
-import RentersPoliciesGeneralSCC from '../components/RentersPoliciesGeneralSCC';
-import RentersPoliciesTPO from '../components/RentersPoliciesTPO';
-import RentersPoliciesMHO from '../components/RentersPoliciesMHO';
-import RentersPoliciesEAOTPOARO from '../components/RentersPoliciesEAOTPOARO';
-import AddressType from '../components/AddressType';
 import HousingDiscrimination from '../components/HousingDiscrimination';
 import MobileHomeOrdinance from '../components/MobileHomeOrdinance';
 import EllisActOrdinance from '../components/EllisActOrdinance';
@@ -34,15 +26,7 @@ import ApartmentRentOrdinance from '../components/ApartmentRentOrdinance';
 ReactOnRails.register({
   Home,
   About,
-  AddressCheck,
-  AddressType,
   ReportIssue,
-  RentersPoliciesGeneral,
-  RentersPoliciesGeneralSCC,
-  RentersPoliciesTPO,
-  RentersPoliciesMHO,
-  RentersPoliciesTPOARO,
-  RentersPoliciesEAOTPOARO,
   Eviction,
   RentCalculator,
   RentIncrease,
