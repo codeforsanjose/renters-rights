@@ -7,11 +7,13 @@ export default class ResourceIndexItem extends React.Component {
 
   render() {
     const {
+      geo,
       organization,
       phone,
       email,
       website,
-      region,
+      language,
+      category,
       description,
       address,
     } = this.props.resource;
@@ -23,7 +25,12 @@ export default class ResourceIndexItem extends React.Component {
           <h3>{organization}</h3>
         </a>
         <p>{description}</p>
+        <p>{geo}</p>
         <p>Contact: </p>
+        <p>
+          <span className="glyphicon glyphicon-globe">
+          </span>   Language: {language}
+        </p>
         <p>
           <span className="glyphicon glyphicon-earphone">
           </span>   Phone: {phone}
@@ -32,6 +39,8 @@ export default class ResourceIndexItem extends React.Component {
           <span style={homeSize}className="glyphicon glyphicon-home">
           </span>  Address: {address}
         </p>
+        <p>Tags:</p>        
+        <p>{category}</p>        
       </div>
     )
   }
