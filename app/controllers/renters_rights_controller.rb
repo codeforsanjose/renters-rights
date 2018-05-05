@@ -23,7 +23,7 @@ class RentersRightsController < ApplicationController
   end
 
   def resources
-    @filter = params[:filter]
+    @filter = params
   end
 
   def rent_calculator

@@ -5,6 +5,28 @@ export default class ResourceIndexItem extends React.Component {
     super(props);
   }
 
+  writeLanguage (string) {
+    let displayArr = [];
+    let langMap = {
+      'english': ' English',
+      'spanish': ' Español',
+      'chinese': ' 中文',
+      'vietnamese': ' Tiếng Việt',
+      'tagalog': ' tagalog',
+      'russian': ' ру́сский',
+      'korean': ' 한국어'
+    }
+
+    let split = string.split(', '); 
+  
+    for (var i=0; i<split.length; i++) {
+      let current= split[i];
+      if (langMap[current]) displayArr.push( langMap[current] );
+    }
+  
+    return displayArr.toString();
+  }
+
   render() {
     const {
       geo,
@@ -25,11 +47,10 @@ export default class ResourceIndexItem extends React.Component {
           <h3>{organization}</h3>
         </a>
         <p>{description}</p>
-        <p>{geo}</p>
         <p>Contact: </p>
         <p>
           <span className="glyphicon glyphicon-globe">
-          </span>   Language: {language}
+          </span>   Language: {this.writeLanguage(language)}
         </p>
         <p>
           <span className="glyphicon glyphicon-earphone">
@@ -39,8 +60,10 @@ export default class ResourceIndexItem extends React.Component {
           <span style={homeSize}className="glyphicon glyphicon-home">
           </span>  Address: {address}
         </p>
-        <p>Tags:</p>        
-        <p>{category}</p>        
+        <p>
+          <span className="glyphicon glyphicon-tag">
+          </span>   Tags: {category}
+        </p>        
       </div>
     )
   }

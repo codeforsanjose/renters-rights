@@ -11,57 +11,53 @@ export default class Resources extends React.Component {
     super(props);
 
     this.state = {
-      filter: 'all'
+      category: 'all',
+      language: 'all' 
     };
-
-    this.handleClick = this.handleClick.bind(this);
   }
 
   componentWillMount () {
-    this.setState({filter: this.props.filter})
-  }
+    var queryParams = Object.keys(this.props.filter); 
 
-  handleClick(filter) {
-    this.setState({filter})
+    if (queryParams.length > 2) { /* If parameters are present in url query string */
+      var category = this.props.filter.category || 'all';
+      var language = this.props.filter.language || 'all';
+      this.setState({
+        category: category,
+        language: language
+      })
+    }
   }
 
   filterResources() {
     let resourceList = tsvParse(resources);
-    let title;
+    
+    if (this.state.category !== 'all') {
+      var category = this.state.category;
+      resourceList = resourceList.filter((row) => row.category.includes(category));
+    }
 
-    if (this.state.filter === 'legal') {
-      title = 'Legal Information'
-      resourceList = resourceList.filter((row) => row.filter_tags === 'Legal/Housing');
-    } else if (this.state.filter === 'shelter') {
-      title = 'Shelter Information'
-      resourceList = resourceList.filter((row) => row.filter_tags === 'Shelter');
+    if (this.state.language !== 'all') {
+      var language = this.state.language;
+      resourceList = resourceList.filter((row) => row.language.includes(language));
     }
 
     return resourceList;
   }
 
-  getTitle() {
-    const { filter } = this.state;
-    let title;
-
-    if (filter === 'all') title = 'All Resources';
-    if (filter === 'legal') title = 'Legal Information';
-    if (filter === 'shelter') title = 'Shelter Information';
-
-    return title;
-  }
-
   render() {
    {/* locale setup - remove comment when app translation is ready. Also add locale={locale} to RentersLayout below
        const { locale } = this.props; */}
-    const filterProps = { handleClick: this.handleClick };
-    const resourceList = this.filterResources();
-    const title = this.getTitle();
+    let resourceList = this.filterResources();
+    let title = 'Resources'
+    if (resourceList.length < 1) {
+      title = 'No resources available. Please try different filter'
+    }
 
     return (
       <RentersLayout>
         <div className='content-container'>
-          <ResourceFilter {...filterProps} currentActive={this.state.filter}/>
+          <ResourceFilter currentActive={this.state.filter}/>
           <div className="row">
             <div className="col-md-9">
               <h2>{title}</h2>
@@ -81,30 +77,3 @@ export default class Resources extends React.Component {
     )
   }
 }
-
-
-
-
-// <div className="content-container">
-//   <div className="page-header">
-//     <h3>
-//       Resources
-//     </h3>
-//   </div>
-//   <div className="row">
-//     <div className="col-md-9">
-//       <p>
-//         <a href="/shelter" className="btn btn-sq-lg btn-warning">
-//           <br/><span className="glyphicon glyphicon-home"></span> <br/>I Need Shelter
-//           </a>
-//           <a href="/legal-aid" className="btn btn-sq-lg btn-primary">
-//             <br/><span className="glyphicon glyphicon-question-sign"></span> <br/>I Need Legal Help
-//             </a>
-//           </p>
-//         </div>
-//         <div className="col-md-3">
-//           <p><strong>More questions?</strong></p>
-//           <p> Check out <a href="https://www.1degree.org/" target="_blank">One Degree</a> for more resources in San Francisco Bay Area </p>
-//         </div>
-//       </div>
-//     </div>
