@@ -12,12 +12,12 @@ export default class ResourceIndexItem extends React.Component {
       'spanish': ' Español',
       'chinese': ' 中文',
       'vietnamese': ' Tiếng Việt',
-      'tagalog': ' tagalog',
+      'tagalog': ' Tagalog',
       'russian': ' ру́сский',
       'korean': ' 한국어'
     }
 
-    let split = string.split(', '); 
+    let split = string.split(','); 
   
     for (var i=0; i<split.length; i++) {
       let current= split[i];

@@ -17,11 +17,10 @@ export default class Resources extends React.Component {
   }
 
   componentWillMount () {
-    var queryParams = Object.keys(this.props.filter); 
-
-    if (queryParams.length > 2) { /* If parameters are present in url query string */
-      var category = this.props.filter.category || 'all';
-      var language = this.props.filter.language || 'all';
+    let queryParams = Object.keys(this.props.filter); 
+    if (queryParams.length >= 2) { /* If parameters are present in url query string */
+      let category = this.props.filter.category || 'all';
+      let language = this.props.filter.language || 'all';
       this.setState({
         category: category,
         language: language
@@ -31,25 +30,35 @@ export default class Resources extends React.Component {
 
   filterResources() {
     let resourceList = tsvParse(resources);
-    
-    if (this.state.category !== 'all') {
-      var category = this.state.category;
-      resourceList = resourceList.filter((row) => row.category.includes(category));
-    }
 
-    if (this.state.language !== 'all') {
-      var language = this.state.language;
-      resourceList = resourceList.filter((row) => row.language.includes(language));
-    }
-
-    return resourceList;
+    let categoryFilter = this.filter(resourceList, this.state.category, 'category')
+    let categoryFilter2 = this.filter(categoryFilter, this.state.language, 'language')
+    return categoryFilter2;
   }
+
+  filter (resources, filterWords, filter) {
+    if(filterWords.includes('all')) { return resources;} /* Case if there is nothing to filter, return all results */
+    
+    return resources.filter( (row) => {
+      let rowWords;
+      if (filter === 'language') { 
+        rowWords = row.language.split(',')
+      } else if (filter === 'category') { 
+        rowWords = row.category.split(',')
+      }
+
+      return filterWords.some( (filterWord) => {
+        return rowWords.indexOf(filterWord) >=0;
+      })
+      
+    })
+  }  
 
   render() {
    {/* locale setup - remove comment when app translation is ready. Also add locale={locale} to RentersLayout below
        const { locale } = this.props; */}
     let resourceList = this.filterResources();
-    let title = 'Resources'
+    let title = ''
     if (resourceList.length < 1) {
       title = 'No resources available. Please try different filter'
     }
@@ -57,9 +66,15 @@ export default class Resources extends React.Component {
     return (
       <RentersLayout>
         <div className='content-container'>
-          <ResourceFilter currentActive={this.state.filter}/>
+
           <div className="row">
-            <div className="col-md-9">
+            <div id='resourceFilter' className="col-md-4 collapse in">
+                <ResourceFilter checked={this.state}/>
+                <EmergencyResource />
+            </div>
+
+            <div className="col-md-8">
+              <h2>Resources</h2>
               <h2>{title}</h2>
               {
                 resourceList.map((resource, idx) => (
@@ -70,7 +85,7 @@ export default class Resources extends React.Component {
                 ))
               }
             </div>
-            <EmergencyResource />
+
           </div>
         </div>
       </RentersLayout>
