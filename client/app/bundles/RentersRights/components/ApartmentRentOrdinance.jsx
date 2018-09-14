@@ -134,15 +134,70 @@ export default class ApartmentRentOrdinance extends React.Component {
                           </div>
                         </div>
 
+
                         <div className="panel panel-default">
                           <div className="panel-heading">
                             <h4 className="panel-title">
                               <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                              Service Reductions</a>
+                              Ratio Utility Billing System (RUBS) Petition </a>
                             </h4>
                           </div>
 
                           <div id="collapse5" className="panel-collapse collapse">
+                            <div className="panel-body">
+                            <p>Landlords may now petition for a one-time offset rent increase for Apartment Rent Ordinance (ARO) apartments currently passing through utility charges through a Ratio Utility Billing System (RUBS). The petitions must be filed between July 5, 2018 to October 31, 2018.</p>
+                            <p>Existing written rental agreement, amendment, or addenda provisions for payment or pass through of utility service or similar charges or for ratio utility billing to the tenant that were executed by the landlord are void by either the date the Petition Examiner or Hearing Officer issues a decision or October 31, 2018 if a landlord does not submit a complete petition.</p>
+                            <p>If landlords charge for water, sewer, garbage, gas, and/or electricity, a one-time increase may be added to the base rent. The one-time increase may equal to the average monthly utility charges in the 2017 calendar year, capped by the 2018 Santa Clara County Housing Authority Utility Allowance rates below:</p>
+                            <br/>
+                            <table style="width:100%">
+                              <caption>Monthly Dollar Increase Allowances by Number of Bedrooms</caption>
+                              <tr>
+                                <th>UTILITY OR SERVICE</th>
+                                <th>Studio</th>
+                                <th>1 Bedroom</th>
+                                <th>2 Bedrooms</th>
+                                <th>3 Bedrooms</th>
+                              </tr>
+                              <tr>
+                                <td>Water, Sewer, & Trash</td>
+                                <td>$ 86</td>
+                                <td>$ 91</td>
+                                <td>$ 102</td>
+                                <td>$ 149</td>
+                              </tr>
+                              <tr>
+                                <td>Gas & Electricity</td>
+                                <td>$ 36</td>
+                                <td>$ 58</td>
+                                <td>$ 70</td>
+                                <td>$ 84</td>    
+                              </tr>
+                            </table>
+                            <br/>
+                            <p>To file a RUBS petition, landlords must submit the following supporting documents:</p>
+                            <ul>
+                              <li>One-time Offset Increase Petition for RUBS<li>
+                              <li>Lease Agreement and addenda with provision regarding pass through of utilities</li>
+                              <li>Pre-filing Notice to Tenant</li>
+                              <li>RUBS Petition Electronic Spreadsheet</li>
+                            <ul>
+                            <br/>
+                            <p>The RUBS Petition may be submitted by mail to the Rent Stabilization Program at 200 E. Santa Clara St, San Jose, CA 95113 or electronically to RSP@sanjoseca.gov with subject line “RUBS Petition – Your Property Address. </p>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                        <div className="panel panel-default">
+                          <div className="panel-heading">
+                            <h4 className="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                              Service Reductions</a>
+                            </h4>
+                          </div>
+
+                          <div id="collapse6" className="panel-collapse collapse">
                             <div className="panel-body">
                             <p>
                             <h5> What is service reduction? </h5>
@@ -159,12 +214,12 @@ export default class ApartmentRentOrdinance extends React.Component {
                         <div className="panel panel-default">
                           <div className="panel-heading">
                             <h4 className="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
                               Housing Code Violation</a>
                             </h4>
                           </div>
 
-                          <div id="collapse6" className="panel-collapse collapse">
+                          <div id="collapse7" className="panel-collapse collapse">
                             <div className="panel-body">
                             <h5>What is a housing code violation?</h5>
                             <p>When there are health and safety defects which violate the San José Housing Code and/or California Civil Code Sections 1941.1 and 1941.2. </p>
