@@ -209,7 +209,6 @@ export default class ApartmentRentOrdinance extends React.Component {
               </div>
               <div id="collapse6" className="panel-collapse collapse">
                 <div className="panel-body">
-                  <p>
                   <h5> What is service reduction? </h5>
                   <p> When the level of service provided by the landlord has been reduced without a corresponding decrease in rent. </p>
                   <h5> Service Reduction Claim </h5>
@@ -230,13 +229,13 @@ export default class ApartmentRentOrdinance extends React.Component {
               </div>
               <div id="collapse7" className="panel-collapse collapse">
                 <div className="panel-body">
-                <h5>What is a housing code violation?</h5>
-                <p>When there are health and safety defects which violate the San José Housing Code and/or California Civil Code Sections 1941.1 and 1941.2. </p>
-                <h5>Housing Violation Claim</h5>
-                <p>The tenant has the burden to prove their claim by submitting evidence such as a Code Enforcement Inspection which is considered presumptive evidence.</p>
-                <p> Unless there is sufficient evidence to the contrary, violations listed in the report are considered to have been proven to exist. </p>
-                <p>Issues of this type may also be classified as 'service reductions' under ARO. </p>
-                <p>The Hearing Officer may reduce, disallow or reasonably condition any rent increase based on the severity of any Housing Code violations. </p>
+                  <h5>What is a housing code violation?</h5>
+                  <p>When there are health and safety defects which violate the San José Housing Code and/or California Civil Code Sections 1941.1 and 1941.2. </p>
+                  <h5>Housing Violation Claim</h5>
+                  <p>The tenant has the burden to prove their claim by submitting evidence such as a Code Enforcement Inspection which is considered presumptive evidence.</p>
+                  <p> Unless there is sufficient evidence to the contrary, violations listed in the report are considered to have been proven to exist. </p>
+                  <p>Issues of this type may also be classified as 'service reductions' under ARO. </p>
+                  <p>The Hearing Officer may reduce, disallow or reasonably condition any rent increase based on the severity of any Housing Code violations. </p>
                 </div>
               </div>
             </div>
