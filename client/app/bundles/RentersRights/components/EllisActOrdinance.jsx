@@ -142,7 +142,7 @@ export default class EllisActOrdinance extends React.Component {
                       <div id="collapse7" className="panel-collapse collapse">
                         <div className="panel-body">
                           <p>On Tuesday, April 24, 2018, the City Council took action to amend the Ellis Act Ordinance, Tenant Protection Ordinance (TPO), and Apartment Rent Ordinance (ARO). Over the past several months, the City of San Jose has  worked with community and stakeholders to develop recommendations for these challenging issues. The following list the results from the City Council meeting:</p>
-                          <p><a href='http://www.sanjoseca.gov/DocumentCenter/View/76752' target='_blank'>Amendment to the Ellis Act Ordinance:</a><p>
+                          <p><a href='http://www.sanjoseca.gov/DocumentCenter/View/76752' target='_blank'>Amendment to the Ellis Act Ordinance:</a></p>
                           <ul>
                             <li>Re-control the greater of either 50% of new apartments built or the number of apartments removed from the market; </li>
                             <li>May exempt re-control requirements if 20% of the new construction is voluntarily restricted affordable rental housing built on-site. 15% would meet the Area Median Income (AMI) levels required by the Inclusionary Ordinance and the additional 5% would be restricted to 100% AMI;  </li>
