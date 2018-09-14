@@ -128,7 +128,6 @@ export default class EllisActOrdinance extends React.Component {
                             <li><a href='http://sanjose.granicus.com/MetaViewer.php?view_id=&event_id=2680&meta_id=629076' target='_blank'>City of San Jose Housing Department staff presentation (April 2017).</a></li>
                             <li><a href='http://www.sanjoseca.gov/DocumentCenter/View/70261' target='_blank'>Ellis Act Fact Sheet for more details on the Ordinance.</a></li>
                           </ul>
-                          </p>
                         </div>
                       </div>
                     </div>
@@ -151,11 +150,9 @@ export default class EllisActOrdinance extends React.Component {
                             <li>Allow apartments built after 1979 to use the Ellis Act procedures to permanently remove a building from the rental market after providing 120-day notification and providing relocation services to impacted tenants; and</li>
                             <li>Return with proposed ordinance after analysis to extend Ellis Act to apply to duplexes.  </li>
                           </ul>
-                          </p>
                         </div>
                       </div>
                     </div>
-
                     <br/>
                     <p>View the <a href="http://www.sanjoseca.gov/index.aspx?NID=5517" target="blank">Ellis Act Ordinance Fact Sheet</a> for more information.</p>
                   </div>
