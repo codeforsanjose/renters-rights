@@ -19,7 +19,9 @@ export default class ApartmentRentOrdinance extends React.Component {
             <h1>Apartment Rent Ordinance (ARO) </h1>
           </div>
           <p>The City of San José's Apartment Rent Ordinance (ARO) controls rent increases on apartments that are covered by the ordinance.</p>
+
           <div className="panel-group" id="accordion">
+
             <div className="panel panel-default">
               <div className="panel-heading">
                 <h4 className="panel-title">
@@ -75,29 +77,29 @@ export default class ApartmentRentOrdinance extends React.Component {
               </div>
               <div id="collapse2" className="panel-collapse collapse">
                 <div className="panel-body">
-                <p><h5>Covered</h5></p>
-                <p>Properties covered under ARO include apartments:</p>
+                  <p><h5>Covered</h5></p>
+                  <p>Properties covered under ARO include apartments:</p>
+                    <ul>
+                      <li>three or more units </li>
+                      <li>built and occupied prior to September 7, 1979</li>
+                    </ul>
+                  <br/>
+                  <p><h5>Not Covered</h5></p>
                   <ul>
-                    <li>three or more units </li>
-                    <li>built and occupied prior to September 7, 1979</li>
+                    <li>Single family homes</li>
+                    <li>in-law units/granny flats/accessory dwelling units</li>
+                    <li>duplexes</li>
+                    <li>condominiums</li>
+                    <li>townhomes</li>
+                    <li>hotels</li>
+                    <li>boarding houses rented to transient guests for periods of less than 30 days</li>
+                    <li>nonprofit homes for the aged</li>
+                    <li>school dormitories</li>
+                    <li>rental units owned and operated by any government agency</li>
+                    <li>new rental units first rented after September 7, 1979</li>
+                    <li>properties in unincorporated areas of San José</li>
                   </ul>
-                <br/>
-                <p><h5>Not Covered</h5></p>
-                <ul>
-                  <li>Single family homes</li>
-                  <li>in-law units/granny flats/accessory dwelling units</li>
-                  <li>duplexes</li>
-                  <li>condominiums</li>
-                  <li>townhomes</li>
-                  <li>hotels</li>
-                  <li>boarding houses rented to transient guests for periods of less than 30 days</li>
-                  <li>nonprofit homes for the aged</li>
-                  <li>school dormitories</li>
-                  <li>rental units owned and operated by any government agency</li>
-                  <li>new rental units first rented after September 7, 1979</li>
-                  <li>properties in unincorporated areas of San José</li>
-                </ul>
-                <p>If you have questions or want to confirm the status of a particular property, you can contact San José staff at (408) 975-4480.</p>
+                  <p>If you have questions or want to confirm the status of a particular property, you can contact San José staff at (408) 975-4480.</p>
                 </div>
               </div>
             </div>
@@ -110,11 +112,12 @@ export default class ApartmentRentOrdinance extends React.Component {
               </div>
               <div id="collapse3" className="panel-collapse collapse">
                 <div className="panel-body">
-                <p>The maximum annual allowable rent increase is 5%.</p>
-                <p>Rent increases may only be given once in a 12-month period. </p>
+                  <p>The maximum annual allowable rent increase is 5%.</p>
+                  <p>Rent increases may only be given once in a 12-month period. </p>
                 </div>
               </div>
             </div>
+
             <div className="panel panel-default">
               <div className="panel-heading">
                 <h4 className="panel-title">
@@ -124,23 +127,22 @@ export default class ApartmentRentOrdinance extends React.Component {
               </div>
               <div id="collapse4" className="panel-collapse collapse">
                 <div className="panel-body">
-                <p>
-                <h5>Exempt rent increases include:</h5>
-                <ul>
-                  <li> an increase after the rental unit has been voluntarily vacated by the tenant</li>
-                  <li> an increase after eviction of a tenant </li>
-                </ul>
-                </p>
-
-                <h5> Petition</h5>
-                <p>Tenants and property owners may file a petition.
-                Property owners who file a petition to increase rent in excess 5% must submit a cost worksheet to the Rental Rights and Referrals Program.
-                Pending a decision by the Hearing Officer, the amount of rent in excess of 5% is deferred and only an 5% rent increase should be demanded or paid.
-                </p>
-                <p>Landlords may file a <a href="http://www.sanjoseca.gov/index.aspx?nid=1356" target="_blank">Fair Return petition</a> if they would like to request the ability to increase rent more than 5% because of substantial capital improvements or capital expenses,
-                unusually low rents, uninsured damage or vandalism, or other reasons.
-                </p>
-                <p>Tenants with a rent increase subject to review and/or service reduction claims or housing code violations may file a petition.</p>
+                  <p>
+                  <h5>Exempt rent increases include:</h5>
+                  <ul>
+                    <li> an increase after the rental unit has been voluntarily vacated by the tenant</li>
+                    <li> an increase after eviction of a tenant </li>
+                  </ul>
+                  </p>
+                  <h5> Petition</h5>
+                  <p>Tenants and property owners may file a petition.
+                  Property owners who file a petition to increase rent in excess 5% must submit a cost worksheet to the Rental Rights and Referrals Program.
+                  Pending a decision by the Hearing Officer, the amount of rent in excess of 5% is deferred and only an 5% rent increase should be demanded or paid.
+                  </p>
+                  <p>Landlords may file a <a href="http://www.sanjoseca.gov/index.aspx?nid=1356" target="_blank">Fair Return petition</a> if they would like to request the ability to increase rent more than 5% because of substantial capital improvements or capital expenses,
+                  unusually low rents, uninsured damage or vandalism, or other reasons.
+                  </p>
+                  <p>Tenants with a rent increase subject to review and/or service reduction claims or housing code violations may file a petition.</p>
                 </div>
               </div>
             </div>
@@ -205,17 +207,16 @@ export default class ApartmentRentOrdinance extends React.Component {
                   Service Reductions</a>
                 </h4>
               </div>
-
               <div id="collapse6" className="panel-collapse collapse">
                 <div className="panel-body">
-                <p>
-                <h5> What is service reduction? </h5>
-                <p> When the level of service provided by the landlord has been reduced without a corresponding decrease in rent. </p>
-                <h5> Service Reduction Claim </h5>
-                <p> ARO allows tenants to request an administrative hearing for a service reduction claim. </p>
-                <p> The tenant has the burden of proof to their claim by submitting evidence such as maintenance record requests, photographs, and/or testimony.</p>
-                <p>If the claim is proven, the Hearing Officer will determine the percentage that the usability of the rental unit was reduced and the duration of the reduction.</p>
-                If the rent increase is unreasonable, the Hearing Officer may reduce a rent increase, order a credit against the paid and/or permanent or temporary reduction in future rent.</p>
+                  <p>
+                  <h5> What is service reduction? </h5>
+                  <p> When the level of service provided by the landlord has been reduced without a corresponding decrease in rent. </p>
+                  <h5> Service Reduction Claim </h5>
+                  <p> ARO allows tenants to request an administrative hearing for a service reduction claim. </p>
+                  <p> The tenant has the burden of proof to their claim by submitting evidence such as maintenance record requests, photographs, and/or testimony.</p>
+                  <p>If the claim is proven, the Hearing Officer will determine the percentage that the usability of the rental unit was reduced and the duration of the reduction.</p>
+                  If the rent increase is unreasonable, the Hearing Officer may reduce a rent increase, order a credit against the paid and/or permanent or temporary reduction in future rent.</p>
                 </div>
               </div>
             </div>
@@ -227,7 +228,6 @@ export default class ApartmentRentOrdinance extends React.Component {
                   Housing Code Violation</a>
                 </h4>
               </div>
-
               <div id="collapse7" className="panel-collapse collapse">
                 <div className="panel-body">
                 <h5>What is a housing code violation?</h5>
@@ -248,21 +248,21 @@ export default class ApartmentRentOrdinance extends React.Component {
                   Freedom to Exercise Rights</a>
                 </h4>
               </div>
-
               <div id="collapse8" className="panel-collapse collapse">
                 <div className="panel-body">
-                <p>Apartment owners may not do the following in retaliation for tenants demanding their rights under the Ordinance:</p>
-                <ul>
-                  <li>Threaten to sue, evict or terminate the tenancy of the tenant(s).</li>
-                  <li>Harass you until you leave. </li>
-                  <li>Reduce your services. </li>
-                  <li>Increase your rent. </li>
-                  <li>Impose a security deposit or any other new charge. </li>
-                </ul>
-                <em>If any of these actions occur, provide a written complaint to the Rental Rights & Referrals Program at 200 East Santa Clara Street, 12th Floor, San José, CA 95113. To contact staff call (408)975-4480.</em>
+                  <p>Apartment owners may not do the following in retaliation for tenants demanding their rights under the Ordinance:</p>
+                  <ul>
+                    <li>Threaten to sue, evict or terminate the tenancy of the tenant(s).</li>
+                    <li>Harass you until you leave. </li>
+                    <li>Reduce your services. </li>
+                    <li>Increase your rent. </li>
+                    <li>Impose a security deposit or any other new charge. </li>
+                  </ul>
+                  <em>If any of these actions occur, provide a written complaint to the Rental Rights & Referrals Program at 200 East Santa Clara Street, 12th Floor, San José, CA 95113. To contact staff call (408)975-4480.</em>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </RentersLayout>
