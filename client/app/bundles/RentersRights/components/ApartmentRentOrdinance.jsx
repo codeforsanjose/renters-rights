@@ -187,7 +187,7 @@ export default class ApartmentRentOrdinance extends React.Component {
                   <br/>
                   <p>To file a RUBS petition, landlords must submit the following supporting documents:</p>
                   <ul>
-                    <li>One-time Offset Increase Petition for RUBS<li>
+                    <li>One-time Offset Increase Petition for RUBS</li>
                     <li>Lease Agreement and addenda with provision regarding pass through of utilities</li>
                     <li>Pre-filing Notice to Tenant</li>
                     <li>RUBS Petition Electronic Spreadsheet</li>
