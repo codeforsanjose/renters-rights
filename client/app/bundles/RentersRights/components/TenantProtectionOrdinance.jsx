@@ -41,7 +41,7 @@ export default class TenantProtectionOrdinance extends React.Component {
                             <li>Return with proposed ordinance after analysis to allow victims of domestic violence who have been residing in a unit with the leaseholder who is the alleged abuser a mechanism to take over the lease; and</li>
                             <li>Return with proposed ordinance after analysis to extend TPO to duplexes requiring a just cause for termination of tenancy.</li>
                           </ul>
-                          <hr>
+                          <hr/>
                           <br/>
                           <p>On Tuesday, November 14, 2017, San Jose City Council voted to make an <strong>Amendment to the Tenant Protection Ordinance (TPO):</strong></p>
                           <ul>
