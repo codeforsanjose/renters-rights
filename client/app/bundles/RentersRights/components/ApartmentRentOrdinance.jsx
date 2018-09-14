@@ -193,7 +193,7 @@ export default class ApartmentRentOrdinance extends React.Component {
                     <li>Lease Agreement and addenda with provision regarding pass through of utilities</li>
                     <li>Pre-filing Notice to Tenant</li>
                     <li>RUBS Petition Electronic Spreadsheet</li>
-                  <ul>
+                  </ul>
                   <br/>
                   <p>The RUBS Petition may be submitted by mail to the Rent Stabilization Program at 200 E. Santa Clara St, San Jose, CA 95113 or electronically to RSP@sanjoseca.gov with subject line “RUBS Petition – Your Property Address. </p>
                 </div>
