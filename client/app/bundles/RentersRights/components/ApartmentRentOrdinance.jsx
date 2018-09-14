@@ -215,7 +215,7 @@ export default class ApartmentRentOrdinance extends React.Component {
                   <p> ARO allows tenants to request an administrative hearing for a service reduction claim. </p>
                   <p> The tenant has the burden of proof to their claim by submitting evidence such as maintenance record requests, photographs, and/or testimony.</p>
                   <p>If the claim is proven, the Hearing Officer will determine the percentage that the usability of the rental unit was reduced and the duration of the reduction.</p>
-                  If the rent increase is unreasonable, the Hearing Officer may reduce a rent increase, order a credit against the paid and/or permanent or temporary reduction in future rent.</p>
+                  <p>If the rent increase is unreasonable, the Hearing Officer may reduce a rent increase, order a credit against the paid and/or permanent or temporary reduction in future rent.</p>
                 </div>
               </div>
             </div>
