@@ -164,27 +164,29 @@ export default class RentIncrease extends React.Component {
                           <br/>
                           <table className="dollar-increase-allowances-by-bedrooms-table">
                             <caption>Monthly Dollar Increase Allowances by Number of Bedrooms</caption>
-                            <tr>
-                              <th>UTILITY OR SERVICE</th>
-                              <th>Studio</th>
-                              <th>1 Bedroom</th>
-                              <th>2 Bedrooms</th>
-                              <th>3 Bedrooms</th>
-                            </tr>
-                            <tr>
-                              <td>Water, Sewer, & Trash</td>
-                              <td>$ 86</td>
-                              <td>$ 91</td>
-                              <td>$ 102</td>
-                              <td>$ 149</td>
-                            </tr>
-                            <tr>
-                              <td>Gas & Electricity</td>
-                              <td>$ 36</td>
-                              <td>$ 58</td>
-                              <td>$ 70</td>
-                              <td>$ 84</td>
-                            </tr>
+                            <tbody>
+                              <tr>
+                                <th>UTILITY OR SERVICE</th>
+                                <th>Studio</th>
+                                <th>1 Bedroom</th>
+                                <th>2 Bedrooms</th>
+                                <th>3 Bedrooms</th>
+                              </tr>
+                              <tr>
+                                <td>Water, Sewer, & Trash</td>
+                                <td>$ 86</td>
+                                <td>$ 91</td>
+                                <td>$ 102</td>
+                                <td>$ 149</td>
+                              </tr>
+                              <tr>
+                                <td>Gas & Electricity</td>
+                                <td>$ 36</td>
+                                <td>$ 58</td>
+                                <td>$ 70</td>
+                                <td>$ 84</td>
+                              </tr>
+                            </tbody>                           
                           </table>
                           <br/>
                           <p>To file a RUBS petition, landlords must submit the following supporting documents:</p>
