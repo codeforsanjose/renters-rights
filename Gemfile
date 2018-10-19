@@ -38,6 +38,8 @@ gem 'httparty', '0.16.0'
 gem 'exception_handler', '0.7.7.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'sprockets', '3.7.2'
+gem 'ffi', '1.9.24'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
