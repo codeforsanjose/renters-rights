@@ -3,8 +3,6 @@ import Home from '../components/Home';
 import Eviction from '../components/Eviction';
 import About from '../components/About';
 import RentCalculator from '../components/RentCalculator';
-// import Shelter from '../components/Shelter';
-// import LegalAid from '../components/LegalAid';
 import Resources from '../components/resources/Resources';
 import ReportIssue from '../components/ReportIssue';
 import FindJurisdiction from '../components/FindJurisdiction';
@@ -14,7 +12,6 @@ import HousingDiscrimination from '../components/HousingDiscrimination';
 import MobileHomeOrdinance from '../components/MobileHomeOrdinance';
 import EllisActOrdinance from '../components/EllisActOrdinance';
 import TenantProtectionOrdinance from '../components/TenantProtectionOrdinance';
-import ApartmentRentOrdinance from '../components/ApartmentRentOrdinance';
 
 
 //import { addLocaleData } from 'react-intl';
@@ -37,5 +34,4 @@ ReactOnRails.register({
   MobileHomeOrdinance,
   EllisActOrdinance,
   TenantProtectionOrdinance,
-  ApartmentRentOrdinance
 });
