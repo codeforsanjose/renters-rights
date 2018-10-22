@@ -11,59 +11,70 @@ export default class Resources extends React.Component {
     super(props);
 
     this.state = {
-      filter: 'all'
+      category: 'all',
+      language: 'all' 
     };
-
-    this.handleClick = this.handleClick.bind(this);
   }
 
   componentWillMount () {
-    this.setState({filter: this.props.filter})
-  }
-
-  handleClick(filter) {
-    this.setState({filter})
+    let queryParams = Object.keys(this.props.filter); 
+    if (queryParams.length >= 2) { /* If parameters are present in url query string */
+      let category = this.props.filter.category || 'all';
+      let language = this.props.filter.language || 'all';
+      this.setState({
+        category: category,
+        language: language
+      })
+    }
   }
 
   filterResources() {
     let resourceList = tsvParse(resources);
-    let title;
 
-    if (this.state.filter === 'legal') {
-      title = 'Legal Information'
-      resourceList = resourceList.filter((row) => row.filter_tags === 'Legal/Housing');
-    } else if (this.state.filter === 'shelter') {
-      title = 'Shelter Information'
-      resourceList = resourceList.filter((row) => row.filter_tags === 'Shelter');
-    }
-
-    return resourceList;
+    let categoryFilter = this.filter(resourceList, this.state.category, 'category')
+    let categoryFilter2 = this.filter(categoryFilter, this.state.language, 'language')
+    return categoryFilter2;
   }
 
-  getTitle() {
-    const { filter } = this.state;
-    let title;
+  filter (resources, filterWords, filter) {
+    if(filterWords.includes('all')) { return resources;} /* Case if there is nothing to filter, return all results */
+    
+    return resources.filter( (row) => {
+      let rowWords;
+      if (filter === 'language') { 
+        rowWords = row.language.split(',')
+      } else if (filter === 'category') { 
+        rowWords = row.category.split(',')
+      }
 
-    if (filter === 'all') title = 'All Resources';
-    if (filter === 'legal') title = 'Legal Information';
-    if (filter === 'shelter') title = 'Shelter Information';
-
-    return title;
-  }
+      return filterWords.some( (filterWord) => {
+        return rowWords.indexOf(filterWord) >=0;
+      })
+      
+    })
+  }  
 
   render() {
    {/* locale setup - remove comment when app translation is ready. Also add locale={locale} to RentersLayout below
        const { locale } = this.props; */}
-    const filterProps = { handleClick: this.handleClick };
-    const resourceList = this.filterResources();
-    const title = this.getTitle();
+    let resourceList = this.filterResources();
+    let title = ''
+    if (resourceList.length < 1) {
+      title = 'No resources available. Please try different filter'
+    }
 
     return (
       <RentersLayout>
         <div className='content-container'>
-          <ResourceFilter {...filterProps} currentActive={this.state.filter}/>
+
           <div className="row">
-            <div className="col-md-9">
+            <div id='resourceFilter' className="col-md-4 collapse in">
+                <ResourceFilter checked={this.state}/>
+                <EmergencyResource />
+            </div>
+
+            <div className="col-md-8">
+              <h2>Resources</h2>
               <h2>{title}</h2>
               {
                 resourceList.map((resource, idx) => (
@@ -74,37 +85,10 @@ export default class Resources extends React.Component {
                 ))
               }
             </div>
-            <EmergencyResource />
+
           </div>
         </div>
       </RentersLayout>
     )
   }
 }
-
-
-
-
-// <div className="content-container">
-//   <div className="page-header">
-//     <h3>
-//       Resources
-//     </h3>
-//   </div>
-//   <div className="row">
-//     <div className="col-md-9">
-//       <p>
-//         <a href="/shelter" className="btn btn-sq-lg btn-warning">
-//           <br/><span className="glyphicon glyphicon-home"></span> <br/>I Need Shelter
-//           </a>
-//           <a href="/legal-aid" className="btn btn-sq-lg btn-primary">
-//             <br/><span className="glyphicon glyphicon-question-sign"></span> <br/>I Need Legal Help
-//             </a>
-//           </p>
-//         </div>
-//         <div className="col-md-3">
-//           <p><strong>More questions?</strong></p>
-//           <p> Check out <a href="https://www.1degree.org/" target="_blank">One Degree</a> for more resources in San Francisco Bay Area </p>
-//         </div>
-//       </div>
-//     </div>

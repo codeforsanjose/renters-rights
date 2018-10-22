@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # reference: http://guides.rubyonrails.org/routing.html
   get '/about', to: 'renters_rights#about'
   get '/eviction', to: 'renters_rights#eviction'
-  get '/resources/:filter', to: 'renters_rights#resources'
+  get '/resources', to: 'renters_rights#resources'
   get '/rent-calculator', to: 'renters_rights#rent_calculator'
   get '/legal-aid', to: 'renters_rights#legal_aid'
   get '/shelter', to: 'renters_rights#shelter'
