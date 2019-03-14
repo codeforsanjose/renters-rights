@@ -31,24 +31,58 @@ export default class RentIncrease extends React.Component {
                   <div className="panel-group" id="accordion">
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                          Recent Policy Updates</a>
-                        </h4>
+                          Updates</a>
+                        </h2>
                       </div>
                       <div id="collapse1" className="panel-collapse collapse">
                         <div className="panel-body">
-                          <p>On April 24, 2018, the City Council approved an amendment to the ARO providing clarification that Ratio Utility Billing System (RUBS) is not allowed and additionally establishing a petition process to be described in the Regulations for landlords with existing RUBS contracts. The City Council requested staff to work with the Attorney’s Office to prepare a further amendment to the ARO clarifying that RUBS agreements will be allowed until October 31, 2018 or until the decision on a landlord’s petition for a one-time rent increase, whichever is sooner. This second amendment was adopted by the City Council on June 5, 2018, at which time the City Council directed staff to take an amendment to the Regulations establishing the petition process to the City Manager for approval.</p>
-                          <p>Additionally, since the ARO and Regulations changed most of the longstanding petition procedures, questions about the new procedures have arisen and staff and the hearing officers have identified opportunities for improvement to customer service and processes related to implementation of the petition process by the Regulations. Staff also received feedback from a range of stakeholders while developing the amendments to the Regulations.</p>
-                          <p>The amendments to the <a href='http://www.sanjoseca.gov/DocumentCenter/View/73546' target='_blank'>ARO Regulations</a> include:</p>
+                          <h3>
+                          Ratio Utility Billing System (RUBS) Petition
+                          </h3>
+                          <p>On April 24, 2018, San Jose City Council voted to require utility charges to be included in the rent charged for rent stabilized apartments.  The Ordinance allows landlords to file a one-time rent increase petition between July 5, 2018 to October 31, 2018 if they are currently charging utilities through a ratio utility billing system (RUBS) or similar unmetered allocation arrangements.  Starting October 31, 2018, landlords will not be allowed to bill utilities to tenants through those means if a petition has not been submitted or after a final decision is submitted on a filed petition.</p><p>A one-time rent increase may be permitted provided that certain requirements are met as set forth in the Ordinance and Regulations.  If approved, the one-time rent increase may equal the average monthly utility charges in the 2017 Santa Clara County Housing Authority Utility Allowance rates.</p>
+                          <p>To file a RUBS petition, landlords must submit the following supporting documents:</p>
                           <ul>
-                            <li><strong>Clarification of Timelines in the Petition Process:</strong> Through the Regulations, amendments were made to number of days a tenant or landlord may respond to a submitted petition. For example, for Incomplete Petitions in Section 5.03.1.b, the petitioner now has 30 days instead of 10 days to complete the petition or otherwise be considered withdrawn. For a response to a submitted petition, the responding party (tenant or landlord) will now have 14 days instead of 30 days from the mailing of the notice that a complete petition was received. This change was a recommended change from stakeholders including the Hearing Officers, landlords, and tenants who provided feedback that 30 days was too long of a timeframe to respond to a petition.</li>
-                            <li><strong>Clarifications to the Hearing Process under Chapter 6 and 7:</strong> Under these chapters, clarifications were made to the following: 1) the notice and timing of a hearing (7.11.1); 2) what Administration Decision should include (6.03); 3) the open session requirement for voluntary mediation hearings (7.04.1 and 7.04.4); 4) when a claim for violating a Voluntary Agreement may be filed (7.04.6); 5) the timeframe for Mediator/Hearing Officer’s decisions following an unresolved mediation hearing (7.04.7); 6) the three types of Ch. 7 hearings (7.05-7.05.3); and 7) what statutes constitute Housing Code Violations (7.09).   </li>
-                            <li><strong>City Will Hold the Official Hearing Record:</strong>Under Section 5.06, the City will be responsible for retaining the official Hearing records after the proceedings under any Chapter in the Regulations.</li>
-                            <li><strong>Addition of Chapter 13:</strong> On the May 22, 2018 City Council meeting, staff was directed to submit to the City Manager for approval a proposed amendment adding Chapter 13 to the ARO Regulations, which describes the offset petition process. The recommended changes will further amend the ARO so that utility pass through agreements executed with existing tenants before January 1, 2018 are not expressly void until the landlord’s offset petition is decided. The period for filing petitions will be from July 5, 2018 to October 31, 2018. Landlords who can demonstrate a standing business process of requiring pass throughs for all tenants since June 2017 may also participate in the offset petition process for those agreements executed between January 1, 2018 and May 1, 2018.</li>
+                            <li>
+                            One-time Offset Increase Petition for RUBS
+                            </li>
+                            <li>
+                            Lease Agreement and Addenda with provision regarding pass-through utilities
+                            </li>
+                            <li>
+                            Pre-filing Notice to Tenant
+                            </li>
+                            <li>
+                            RUBS Petition Electronic Spreadsheet
+                            </li>
+                          </ul>
+                          <hr/>
+                          <h3>Apartment Rent Ordinance Regulation Amendments (June 28, 2018)</h3>
+                          <p><a href="http://www.sanjoseca.gov/DocumentCenter/View/73546" target="_blank">Amendments to Apartment Rent Ordinance</a> include:</p>
+                          <ul>
+                            <li>
+                              <strong>Clarification of Timelines in the Petition Process:</strong> Through the Regulations, amendments were made to number of days a tenant or landlord may respond to a submitted petition. For example, for Incomplete Petitions in Section 5.03.1.b, the petitioner now has 30 days instead of 10 days to complete the petition or otherwise be considered withdrawn. For a response to a submitted petition, the responding party (tenant or landlord) will now have 14 days instead of 30 days from the mailing of the notice that a complete petition was received. This change was a recommended change from stakeholders including the Hearing Officers, landlords, and tenants who provided feedback that 30 days was too long of a timeframe to respond to a petition.
+                            </li>
+                            <li>
+                              <strong>Clarifications to the Hearing Process under Chapter 6 and 7:</strong> Under these chapters, clarifications were made to the following: 1) the notice and timing of a hearing (7.11.1); 2) what Administration Decision should include (6.03); 3) the open session requirement for voluntary mediation hearings (7.04.1 and 7.04.4); 4) when a claim for violating a Voluntary Agreement may be filed (7.04.6); 5) the timeframe for Mediator/Hearing Officer’s decisions following an unresolved mediation hearing (7.04.7); 6) the three types of Ch. 7 hearings (7.05-7.05.3); and 7) what statutes constitute Housing Code Violations (7.09).   
+                            </li>
+                            <li>
+                              <strong>City Will Hold the Official Hearing Record:</strong> Under Section 5.06, the City will be responsible for retaining the official Hearing records after the proceedings under any Chapter in the Regulations.
+                            </li>
+                            <li>
+                              <strong>Addition of Chapter 13:</strong> On the May 22, 2018 City Council meeting, staff was directed to submit to the City Manager for approval a proposed amendment adding Chapter 13 to the ARO Regulations, which describes the offset petition process. The recommended changes will further amend the ARO so that utility pass through agreements executed with existing tenants before January 1, 2018 are not expressly void until the landlord’s offset petition is decided. The period for filing petitions will be from July 5, 2018 to October 31, 2018. Landlords who can demonstrate a standing business process of requiring pass throughs for all tenants since June 2017 may also participate in the offset petition process for those agreements executed between January 1, 2018 and May 1, 2018. 
+                            </li>
                           </ul>
                           <br/>
                           <hr/>
+                          <h3>Rent Registry</h3>
+                          <p>
+                          The deadline for landlords to register their rent-stabilized apartments is March 1, 2019. Log into the <a href="https://sjrentregistry.force.com" target="_blank">Rent Registry</a>
+                          </p>
+                          <br/>
+                          <hr/>
+                          <h3>November 14, 2017 Updates</h3>
                           <p>On Tuesday, November 14, 2017, San Jose City Council took action on the following agenda items:</p>
                           <strong>Amendment to the Tenant Protection Ordinance (TPO):</strong>
                           <ul>
@@ -76,21 +110,21 @@ export default class RentIncrease extends React.Component {
                     </div>
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                           What is covered by ARO?</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse2" className="panel-collapse collapse">
                         <div className="panel-body">
-                          <h5>Covered</h5>
+                          <h3>Covered</h3>
                           <p>Properties covered under ARO include apartments:</p>
                             <ul>
                               <li>three or more units </li>
                               <li>built and occupied prior to September 7, 1979</li>
                             </ul>
                           <br/>
-                          <h5>Not Covered</h5>
+                          <h3>Not Covered</h3>
                           <ul>
                             <li>Single family homes</li>
                             <li>in-law units/granny flats/accessory dwelling units</li>
@@ -111,10 +145,10 @@ export default class RentIncrease extends React.Component {
                     </div>
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
                           How much can rent be increased?</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse3" className="panel-collapse collapse">
                         <div className="panel-body">
@@ -125,36 +159,45 @@ export default class RentIncrease extends React.Component {
                     </div>
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
                           Exceptions to Allowable Rent Increase</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse4" className="panel-collapse collapse">
                         <div className="panel-body">
-                          <h5>Exempt rent increases include:</h5>
+                          <h3>Exempt rent increases include:</h3>
                           <ul>
                             <li> an increase after the rental unit has been voluntarily vacated by the tenant</li>
                             <li> an increase after eviction of a tenant </li>
                           </ul>
-                          <h5> Petition</h5>
-                          <p>Tenants and property owners may file a petition.
-                          Property owners who file a petition to increase rent in excess 5% must submit a cost worksheet to the Rental Rights and Referrals Program.
-                          Pending a decision by the Hearing Officer, the amount of rent in excess of 5% is deferred and only an 5% rent increase should be demanded or paid.
+                          <h3> Petition</h3>
+                          <p>
+                            A landlord can petition to pass through costs to tenants for the following reasons:
+                          </p>
+                          <ul>
+                            <li>
+                              Specific Capital Improvements: The total monthly amount imposed may not exceed 3 percent of the monthly rent charged and is not considered rent. The improvement must have been completed within 12 months prior to the filing of the petition.
+                            </li>
+                            <li>
+                              Fair Return Increase: A special permanent rent adjustment may be approved by the City when the landlord offers proof that their operating expenses exceed income as is adjusted for by inflation.
+                            </li>
+                          </ul>
+                          <p>
+                            Tenants may also file a joint petition with their landlord for a 5% increase in rent per additional occupant.
                           </p>
                           <p>Landlords may file a <a href="http://www.sanjoseca.gov/index.aspx?nid=1356" target="_blank">Fair Return petition</a> if they would like to request the ability to increase rent more than 5% because of substantial capital improvements or capital expenses,
                           unusually low rents, uninsured damage or vandalism, or other reasons.
                           </p>
-                          <p>Tenants with a rent increase subject to review and/or service reduction claims or housing code violations may file a petition.</p>
                         </div>
                       </div>
                     </div>
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
                           Ratio Utility Billing System (RUBS) Petition </a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse5" className="panel-collapse collapse">
                         <div className="panel-body">
@@ -203,16 +246,16 @@ export default class RentIncrease extends React.Component {
                     </div>
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
                           Service Reductions</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse6" className="panel-collapse collapse">
                         <div className="panel-body">
-                          <h5> What is service reduction? </h5>
+                          <h3> What is service reduction? </h3>
                           <p> When the level of service provided by the landlord has been reduced without a corresponding decrease in rent. </p>
-                          <h5> Service Reduction Claim </h5>
+                          <h3> Service Reduction Claim </h3>
                           <p> ARO allows tenants to request an administrative hearing for a service reduction claim. </p>
                           <p> The tenant has the burden of proof to their claim by submitting evidence such as maintenance record requests, photographs, and/or testimony.</p>
                           <p>If the claim is proven, the Hearing Officer will determine the percentage that the usability of the rental unit was reduced and the duration of the reduction.</p>
@@ -222,16 +265,16 @@ export default class RentIncrease extends React.Component {
                     </div>
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
                           Housing Code Violation</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse7" className="panel-collapse collapse">
                         <div className="panel-body">
-                          <h5>What is a housing code violation?</h5>
+                          <h3>What is a housing code violation?</h3>
                           <p>When there are health and safety defects which violate the San José Housing Code and/or California Civil Code Sections 1941.1 and 1941.2. </p>
-                          <h5>Housing Violation Claim</h5>
+                          <h3>Housing Violation Claim</h3>
                           <p>The tenant has the burden to prove their claim by submitting evidence such as a Code Enforcement Inspection which is considered presumptive evidence.</p>
                           <p> Unless there is sufficient evidence to the contrary, violations listed in the report are considered to have been proven to exist. </p>
                           <p>Issues of this type may also be classified as 'service reductions' under ARO. </p>
@@ -239,13 +282,12 @@ export default class RentIncrease extends React.Component {
                         </div>
                       </div>
                     </div>
-
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
                           Freedom to Exercise Rights</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse8" className="panel-collapse collapse">
                         <div className="panel-body">
@@ -269,10 +311,10 @@ export default class RentIncrease extends React.Component {
                   <div className="panel-group" id="accordion">
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">
                           What is covered by the Mobilehome Ordinance?</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse16" className="panel-collapse collapse">
                         <div className="panel-body">
@@ -283,10 +325,10 @@ export default class RentIncrease extends React.Component {
                     </div>
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">
                           How much can rent be increased?</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse17" className="panel-collapse collapse">
                         <div className="panel-body">
@@ -304,10 +346,10 @@ export default class RentIncrease extends React.Component {
                     </div>
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse18">
                           Mobilehome Owners' Rights under the Ordinance - Rent Increases Above the Allowable Amount</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse18" className="panel-collapse collapse">
                         <div className="panel-body">
@@ -326,14 +368,14 @@ export default class RentIncrease extends React.Component {
                     </div>
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse19">
                           Service Reductions</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse19" className="panel-collapse collapse">
                         <div className="panel-body">
-                        <h5>What is a service reduction?</h5>
+                        <h3>What is a service reduction?</h3>
                         <p>
                         A service reduction has occurred when the level of service provided by the park owner has been reduced without a corresponding decrease in rent.  The Ordinance does not allow residents to request an administrative hearing but you do have other rights under state and local laws.
                         The State Mobilehome Residency Law allows mobilehome park residents to make a written request for a meeting on service problems with the park owner or their representative.
@@ -354,10 +396,10 @@ export default class RentIncrease extends React.Component {
                     </div>
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse20">
                           Resident's Waiver of Rights</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse20" className="panel-collapse collapse">
                         <div className="panel-body">
@@ -374,10 +416,10 @@ export default class RentIncrease extends React.Component {
 
                     <div className="panel panel-default">
                       <div className="panel-heading">
-                        <h4 className="panel-title">
+                        <h2 className="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse21">
                           Freedom to Exercise Rights</a>
-                        </h4>
+                        </h2>
                       </div>
                       <div id="collapse21" className="panel-collapse collapse">
                         <div className="panel-body">
