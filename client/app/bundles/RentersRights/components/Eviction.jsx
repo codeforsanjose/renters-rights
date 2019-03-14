@@ -19,10 +19,10 @@ export default class Eviction extends React.Component {
           </div>
           <div className="row">
             <div className="col-md-3">
-              <h3>STEP ONE</h3>
+              <h2>STEP ONE</h2>
             </div>
             <div className="col-md-9">
-              <h3>VERIFY THAT IT’S AN OFFICIAL EVICTION NOTICE</h3>
+              <h2>VERIFY THAT IT’S AN OFFICIAL EVICTION NOTICE</h2>
               <br/>
               <span className="glyphicon glyphicon-unchecked"></span> 
               Is it in writing?
@@ -59,10 +59,10 @@ export default class Eviction extends React.Component {
           </div>
           <div className="row">
             <div className="col-md-3">
-              <h3>STEP TWO</h3>
+              <h2>STEP TWO</h2>
             </div>
             <div className="col-md-9">
-              <h3>RESPOND WITHIN FIVE DAYS</h3>
+              <h2>RESPOND WITHIN FIVE DAYS</h2>
               <br/>
               <p>
               After confirming that the notice is official, respond by filing an answer to the unlawful detainer within <em>five days</em>. 
@@ -89,10 +89,10 @@ File an answer by filling out the following forms supplied by Santa Clara County
           </div>
           <div className="row">
             <div className="col-md-3">
-              <h3>STEP THREE</h3>
+              <h2>STEP THREE</h2>
             </div>
             <div className="col-md-9">
-              <h3>WAIT</h3>
+              <h2>WAIT</h2>
               <br/>
               <p>After you file an answer, your landlord can request a trial. Since evictions are on “fast-tracks” your trial will be scheduled in approximately 20 days.</p>
               <p className="text-center">
@@ -105,10 +105,10 @@ File an answer by filling out the following forms supplied by Santa Clara County
           </div>
           <div className="row">
             <div className="col-md-3">
-              <h3>STEP FOUR</h3>
+              <h2>STEP FOUR</h2>
             </div>
             <div className="col-md-9">
-              <h3>SEEK ASSISTANCE</h3>
+              <h2>SEEK ASSISTANCE</h2>
               <br/>
               Find local <a href="/resources/all">legal aid resources</a>
             </div>

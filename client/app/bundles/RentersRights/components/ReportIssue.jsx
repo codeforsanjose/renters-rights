@@ -16,7 +16,7 @@ export default class ReportIssue extends React.Component {
       <RentersLayout>
         <div className="content-container language-paragraph">
           <div className="page-header">
-            <h1>Report San José Rental Issue(s)</h1>
+            <h1>Are you a renter in San José, California with issues with your rental?</h1> 
           </div>
           <p>Contact the City of San José Rental Rights and Referrals Program via <a href="mailto:rrrp@sanjoseca.gov">email</a> or call <a href="tel:+4089754480">(408)975-4480</a>.</p>
         </div>

@@ -14,22 +14,22 @@ export default class Home extends React.Component {
       <RentersLayout locale={locale}>
         <div className="content-container">
           <div className="page-header">
-            <h3>
+            <h1>
               <FormattedMessage
                 defaultMessage="Helping renters in San José, California understand the laws and programs in place to protect them."
                 id="home.title"
               />
-            </h3>
+            </h1>
           </div>
           <br/>
           <div className="home-links">
             <div className="col-sm-12 col-md-6">
-              <h3>
+              <h1>
                 <FormattedMessage
                   defaultMessage="How can we help you today?"
                   id="home.subtitle"
                 />
-              </h3>
+              </h1>
               <div className="list-group">
                 <a href={`/${locale}/eviction`} className="list-group-item list-group-item-danger">
                   <h4 className="list-group-item-heading">
@@ -75,7 +75,7 @@ export default class Home extends React.Component {
        <RentersLayout>
          <div className="content-container">
            <div className="page-header text-center">
-             <h3>Know Your Rights as a San José, California Renter</h3>
+             <h1>Know Your Rights as a San José, California Renter</h1>
            </div>
            <div className="row">
               <div className=" col-md-12 text-center">

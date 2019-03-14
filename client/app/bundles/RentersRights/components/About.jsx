@@ -23,15 +23,14 @@ export default class About extends React.Component {
           <div className="panel-group" id="accordion">
             <div className="panel panel-default">
               <div className="panel-heading">
-                <h3 className="panel-title">
+                <h2 className="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                   About this website
                   </a>
-                </h3>
+                </h2>
               </div>
               <div id="collapse1" className="panel-collapse collapse">
                 <div className="panel-body">
-
                 We built this website to help inform renters in San José, California to know their rights and learn about local resources. <br/><br/>
                 This currently only covers San José, California. This app is not a substitute for legal advice. If you are seeking legal aid, please consult a lawyer immediately. <br/><br/>
                 This web app is built by volunteer researchers, designers and developers with <a href="http://www.codeforsanjose.com/" target="_blank">Code for San José</a>, a chapter of <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>. We built this tool, because we are concerned with the affordable housing crisis in Silicon Valley.
@@ -56,10 +55,10 @@ export default class About extends React.Component {
             </div>
             <div className="panel panel-default">
               <div className="panel-heading">
-                <h3 className="panel-title">
+                <h2 className="panel-title">
                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                   How You Can Help</a>
-                </h3>
+                </h2>
               </div>
               <div id="collapse2" className="panel-collapse collapse">
                 <div className="panel-body">
@@ -78,10 +77,10 @@ export default class About extends React.Component {
 
             <div className="panel panel-default">
               <div className="panel-heading">
-                <h3 className="panel-title">
+                <h2 className="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
                   Who can I contact about an eviction?</a>
-                </h3>
+                </h2>
               </div>
               <div id="collapse3" className="panel-collapse collapse">
                 <div className="panel-body">
@@ -92,10 +91,10 @@ export default class About extends React.Component {
 
             <div className="panel panel-default">
               <div className="panel-heading">
-                <h3 className="panel-title">
+                <h2 className="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
                   How can I report San José rental issues?</a>
-                </h3>
+                </h2>
               </div>
               <div id="collapse4" className="panel-collapse collapse">
                 <div className="panel-body">
@@ -112,10 +111,10 @@ export default class About extends React.Component {
 
             <div className="panel panel-default">
               <div className="panel-heading">
-                <h3 className="panel-title">
+                <h2 className="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
                   Where can I go for help if I live outside of San José?</a>
-                </h3>
+                </h2>
               </div>
               <div id="collapse5" className="panel-collapse collapse">
                 <div className="panel-body">

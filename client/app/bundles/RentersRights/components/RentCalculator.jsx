@@ -28,7 +28,7 @@ export default class RentCalculator extends React.Component {
 
     return (
         <div className="col-md-6">
-          <h3>Calculate Rent Increase</h3>
+          <h1>Calculate Rent Increase</h1>
           <form>
             <div className="form-group">
               <label htmlFor="previous-rent">
@@ -59,7 +59,7 @@ export default class RentCalculator extends React.Component {
             </div>
             <div className="panel panel-default">
               <div className="panel-heading">
-                <h5>Percentage Increase</h5>
+                <h2>Percentage Increase</h2>
               </div>
               <div className="panel-body">
                 <p>
