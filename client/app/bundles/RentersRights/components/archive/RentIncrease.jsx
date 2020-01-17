@@ -1,5 +1,5 @@
 import React from 'react';
-import RentersLayout from './RentersLayout'
+import RentersLayout from '../RentersLayout'
 import RentCalculator from './RentCalculator'
 
 export default class RentIncrease extends React.Component {

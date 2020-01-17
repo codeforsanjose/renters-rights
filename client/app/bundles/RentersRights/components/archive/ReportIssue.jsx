@@ -1,5 +1,5 @@
 import React from 'react';
-import RentersLayout from './RentersLayout'
+import RentersLayout from '../RentersLayout'
 
 export default class ReportIssue extends React.Component {
 
