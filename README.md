@@ -1,8 +1,14 @@
 # Renter's Rights Guide
-Renter's Rights Guide is a [Code for San José](http://codeforsanjose.com) open source web application to help renters in San José understand the laws and programs in place to protect them. View the [demo](https://rentersrightsguide.org)
+This [website]](https://rentersrightsguide.org)'s original UI is now archived. We now direct visitors to [City of San José Housing Department](http://sanjoseca.gov/rent) because they have improved the website UI. 
 
-## Why Renter's Rights Guide
-We learned from conducting user research and stakeholder interviews that renters in Santa Clara County deal with issues such as how to navigate the eviction process, increased rent, and how to find affordable housing. It can be difficult to navigate policy jargon to understand renters rights and procedures to address issues. We hope to build an application that will empower renters in San José to understand their rights and resources. 
+## Project History 
+We started the Renter's Rights Guide in 2017 as a [Code for San José](http://codeforsanjose.com) open source web application to help renters in San José understand their rights and resources. 
+
+We learned from conducting user research and stakeholder interviews that renters in Santa Clara County deal with issues such as how to navigate the eviction process, increased rent, and how to find affordable housing. It can be difficult to navigate policy jargon to understand renters rights and procedures to address issues.  
+
+From 2018-2019 we maintained the website, keeping it up to date with any policy changes from the City of San José. 
+
+In January 2020, we decided to archive the website because the city has improved their Housing department website UI.  
 
 ## Tech
 This web application is built with  Rails, React.js, React-on-Rails gem, and PostgreSQL.
@@ -35,18 +41,6 @@ After you install the dependencies:
 1. Navigate to ```http://0.0.0.0:5100/```
 
 ## How You Can Contribute
-Join the #renters_rights channel on our [Slack](https://codeforsanjose.slack.com)
+Look at our [projects page](https://codeforsanjose.com#projects) to find other projects to contribute to, discuss your ideas and join teams on our [Slack](https://codeforsanjose.slack.com). If you don't have an account, [sign up here](https://slackin-c4sj.herokuapp.com/). Join us at an upcoming [civic hack night or other event on Meetup](https://meetup.com/Code-for-San-Jose).
 
 ## Made with <3 by Code for San José
-
-* [Yan-Yin Choy](https://github.com/ychoy), Developer
-* [Matthew King](https://github.com/mking), Developer
-* [Julie Kim](https://github.com/jliekim), UX Researcher & Designer
-* [David Pindrys](https://github.com/dpindrys), UX Researcher & Designer
-* [Sanaz Jamloo](https://github.com/sanazjamloo), UX Researcher
-* [Emily Ramos](https://github.com/EngineerEmily), UX Researcher
-* [Lorin Camargo](https://www.linkedin.com/in/lorincamargo), UX Researcher
-
-Thanks to our advisors:
-* [Michelle Thong](https://github.com/mthong), Code for San José Chapter Director 
-* [Vivek Bansal](https://github.com/3vivekb), Code for San José Chapter Director
