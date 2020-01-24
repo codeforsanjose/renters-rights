@@ -1,14 +1,16 @@
 # Renter's Rights Guide
-This [website]](https://rentersrightsguide.org)'s original UI is now archived. We now direct visitors to [City of San José Housing Department](http://sanjoseca.gov/rent) because they have improved the website UI. 
+Tools to help tenants facing eviction in California
 
 ## Project History 
 We started the Renter's Rights Guide in 2017 as a [Code for San José](http://codeforsanjose.com) open source web application to help renters in San José understand their rights and resources. 
 
 We learned from conducting user research and stakeholder interviews that renters in Santa Clara County deal with issues such as how to navigate the eviction process, increased rent, and how to find affordable housing. It can be difficult to navigate policy jargon to understand renters rights and procedures to address issues.  
 
-From 2018-2019 we maintained the website, keeping it up to date with any policy changes from the City of San José. 
+From 2018-2019 we maintained the [website](https://rentersrightsguide.org), keeping it up to date with any policy changes from the City of San José. 
 
-In January 2020, we decided to archive the website because the city has improved their Housing department website UI.  
+In ealry January 2020, we decided to archive the [website](https://rentersrightsguide.org) because the city has improved their Housing department website UI. 
+ 
+Recently, we began discussions with Stanford Legal Design Lab students to partner on tools that help tenants facing eviction.
 
 ## Tech
 This web application is built with  Rails, React.js, React-on-Rails gem, and PostgreSQL.
